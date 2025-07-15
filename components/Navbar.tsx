@@ -33,11 +33,6 @@ const Navbar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [mobileMenuOpen, accountDropdownOpen]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('access');
-    setToken(null);
-  };
-  
   navLinks = [
     { english: "Our Story", maori: "Tā Mātou Kōrero" },
     { english: "Our Solutions", maori: "Ā Mātou Rongoā" },

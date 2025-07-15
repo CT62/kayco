@@ -20,13 +20,13 @@ const OurPeople = () => {
                 again and again.
               </p>
               <p className="mb-4 text-gray-700 leading-relaxed">
-                Patients' needs left unmet, groups of people forgotten,
+                Patients&rsquo; needs left unmet, groups of people forgotten,
                 unbearable side effects, and medications that offered little to no
                 relief. In some cases, there were no treatment options at all.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 The science was there. But access to meaningful medicine still
-                wasn’t reaching everyone — women, children, people with
+                wasn&rsquo;t reaching everyone — women, children, people with
                 disabilities, the elderly, and those living with rare conditions.
               </p>
             </>
@@ -38,4 +38,3 @@ const OurPeople = () => {
 };
 
 export default OurPeople;
-

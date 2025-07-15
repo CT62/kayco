@@ -2,11 +2,8 @@
 import { motion } from 'framer-motion';
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { useState } from 'react';
 
 const KaycoHomepage = () => {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
   const router = useRouter()
   const containerVariants = {
     hidden: { opacity: 0 },
