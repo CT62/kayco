@@ -1,4 +1,4 @@
-import Jumbotron from "@/components/Jumbotron.tsx"
+import Jumbotron from "@/components/Jumbotron"
 
 export default function Home() {
   return (
