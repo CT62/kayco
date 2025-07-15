@@ -1,32 +1,33 @@
 "use client";
-import { motion } from 'framer-motion';
+import { motion, Variants } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const KaycoHomepage = () => {
-  const router = useRouter()
-  const containerVariants = {
+  const router = useRouter();
+
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
         duration: 0.8,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
-        damping: 15
-      }
-    }
+        damping: 15,
+      },
+    },
   };
 
   const backgroundLogos = Array.from({ length: 10 }).map((_, i) => {
@@ -47,7 +48,7 @@ const KaycoHomepage = () => {
       yMove,
       rotateStart,
       duration,
-      gray: i % 2 === 0
+      gray: i % 2 === 0,
     };
   });
 
@@ -93,25 +94,25 @@ const KaycoHomepage = () => {
           >
             <motion.button
               className="text-white px-10 py-3 sm:px-12 sm:py-4 rounded-full font-light text-base sm:text-lg tracking-wide transition-all duration-300 shadow-lg"
-              style={{ backgroundColor: '#FF6B6B' }}
+              style={{ backgroundColor: "#FF6B6B" }}
               whileHover={{
                 y: -3,
                 boxShadow: "0 15px 35px rgba(255,107,107,0.3)",
-                backgroundColor: '#FF5252'
+                backgroundColor: "#FF5252",
               }}
               whileTap={{ scale: 0.98 }}
-	      onClick={()=> router.push("/about")}
+              onClick={() => router.push("/about")}
             >
               OUR RESEARCH
             </motion.button>
 
             <motion.button
               className="text-gray-700 px-10 py-3 sm:px-12 sm:py-4 border-2 rounded-full font-light text-base sm:text-lg tracking-wide transition-all duration-300"
-              style={{ borderColor: '#FF6B6B' }}
+              style={{ borderColor: "#FF6B6B" }}
               whileHover={{
                 y: -3,
-                color: '#FF6B6B',
-                boxShadow: "0 10px 25px rgba(255,107,107,0.2)"
+                color: "#FF6B6B",
+                boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -125,51 +126,67 @@ const KaycoHomepage = () => {
       <section className="relative z-10 bg-white py-20 px-4 sm:px-8 md:px-16 overflow-hidden">
         {/* Floating Background Logos */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-          {backgroundLogos.map(({ id, size, xStart, yStart, xMove, yMove, rotateStart, duration, gray }) => (
-            <motion.div
-              key={id}
-              className="absolute opacity-20"
-              style={{
-                top: `${yStart}%`,
-                left: `${xStart}%`,
-                width: `${size}px`,
-                height: `${size}px`,
-                filter: gray ? "grayscale(100%)" : "none",
-              }}
-              animate={{
-                x: [`0%`, `${xMove}%`],
-                y: [`0%`, `${yMove}%`],
-                rotate: [rotateStart, rotateStart + 360],
-              }}
-              transition={{
-                duration,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut"
-              }}
-            >
-              <Image
-                src="/mobilelogo.png"
-                alt="Background Logo"
-                fill
-                className="object-contain"
-              />
-            </motion.div>
-          ))}
+          {backgroundLogos.map(
+            ({
+              id,
+              size,
+              xStart,
+              yStart,
+              xMove,
+              yMove,
+              rotateStart,
+              duration,
+              gray,
+            }) => (
+              <motion.div
+                key={id}
+                className="absolute opacity-20"
+                style={{
+                  top: `${yStart}%`,
+                  left: `${xStart}%`,
+                  width: `${size}px`,
+                  height: `${size}px`,
+                  filter: gray ? "grayscale(100%)" : "none",
+                }}
+                animate={{
+                  x: [`0%`, `${xMove}%`],
+                  y: [`0%`, `${yMove}%`],
+                  rotate: [rotateStart, rotateStart + 360],
+                }}
+                transition={{
+                  duration,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src="/mobilelogo.png"
+                  alt="Background Logo"
+                  fill
+                  className="object-contain"
+                />
+              </motion.div>
+            )
+          )}
         </div>
 
         <motion.div
           className="relative max-w-5xl mx-auto text-center z-10"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 mb-6 tracking-tight">
             Our Vision
           </h2>
           <p className="text-gray-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-            At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing solutions that prioritize people. We aim to make healthcare smarter, simpler, and more human.
+            At{" "}
+            <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are
+            reshaping the future of medicine by creating life-changing solutions
+            that prioritize people. We aim to make healthcare smarter, simpler,
+            and more human.
           </p>
         </motion.div>
       </section>
@@ -178,4 +195,3 @@ const KaycoHomepage = () => {
 };
 
 export default KaycoHomepage;
-
