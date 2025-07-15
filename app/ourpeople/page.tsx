@@ -1,39 +1,50 @@
-import Person from "@/components/Person";
+import LenaKadri from "@/components/people/lenaKadri";
+import { CharlotteOwens } from "@/components/people/charlotteOwens";
+import Unknown from "@/components/people/unknown"
+import AnisoaraNicol from "@/components/people/anisoaraNicol"
 
 const OurPeople = () => {
   return (
-    <>
-      <div className="flex justify-center text-5xl font-extrabold py-12 text-gradient">
-        Our People
-      </div>
+    <div className="min-h-screen bg-gray-50 py-8 pt-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-extrabold text-gray-800 mb-4">Our People</h1>
+          <p className="text-xl text-gray-600">Meet the team driving innovation in pharmaceutical development</p>
+        </div>
 
-      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 transition-transform hover:scale-[1.02] hover:shadow-2xl duration-300">
-        <Person
-          name="Dr. Lena Kadri"
-          image="/people/Lena.jpg"
-          role="Founder | Kaiwhakarewa"
-          text={
-            <>
-              <p className="mb-4 text-gray-700 leading-relaxed">
-                I am Dr. Lena Kadri, the founder of Kayco. Throughout my career
-                in academia and global pharma, I kept seeing the same challenges
-                again and again.
-              </p>
-              <p className="mb-4 text-gray-700 leading-relaxed">
-                Patients&rsquo; needs left unmet, groups of people forgotten,
-                unbearable side effects, and medications that offered little to no
-                relief. In some cases, there were no treatment options at all.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                The science was there. But access to meaningful medicine still
-                wasn&rsquo;t reaching everyone — women, children, people with
-                disabilities, the elderly, and those living with rare conditions.
-              </p>
-            </>
-          }
-        />
+        <div className="mb-16">
+          <h2 className="text-4xl font-extrabold text-center text-red-500 mb-8">Founder</h2>
+          <LenaKadri />
+        </div>
+
+        <div className="mb-16">
+          <h2 className="text-4xl font-extrabold text-center text-red-500 mb-8">Advisor</h2>
+          <div className="space-y-12">
+            <CharlotteOwens />
+          </div>
+        </div>
+        <div className="mb-16">
+	    <AnisoaraNicol/>
+	</div>
+        <div className="mb-16">
+	    <Unknown/>
+	</div>
+        <div className="mb-16">
+	    <Unknown/>
+	</div>
+          <h2 className="text-4xl font-extrabold text-center text-red-500 mb-8">Affiliations</h2>
+        <div className="mb-16">
+	    <Unknown/>
+	</div>
+
+       <div className="mb-16">
+	    <Unknown/>
+	</div>
+       <div className="mb-16">
+	    <Unknown/>
+	</div>
       </div>
-    </>
+    </div>
   );
 };
 
