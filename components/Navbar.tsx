@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event:MouseEvent) => {
       const navElement = document.getElementById('main-nav');
       if (navElement && !navElement.contains(event.target)) {
         setMobileMenuOpen(false);
