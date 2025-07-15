@@ -24,7 +24,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event:MouseEvent) => {
       const navElement = document.getElementById('main-nav');
-      if (navElement && !navElement.contains(event.target)) {
+      if (navElement && event.target instanceof Node && !navElement.contains(event.target)) {
         setMobileMenuOpen(false);
         setAccountDropdownOpen(false);
       }
