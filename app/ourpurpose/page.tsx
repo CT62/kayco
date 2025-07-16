@@ -43,7 +43,19 @@ const data = [
   },
 ];
 
-const SectionCard = ({ title, image, patient, problem, solution }) => {
+const SectionCard = ({
+  title,
+  image,
+  patient,
+  problem,
+  solution,
+}: {
+  title: string;
+  image: string;
+  patient: string;
+  problem: string;
+  solution: string;
+}) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
