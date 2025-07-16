@@ -1,7 +1,6 @@
 'use client';
-
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import { motion, AnimatePresence, Variants, Transition } from 'framer-motion';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -16,7 +15,6 @@ const Navbar = () => {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -43,20 +41,20 @@ const Navbar = () => {
 
   // Animation variants
   const navVariants: Variants = {
-  hidden: { y: -100, opacity: 0 },
-  visible: { 
-    y: 0, 
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-      staggerChildren: 0.1
+    hidden: { y: -100, opacity: 0 },
+    visible: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+        staggerChildren: 0.1
+      }
     }
-  }
-};
+  };
 
-  const linkVariants = {
+  const linkVariants: Variants = {
     hidden: { y: -20, opacity: 0 },
     visible: { 
       y: 0, 
@@ -65,11 +63,11 @@ const Navbar = () => {
         type: "spring",
         stiffness: 150,
         damping: 15
-      }
+      } as Transition
     }
   };
 
-  const mobileMenuVariants = {
+  const mobileMenuVariants: Variants = {
     hidden: { 
       opacity: 0,
       height: 0,
@@ -90,7 +88,7 @@ const Navbar = () => {
     }
   };
 
-  const mobileItemVariants = {
+  const mobileItemVariants: Variants = {
     hidden: { x: -50, opacity: 0 },
     visible: { 
       x: 0, 
@@ -99,22 +97,22 @@ const Navbar = () => {
         type: "spring",
         stiffness: 150,
         damping: 20
-      }
+      } as Transition
     }
   };
-const logoVariants = {
-  hidden: { scale: 0.8, opacity: 0 },
-  visible: { 
-    scale: 1, 
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 150,
-      damping: 15
-    }
-  }
-} as Variants;
 
+  const logoVariants: Variants = {
+    hidden: { scale: 0.8, opacity: 0 },
+    visible: { 
+      scale: 1, 
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        damping: 15
+      } as Transition
+    }
+  };
 
   return (
     <motion.nav 
