@@ -10,11 +10,31 @@ const AnisoaraNicol = () => {
   ];
 
 
+   const bio = (
+    <>
+      <div className="mb-6">
+        <div className="flex flex-wrap gap-3 justify-center">
+          {keywords.map((word, index) => (
+            <span
+              key={`keyword-${index}`}
+              className="border border-red-500 text-black px-4 py-2 rounded-full text-sm shadow hover:scale-105 transition-transform duration-200"
+            >
+              {word}
+            </span>
+          ))}
+        </div>
+      </div>
+      
+    </>
+  );
+
+
   return (
     <Person
       name="Dr. Anisoara Nicol, PhD"
       image="/people/Anisoara.png"
       role="Business Development Advisor"
+      text={bio}
     />
   );
 };
