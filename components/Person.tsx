@@ -2,7 +2,15 @@
 import { useState } from "react";
 
 // Mock Image component for demonstration
-const Image = ({ src, alt, width, height, className }) => (
+type ImageProps = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className?: string;
+};
+
+const Image = ({ src, alt, width, height, className }: ImageProps) => (
   <img src={src} alt={alt} width={width} height={height} className={className} />
 );
 
@@ -15,7 +23,7 @@ type PersonProps = {
 
 const Person = ({ name, role, image, text }: PersonProps) => {
   const [showFull, setShowFull] = useState(false);
-
+  
   return (
     <>
       <div className="flex flex-col md:flex-row items-center gap-8 bg-white border border-gray-200 rounded-2xl shadow-sm p-6 md:p-10 max-w-5xl mx-auto">
@@ -28,7 +36,7 @@ const Person = ({ name, role, image, text }: PersonProps) => {
             height={128}
             className="w-32 h-32 rounded-full object-cover mb-4"
           />
-          <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
+          <h3 className="text-xl font-semibbold text-gray-900">{name}</h3>
           <p className="text-sm text-gray-500">{role}</p>
         </div>
         
@@ -51,7 +59,6 @@ const Person = ({ name, role, image, text }: PersonProps) => {
           )}
         </div>
       </div>
-
       {showFull && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[60] p-4"
@@ -71,7 +78,6 @@ const Person = ({ name, role, image, text }: PersonProps) => {
                   <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                 </svg>
               </button>
-
               {/* Modal content */}
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 <div className="flex-shrink-0">
