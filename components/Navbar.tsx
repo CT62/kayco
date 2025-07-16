@@ -102,19 +102,19 @@ const Navbar = () => {
       }
     }
   };
-
-  const logoVariants = {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: { 
-      scale: 1, 
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 150,
-        damping: 15
-      }
+const logoVariants = {
+  hidden: { scale: 0.8, opacity: 0 },
+  visible: { 
+    scale: 1, 
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 150,
+      damping: 15
     }
-  };
+  }
+} as Variants;
+
 
   return (
     <motion.nav 
