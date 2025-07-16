@@ -35,13 +35,14 @@ const Navbar = () => {
 
   navLinks = [
     { english: "Our Story", maori: "Tā Mātou Kōrero" },
-    { english: "Our Solutions", maori: "Ā Mātou Rongoā" },
-    { english: "Our People", maori: "Ō Mātou Tāngata" },
-    { english: "Mechano-Chemistry", maori: "Toitūtanga" }
+    { english: "Our Purpose", maori: "Ō Mātou Tāngata" },
+    { english: "Our People", maori: "Hono Mai" },
+    { english: "Mechano-Chemistry", maori: "Hangarau-Matū" },
+    { english: "Join Us", maori: "Hono Mai" },
   ];
 
   // Animation variants
-const navVariants: Variants = {
+  const navVariants: Variants = {
   hidden: { y: -100, opacity: 0 },
   visible: { 
     y: 0, 
@@ -125,7 +126,7 @@ const navVariants: Variants = {
       animate="visible"
       variants={navVariants}
     >
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3 relative">
+      <div className="max-w-screen-2xl flex items-center justify-between mx-auto p-3 relative">
         {/* Logo */}
         <motion.a 
           href="/" 
@@ -135,7 +136,7 @@ const navVariants: Variants = {
           whileTap={{ scale: 0.95 }}
         >
           <Image
-    className="filter grayscale hover:grayscale-0 transition duration-300"
+            className="filter grayscale hover:grayscale-0 transition duration-300"
             src="/mobilelogo.png"
             alt="Logo"
             width={40}
@@ -145,7 +146,7 @@ const navVariants: Variants = {
         </motion.a>
 
         <motion.ul 
-          className="hidden md:flex space-x-12 absolute left-1/2 transform -translate-x-1/2"
+          className="hidden lg:flex space-x-8 xl:space-x-12 absolute left-1/2 transform -translate-x-1/2"
           variants={navVariants}
         >
           {navLinks.map((link, i) => (
@@ -157,7 +158,7 @@ const navVariants: Variants = {
             >
               <motion.a
                 href={`/${link.english.toLowerCase().replace(" ", "")}`}
-                className="text-black relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-current font-black text-md tracking-wide flex flex-col items-center text-center"
+                className="text-black relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-current font-black text-sm xl:text-md tracking-wide flex flex-col items-center text-center"
                 whileHover={{ 
                   color: "#FF0000",
                   transition: { duration: 0.2 }
@@ -175,7 +176,7 @@ const navVariants: Variants = {
         <div className="flex items-center space-x-4">
           {/* Mobile menu toggle */}
           <motion.button
-            className="md:hidden text-black"
+            className="lg:hidden text-black"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -213,7 +214,7 @@ const navVariants: Variants = {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="md:hidden bg-gray-50/95 backdrop-blur-md shadow-md border-t border-gray-200"
+            className="lg:hidden bg-gray-50/95 backdrop-blur-md shadow-md border-t border-gray-200"
             variants={mobileMenuVariants}
             initial="hidden"
             animate="visible"

@@ -19,7 +19,7 @@ const LenaKadri = () => {
           {keywords.map((word, index) => (
             <span
               key={`keyword-${index}`}
-              className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:scale-105 transition-transform duration-200"
+              className="border border-red-500 text-black px-4 py-2 rounded-full text-sm shadow hover:scale-105 transition-transform duration-200"
             >
               {word}
             </span>
@@ -73,7 +73,7 @@ const LenaKadri = () => {
 
   return (
     <Person
-      name="Dr. Lena Kadri"
+      name="Dr. Lena Kadri, Ph.D"
       image="/people/Lena.jpg"
       role="Founder | Kaiwhakarewa"
       text={bio}

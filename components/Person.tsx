@@ -44,7 +44,7 @@ const Person = ({ name, role, image, text }: PersonProps) => {
           {!showFull && text && (
             <button
               onClick={() => setShowFull(true)}
-              className="mt-2 text-red-500 font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded"
+              className="flex justify-center mt-2 text-red-500 font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded"
             >
               Show more
             </button>

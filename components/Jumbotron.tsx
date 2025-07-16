@@ -69,9 +69,9 @@ const KaycoHomepage = () => {
             className="flex justify-center items-center mb-6 sm:mb-8"
             variants={itemVariants}
           >
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72">
+            <div className="relative w-52 h-52 sm:w-80 sm:h-80 md:w-80 md:h-80">
               <Image
-                src="/logo.png"
+                src="/nolaunch.png"
                 alt="Logo"
                 fill
                 priority
@@ -85,6 +85,7 @@ const KaycoHomepage = () => {
             variants={itemVariants}
           >
             Shaping the future of medicine,
+	    <br/>
             Where people come first.
           </motion.p>
 
@@ -178,7 +179,7 @@ const KaycoHomepage = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-red-500 mb-6 tracking-tight">
             Our Vision
           </h2>
           <p className="text-gray-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">

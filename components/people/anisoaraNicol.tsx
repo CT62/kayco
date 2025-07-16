@@ -9,9 +9,10 @@ const AnisoaraNicol = () => {
     "University of Auckland",
   ];
 
+
   return (
     <Person
-      name="Dr. Anisoara Nicol"
+      name="Dr. Anisoara Nicol, PhD"
       image="/people/Anisoara.png"
       role="Business Development Advisor"
     />

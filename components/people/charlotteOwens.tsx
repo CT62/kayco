@@ -1,27 +1,25 @@
 import Person from "@/components/Person";
 
 export const CharlotteOwens = () => {
-  const keywords = [
-    "Pharmaceutical Industrial Advisor",
-    "CMO",
-    "Founder",
-    "Board Member",
-    "Medical Affairs",
-    "Driving Innovation",
-    "Global Portfolio Impact",
-    "Scalable Health Solutions",
-    "Clinical Development Leader",
-    "Practicing Obstetrician Gynecologist",
-  ];
-
   const bio = (
     <>
       <div className="mb-6">
         <div className="flex flex-wrap gap-3 justify-center">
-          {keywords.map((tag, index) => (
+          {[
+            "Pharmaceutical Industrial Advisor",
+            "CMO",
+            "Founder",
+            "Board Member",
+            "Medical Affairs",
+            "Driving Innovation",
+            "Global Portfolio Impact",
+            "Scalable Health Solutions",
+            "Clinical Development Leader",
+            "Practicing Obstetrician Gynecologist",
+          ].map((tag, index) => (
             <span
               key={index}
-              className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:scale-105 transition-transform duration-200"
+              className="bg-red-400 text-white px-4 py-2 rounded-full text-sm font-semibold shadow hover:scale-105 transition-transform duration-200"
             >
               {tag}
             </span>
@@ -41,11 +39,11 @@ export const CharlotteOwens = () => {
           <ul className="list-disc list-inside space-y-1">
             <li>SVP, Head of Global Medical Affairs & Outcomes Research, Organon</li>
             <li>VP, Head of Center for Health Equity & Patient Affairs, Takeda</li>
-            <li>Therapeutic Area Lead, Sr. Medical Director, Women's Health, General Medicine & Virology, AbbVie</li>
+            <li>Therapeutic Area Lead, Sr. Medical Director, Women&apos;s Health, General Medicine & Virology, AbbVie</li>
             <li>CMO, Director Division of Industry Collaborative Research, Assist. Prof., Morehouse School of Medicine</li>
             <li>Strategic Management Lead Consultant, Booz Allen Hamilton</li>
             <li>Director Global Clinical Affairs, Kimberly-Clark Corporation</li>
-            <li>Worldwide Medical Director, Ethicon, Inc. (J&J)</li>
+            <li>Worldwide Medical Director, Ethicon, Inc. (J&amp;J)</li>
           </ul>
         </div>
         <h3 className="text-xl font-bold text-gray-800 pt-4">Career Summary</h3>
@@ -53,7 +51,7 @@ export const CharlotteOwens = () => {
           Dr. Charlotte Owens, M.D., is a physician-executive with over two decades of global leadership
           experience across clinical medicine, the biopharmaceutical and device industries, and strategic
           management consulting. Throughout her career, she has led clinical development and medical affairs
-          functions at some of the world's most respected pharmaceutical and healthcare companies — driving
+          functions at some of the world&apos;s most respected pharmaceutical and healthcare companies — driving
           strategy and execution across Fortune 100 and Fortune Global 500 organizations.
         </p>
         <p className="text-gray-700 leading-relaxed">
@@ -74,3 +72,4 @@ export const CharlotteOwens = () => {
     />
   );
 };
+
