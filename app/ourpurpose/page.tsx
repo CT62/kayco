@@ -7,39 +7,75 @@ import { motion, AnimatePresence } from "framer-motion";
 const data = [
   {
     title: "Enhancing Drug Efficacy",
-    image: "/images/priya.jpg",
+    image: "asian_woman.jpg",
     patient: "Priya, 52 — A mother who did everything right, but still got worse.",
     problem:
-      "Some medicines don’t absorb well in the body, meaning that even when taken correctly, they don’t reach the infection in high enough quantities to work. This can lead to resistant bacteria, prolonged illness, and more side effects.",
+      "Priya took the prescribed antibiotics and followed every instruction for her UTI — but she didn’t get better. Her fever spiked, pain increased, and a second visit confirmed the infection hadn’t cleared. It wasn’t her fault — the medication simply didn’t absorb into her bloodstream properly.",
     solution:
-      "We improve essential antibiotics to increase absorption, reduce side effects, and work the first time. Delivered through oral tablets, skin patches, or inhalable formulations.",
+      "We improve essential antibiotics so they’re absorbed better, faster, and with fewer side effects. Delivered via oral tablets, gentle skin patches, or inhalable forms — so treatment works right, the first time.",
   },
   {
-    title: "Children, Disabilities & Elderly",
-    image: "/images/mia.jpg",
-    patient: "Mia (6), Wayne (86), and Leo (2) — Struggling with how medicine is delivered.",
+    title: "Mia’s Story – Children & Disabilities",
+    image: "mia.jpg",
+    patient: "Mia, 6 — Living with Down syndrome in a one-size-fits-all system.",
     problem:
-      "Many people experience difficulties swallowing pills or coping with harsh formats. This leads to trauma, poor adherence, and compromised care.",
+      "Mia needs antibiotics frequently, but the pills are hard to swallow and taste unbearable. Her Down syndrome causes oral motor challenges and sensory sensitivities, making medication traumatic for both her and her parents. They often resort to suppositories, which she screams and cries through.",
     solution:
-      "We redesign medicines into chewable gummies, oral strips, sprinkle powders, and gentle skin patches — formats that are safer, friendlier, and trauma-free.",
+      "We redesign medications into formats that are child- and disability-friendly: medicated lollipops, chewable gummies, oral strips, sprinkle powders, and skin patches — making treatment safe, effective, and trauma-free.",
   },
   {
-    title: "Women’s Health",
-    image: "/images/anika.jpg",
-    patient: "Anika with endometriosis. Aroha with PCOS. Underserved and unheard.",
+    title: "Wayne’s Story – Elderly Patients",
+    image: "wayne.jpg",
+    patient: "Wayne, 86 — Battling Parkinson’s while battling his pills.",
     problem:
-      "Conditions like endometriosis and PCOS are often treated with hormone-suppressing drugs or repurposed meds, leading to side effects and poor results.",
+      "Parkinson’s makes swallowing difficult for Wayne. Pills make him choke, some can’t be crushed, and liquids can go down the wrong way. His daughter does her best, but the daily struggle is real. Medication shouldn’t be dangerous.",
     solution:
-      "We’re advancing women’s health with hormone-sparing therapies, modern delivery formats, and treatments designed to fit real lives — not borrowed ones.",
+      "We reformulate medicines into safer formats: melt-on-the-tongue oral strips and gentle skin patches — giving Wayne peace of mind and dignity in care.",
   },
   {
-    title: "Difficult-to-Treat Diseases",
-    image: "/images/hassan.jpg",
-    patient: "Hassan with cancer. Richard with a rare neuromuscular disorder.",
+    title: "Leo’s Story – Children & Cancer",
+    image: "leo.jpg",
+    patient: "Leo, 2 — Fighting leukemia, and fighting his medicine.",
     problem:
-      "Outdated treatments or no treatments at all. Rare and difficult diseases are neglected, leaving patients without options or hope.",
+      "Leo’s chemotherapy drug comes as bitter granules dissolved in water. He gags, spits it out, or vomits. But the dose is critical — there’s no room for error. His parents must force each dose, turning treatment into trauma.",
     solution:
-      "We develop new drugs, enhance old ones, and focus innovation where others won’t. With urgency, empathy, and science.",
+      "We re-engineer cancer meds into formats children can tolerate: medicated lollipops, gummies, oral strips, sprinkle powders, and gentle patches — making vital treatment easier to take.",
+  },
+  {
+    title: "Anika’s Story – Women’s Health",
+    image: "anika.jpg",
+    patient: "Anika, 31 — Living with endometriosis and waiting for answers.",
+    problem:
+      "After years of pain and dismissal, Anika was finally diagnosed with endometriosis. Hormonal drugs caused fogginess and emotional disruption. Surgery was temporary. Nothing fit her life — and nothing was designed for her.",
+    solution:
+      "We develop hormone-sparing therapies and formats that support real-life routines. Because women like Anika deserve more than a shrug and side effects — they deserve solutions made for them.",
+  },
+  {
+    title: "Aroha’s Story – PCOS",
+    image: "aroha.webp",
+    patient: "Aroha, 27 — Living with PCOS: Misdiagnosed and overlooked.",
+    problem:
+      "Aroha experienced irregular cycles, skin issues, and stubborn weight gain. For years, she was dismissed or told to manage stress. Finally diagnosed with PCOS, she was offered only repurposed drugs that didn’t help. Nothing was designed for her.",
+    solution:
+      "We’re advancing real treatments for women with PCOS: therapies that target the root cause, not borrowed meds. Because women deserve innovation — not leftovers.",
+  },
+  {
+    title: "Hassan’s Story – Difficult-to-Treat Cancer",
+    image: "hassan.jpg",
+    patient: "Hassan, 58 — Diagnosed with cancer and running out of options.",
+    problem:
+      "Hassan’s treatments caused relentless side effects — nausea, skin reactions, weakness. Newer drugs were out of reach. While hope remained, time slipped away. Outdated options were all he had.",
+    solution:
+      "We discover new medicines and improve old ones with delivery science — to reduce side effects, increase access, and restore quality of life. Because no one should run out of options.",
+  },
+  {
+    title: "Richard’s Story – Rare Disease",
+    image: "richard.jpg",
+    patient: "Richard, 74 — Fighting an illness with no cure.",
+    problem:
+      "Richard was diagnosed with a rare neuromuscular disease. The only meds available were borrowed from other conditions and didn’t help. 95% of rare diseases have no approved treatments — and patients like Richard are forgotten.",
+    solution:
+      "We’re developing new medicines for those with no options, and reengineering existing drugs to treat what was once untreatable. Because Richard deserves more than a diagnosis — he deserves hope.",
   },
 ];
 
@@ -64,7 +100,7 @@ const SectionCard = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-48 object-cover"
+          className="w-full h-74 object-cover"
         />
       )}
       <div className="p-6 flex flex-col grow">
@@ -122,26 +158,10 @@ const OurPurposePage = () => {
             <SectionCard key={idx} {...section} />
           ))}
         </main>
-
-        <footer className="text-center pt-12 space-y-8">
-          <div>
-            <h3 className="text-xl font-semibold text-gray-900">Our Start</h3>
-            <p className="text-sm text-gray-500">Tō Mātou Tīmatanga</p>
-            <p className="text-gray-700 mt-2 max-w-xl mx-auto">
-              We begin where today’s treatments fall short. This is our starting point—not our endpoint.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold text-gray-900">Our Future</h3>
-            <p className="text-sm text-gray-500">Tō Tātou Anamata</p>
-            <p className="text-gray-700 mt-2 max-w-xl mx-auto">
-              We are building a future where no one is left behind. Because every need deserves a solution.
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
   );
 };
 
 export default OurPurposePage;
+

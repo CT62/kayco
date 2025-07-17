@@ -8,16 +8,26 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [accountDropdownOpen, setAccountDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   let navLinks = [];
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
       setScrolled(isScrolled);
     };
+    
+    // Check initial scroll position
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [mounted]);
 
   useEffect(() => {
     const handleClickOutside = (event:MouseEvent) => {
@@ -118,7 +128,7 @@ const Navbar = () => {
     <motion.nav 
       id="main-nav" 
       className={`fixed top-0 z-50 w-full border-b-2 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-white'
+        mounted && scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-white'
       } border-[#FF0000]`}
       initial="hidden"
       animate="visible"
