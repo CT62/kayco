@@ -48,7 +48,7 @@ const OurPeople = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-red-500 mb-4">Our People</h1>
-          <p className="text-xl text-gray-600">We've walked the walk. Now we're ready to build the future</p>
+          <p className="text-xl text-gray-600">We&apos;ve walked the walk. Now we&apos;re ready to build the future</p>
         </div>
         <div className="mb-16">
           <h2 className="text-3xl font-extrabold text-center text-red-400 mb-8">Founder</h2>
