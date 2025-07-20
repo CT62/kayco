@@ -16,16 +16,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 text-white relative overflow-hidden">
+    <footer className="bg-gray-100 text-white relative overflow-hidden ">
       <div className="bg-red-600 h-10 overflow-hidden relative">
-        {/* 🔴 Animated Coming Soon Bar */}
         <motion.div
-          className="absolute inset-0 flex items-center"
+          className="absolute inset-0 flex items-center sm:hidden"
           initial={{ x: "0%" }}
-          animate={{ x: "-100%" }}
+          animate={{ x: "-500%" }}
           transition={{
             repeat: Infinity,
-            duration: 20,
+            duration: 8,
             ease: "linear",
           }}
         >
@@ -49,8 +48,7 @@ const Footer = () => {
               Building a better future through science and technology.
             </p>
             <div className="text-gray-800 space-y-1">
-              <p>Phone: +64 9 123 4567</p>
-              <p>Email: LenaKadri@kayco-health.co.nz</p>
+              <p>Email: lenaKadri@kayco-health.co.nz</p>
             </div>
           </div>
 

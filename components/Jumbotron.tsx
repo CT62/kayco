@@ -71,7 +71,7 @@ const KaycoHomepage = () => {
           >
             <div className="relative w-52 h-52 sm:w-80 sm:h-80 md:w-80 md:h-80">
               <Image
-                src="/nolaunch.png"
+                src="/logo.png"
                 alt="Logo"
                 fill
                 priority
@@ -179,16 +179,37 @@ const KaycoHomepage = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-red-500 mb-6 tracking-tight">
-            Our Vision
-          </h2>
-          <p className="text-gray-600 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-            At{" "}
-            <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are
-            reshaping the future of medicine by creating life-changing solutions
-            that prioritize people. We aim to make healthcare smarter, simpler,
-            and more human.
-          </p>
+<section className="relative text-center px-4 sm:px-8 lg:px-12 py-24">
+  <div className="max-w-5xl mx-auto space-y-20 z-10 relative">
+    {/* Vision */}
+    <div className="space-y-6">
+      <div className="inline-block">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+          Our Vision
+        </h2>
+        <div className="h-1 bg-red-300 mt-3 rounded-full w-20 mx-auto transition-all duration-500" />
+      </div>
+      <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+        At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing
+        solutions that prioritize people. We aim to make healthcare smarter, simpler, and more human.
+      </p>
+    </div>
+
+    {/* Mission */}
+    <div className="space-y-6">
+      <div className="inline-block">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+          Our Mission
+        </h2>
+        <div className="h-1 bg-red-300 mt-3 rounded-full w-24 mx-auto transition-all duration-500" />
+      </div>
+      <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+        To transform lives through science rooted in empathy, one molecule at a time.
+      </p>
+    </div>
+  </div>
+</section>
+
         </motion.div>
       </section>
     </div>

@@ -27,7 +27,6 @@ const Person = ({ name, role, image, text }: PersonProps) => {
   return (
     <>
       <div className="flex flex-col md:flex-row items-center gap-8 bg-white border border-gray-200 rounded-2xl shadow-sm p-6 md:p-10 max-w-5xl mx-auto">
-        {/* Image & Info */}
         <div className="flex flex-col items-center text-center md:text-left md:items-start w-72">
           <Image
             src={image}
@@ -61,7 +60,7 @@ const Person = ({ name, role, image, text }: PersonProps) => {
       </div>
       {showFull && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[60] p-4"
+          className="fixed inset-0 bg-white bg-opacity-25 flex justify-center items-center z-[60] p-4"
           onClick={() => setShowFull(false)}
         >
           <div
@@ -71,7 +70,7 @@ const Person = ({ name, role, image, text }: PersonProps) => {
             <div className="p-8">
               <button
                 onClick={() => setShowFull(false)}
-                className="float-right p-2 text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded-lg transition-colors"
+                className="p-2 text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded-lg transition-colors"
                 aria-label="Close modal"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
