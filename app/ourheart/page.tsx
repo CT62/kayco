@@ -10,7 +10,7 @@ const data = [
     image: "asian_woman.jpg",
     patient: "Priya, 52 — A mother who did everything right, but still got worse.",
     problem:
-      "Priya took the prescribed antibiotics and followed every instruction for her UTI — but she didn’t get better. Her fever spiked, pain increased, and a second visit confirmed the infection hadn’t cleared. It wasn’t her fault — the medication simply didn’t absorb into her bloodstream properly.",
+      "Priya’s the type of mother who holds everything together. Full-time job, deadlines, school drop-offs, family dinners, putting the kids to bed, cleaning the house, looking after her aging parents. So when she got a urinary tract infection, she didn’t stop. She took the prescribed antibiotics, followed every instruction, and waited to feel better. But she didn’t.Her fever spiked. The pain got worse. A second visit to urgent care confirmed what she suspected. The infection hadn’t cleared. It wasn’t because she skipped a dose.It wasn’t the wrong medicine. It was because not enough of the treatment reached her bloodstream. Some medicines, don’t absorb well in the body. So even when taken correctly, not enough of the medicine reaches the infection to work as its needed. The bacteria survive, adapt, and become more resistant. Meaning future medication will be even less effective. Priya missed more days at work. Her family routine was thrown off. And she was left wondering what more she could’ve done. Even though she had done everything right.",
     solution:
       "We improve essential antibiotics so they’re absorbed better, faster, and with fewer side effects. Delivered via oral tablets, gentle skin patches, or inhalable forms — so treatment works right, the first time.",
   },
@@ -149,7 +149,7 @@ const OurPurposePage = () => {
     <div className="bg-gray-50 min-h-screen py-20 px-6 sm:px-8 lg:px-12">
       <div className="max-w-6xl mx-auto space-y-16 pt-8">
         <header className="text-center space-y-3">
-          <h1 className="text-4xl font-extrabold text-gray-800">Our Purpose</h1>
+          <h1 className="text-4xl font-extrabold text-gray-800">Our Heart</h1>
           <p className="text-md text-gray-500">Tō mātou kaupapa</p>
         </header>
 

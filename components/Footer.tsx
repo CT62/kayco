@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const tabs = [
-    "Our Story",
-    "Our Purpose",
+    "Our Heart",
     "Our People",
     "Mechano-Chemistry",
     "Join Us",
@@ -48,7 +47,7 @@ const Footer = () => {
               Building a better future through science and technology.
             </p>
             <div className="text-gray-800 space-y-1">
-              <p>Email: lenaKadri@kayco-health.co.nz</p>
+              <p>Email: lenakadri@kayco-health.co.nz</p>
             </div>
           </div>
 
