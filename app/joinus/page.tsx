@@ -130,7 +130,7 @@ export default function Roadmap() {
               >
                 {/* Simplified bullet point */}
                 <div className="relative z-20 flex-shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-red-400 to-red-500 shadow-2xl border-4 border-white relative overflow-hidden">
+                  <div className="w-10 h-10 rounded-full bg-red-500 shadow-2xl border-4 border-white relative overflow-hidden">
                     {/* Animated rings */}
                     <motion.div
                       className="absolute inset-0 rounded-full border-2 border-red-400"
@@ -156,7 +156,7 @@ export default function Roadmap() {
                   <div className="absolute inset-0 bg-gradient-to-r from-red-400/5 to-red-500/5" />
                   
                   {/* Corner decoration */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-400/20 to-transparent rounded-bl-full" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-500/40 to-transparent rounded-bl-full" />
                   
                   <div className="relative z-10">
                     <motion.h3 
@@ -175,7 +175,7 @@ export default function Roadmap() {
                       {step.details.map((detail, detailIndex) => (
                         <motion.span
                           key={detailIndex}
-                          className="px-4 py-2 bg-red-400/20 border border-red-400/40 rounded-full text-red-700 text-sm font-medium"
+                          className="px-4 py-2 border border-red-500 rounded-full text-sm font-medium"
                           initial={{ opacity: 0, scale: 0 }}
                           whileInView={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.2 + detailIndex * 0.1 }}

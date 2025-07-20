@@ -16,10 +16,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 text-white relative overflow-hidden ">
-      <div className="bg-red-600 h-10 overflow-hidden relative">
+    <footer className="bg-gray-100 text-white relative overflow-hidden">
+      <div className="bg-red-500 h-10 overflow-hidden relative sm:hidden">
         <motion.div
-          className="absolute inset-0 flex items-center sm:hidden"
+          className="absolute inset-0 flex items-center"
           initial={{ x: "0%" }}
           animate={{ x: "-500%" }}
           transition={{
