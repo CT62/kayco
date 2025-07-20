@@ -73,7 +73,7 @@ const LenaKadri = () => {
 
   return (
     <Person
-      name="Dr. Lena Kadri, Ph.D"
+      name="Dr. Lena Kadri, PhD"
       image="/people/Lena.jpg"
       role="Founder | Kaiwhakarewa"
       text={bio}
