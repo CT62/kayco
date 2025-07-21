@@ -42,7 +42,7 @@ const Navbar = () => {
   }, [mobileMenuOpen, accountDropdownOpen]);
 
   navLinks = [
-    { english: "Our Heart", maori: "Ō Mātou Tāngata" },
+    { english: "Our Purpose", maori: "Ō Mātou Tāngata" },
     { english: "Our People", maori: "Hono Mai" },
     { english: "Mechano-Chemistry", maori: "Hangarau-Matū" },
     { english: "Join Us", maori: "Hono Mai" },

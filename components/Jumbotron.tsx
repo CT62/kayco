@@ -102,9 +102,9 @@ const KaycoHomepage = () => {
                 backgroundColor: "#FF5252",
               }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => router.push("/about")}
+              onClick={() => router.push("/ourpurpose")}
             >
-              OUR RESEARCH
+              OUR PURPOSE
             </motion.button>
 
             <motion.button
@@ -116,8 +116,9 @@ const KaycoHomepage = () => {
                 boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
               }}
               whileTap={{ scale: 0.98 }}
+	      onClick={() => router.push("/joinus")}
             >
-              CONTACT US
+              JOIN US
             </motion.button>
           </motion.div>
         </motion.div>

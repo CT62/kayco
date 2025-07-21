@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const tabs = [
-    "Our Heart",
+    "Our Purpose",
     "Our People",
     "Mechano-Chemistry",
     "Join Us",
