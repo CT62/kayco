@@ -170,7 +170,6 @@ Because no one should have to say goodbye before their time.
   }
 };
 
-export { ourStartData, ourFutureData };
 
 const PatientCard = ({ patient }) => {
   const [expanded, setExpanded] = useState(false);
