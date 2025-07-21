@@ -334,7 +334,7 @@ const OurPurposePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              At Kayco, we begin where today's treatment falls short.
+              At Kayco, we begin where today&#39;s treatment falls short.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
