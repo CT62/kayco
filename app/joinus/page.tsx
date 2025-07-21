@@ -268,7 +268,8 @@ export default function Roadmap() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Join Kayco's revolutionary approach to sustainable medicine. Whether you're an investor, partner, or innovator, let's build the future of healthcare together.
+Join Kayco&#39;s revolutionary approach to sustainable medicine. Whether you&#39;re an investor, partner, or innovator, let&#39;s build the future of healthcare together.
+
               </motion.p>
 
               {/* Action buttons */}
