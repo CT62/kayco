@@ -173,7 +173,7 @@ Because no one should have to say goodbye before their time.
 export { ourStartData, ourFutureData };
 
 
-const PatientCard = ({ patient, solution, sectionTitle }) => {
+const PatientCard = ({ patient, solution?, sectionTitle? }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -326,7 +326,7 @@ const OurPurposePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Who We're Here For
+            Who We&#39;re Here For
           </motion.h2>
           <div className="max-w-4xl mx-auto space-y-6 text-xl text-gray-700">
             <motion.p

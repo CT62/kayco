@@ -9,21 +9,22 @@ const steps = [
     details: ['Mechano-chemistry expertise', 'Proven R&D track record', 'Global biopharma advisors']
   },
   { 
-    title: 'What\'s Broken', 
+    title: 'What&#39;s Broken', 
     description: 'Addressing critical gaps in modern medicine from poor absorption to antimicrobial resistance',
     details: ['Poor drug absorption', 'Antimicrobial resistance', 'Vulnerable patient needs']
   },
   { 
-    title: 'What We\'re Building', 
+    title: 'What We&#39;re Building', 
     description: 'A sustainable revolution in medicine - better absorption, fewer side effects, and global accessibility',
     details: ['Better drug absorption', 'Fighting resistance', 'Sustainable manufacturing']
   },
   { 
-    title: 'Why Now & What\'s Next', 
+    title: 'Why Now &amp; What&#39;s Next', 
     description: 'The science is ready, the need is urgent. Join us in shaping the future of medicine',
     details: ['Pipeline ready', 'Angel round open', 'Global partnerships']
   },
-]
+];
+
 
 export default function Roadmap() {
   const containerRef = useRef(null)
