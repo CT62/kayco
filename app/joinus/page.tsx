@@ -291,14 +291,6 @@ export default function Roadmap() {
                     transition={{ duration: 0.6 }}
                   />
                 </motion.button>
-
-                <motion.button
-                  className="group px-8 py-4 border-2 border-red-500 text-red-600 font-bold rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 shadow-lg"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="relative z-10">Learn More</span>
-                </motion.button>
               </motion.div>
 
               {/* Contact info */}
