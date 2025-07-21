@@ -172,8 +172,7 @@ Because no one should have to say goodbye before their time.
 
 export { ourStartData, ourFutureData };
 
-
-const PatientCard = ({ patient, solution, sectionTitle }) => {
+const PatientCard = ({ patient }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -281,18 +280,14 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }) => {
           {data.patients.map((patient, idx) => (
             <PatientCard 
               key={idx} 
-              patient={patient} 
-              solution={data.solution}
-              sectionTitle={title}
+              patient={patient}
             />
           ))}
         </div>
       ) : (
         <div className="max-w-2xl mx-auto">
           <PatientCard 
-            patient={data.patient} 
-            solution={data.solution}
-            sectionTitle={title}
+            patient={data.patient}
           />
         </div>
       )}
