@@ -197,7 +197,6 @@ Because no one should have to say goodbye before their time.
   }
 };
 
-
 const PatientCard = ({ patient }: PatientCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -301,7 +300,7 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: Sect
         <p className="text-gray-600 text-lg">{subtitle}</p>
       </div>
       
-      {isMultiplePatients ? (
+      {isMultiplePatients && data.patients ? (
         <div className="grid gap-8">
           {data.patients.map((patient, idx) => (
             <PatientCard 
@@ -310,13 +309,13 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: Sect
             />
           ))}
         </div>
-      ) : (
+      ) : data.patient ? (
         <div className="max-w-2xl mx-auto">
           <PatientCard 
             patient={data.patient}
           />
         </div>
-      )}
+      ) : null}
     </div>
   );
 };
@@ -388,8 +387,8 @@ const OurPurposePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Start</h2>
             <p className="text-2xl text-gray-600 mb-2">Tō Mātou Tīmatanga</p>
-            <p className="text-l text-gray-700 mt-6 max-w-3xl mx-auto">
-	    At Kayco, we begin where todays treatment falls short. <br/>
+            <p className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
+	    At Kayco, we begin where today&apos;s treatment falls short. <br/>
 	    This is our starting point,<br/>
 	    Not our endpoint.<br/>
 	    Because everyone deserves better.<br/>
