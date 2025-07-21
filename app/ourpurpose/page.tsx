@@ -3,6 +3,33 @@ import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon, UserIcon } from "@heroicons/react/24/solid";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Type definitions
+interface Patient {
+  name: string;
+  description: string;
+  image: string;
+  problem: string;
+  solution: string;
+}
+
+interface SectionData {
+  title: string;
+  subtitle: string;
+  patient?: Patient;
+  patients?: Patient[];
+}
+
+interface PatientCardProps {
+  patient: Patient;
+}
+
+interface SectionCardProps {
+  title: string;
+  subtitle: string;
+  data: SectionData;
+  isMultiplePatients?: boolean;
+}
+
 const ourStartData = {
   enhancingDrugEfficacy: {
     title: "Enhancing Drug Efficacy",
@@ -171,7 +198,7 @@ Because no one should have to say goodbye before their time.
 };
 
 
-const PatientCard = ({ patient }) => {
+const PatientCard = ({ patient }: PatientCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -263,7 +290,7 @@ const PatientCard = ({ patient }) => {
   );
 };
 
-const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }) => {
+const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: SectionCardProps) => {
   return (
     <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
       <div className="text-center mb-10">
