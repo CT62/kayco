@@ -36,7 +36,7 @@ export default function Roadmap() {
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-gradient-to-br from-gray-50 via-red-50 to-white px-4 overflow-hidden relative">
+    <div ref={containerRef} className="min-h-screen to-white px-4 overflow-hidden relative">
       {/* Animated background elements */}
       <motion.div 
         className="absolute inset-0 opacity-20"
@@ -51,7 +51,7 @@ export default function Roadmap() {
       {[...Array(20)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-red-500 rounded-full"
+          className="absolute w-1 h-1 rounded-full"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -152,8 +152,6 @@ export default function Roadmap() {
                 <motion.div
                   className="bg-white/80 backdrop-blur-xl border border-red-200 rounded-3xl p-8 flex-1 max-w-3xl relative overflow-hidden shadow-2xl"
                 >
-                  {/* Animated background pattern */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-400/5 to-red-500/5" />
                   
                   {/* Corner decoration */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-red-500/40 to-transparent rounded-bl-full" />
@@ -196,6 +194,136 @@ export default function Roadmap() {
             ))}
           </div>
         </div>
+
+        {/* Call to Action Section */}
+        <motion.div
+          className="mt-32 relative"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, type: "spring" }}
+        >
+          {/* Background effects */}
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-red-400/5 to-red-500/10 rounded-3xl blur-3xl" />
+          
+          <div className="relative bg-white/90 backdrop-blur-xl border border-red-200 rounded-3xl p-12 text-center overflow-hidden shadow-2xl">
+            {/* Animated background pattern */}
+            <div className="absolute inset-0 opacity-20">
+              {[...Array(15)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute w-2 h-2 bg-red-400 rounded-full"
+                  style={{
+                    left: `${Math.random() * 100}%`,
+                    top: `${Math.random() * 100}%`,
+                  }}
+                  animate={{
+                    scale: [0, 1, 0],
+                    opacity: [0, 1, 0],
+                  }}
+                  transition={{
+                    duration: 2 + Math.random(),
+                    repeat: Infinity,
+                    delay: Math.random() * 2,
+                  }}
+                />
+              ))}
+            </div>
+
+            {/* Corner decorations */}
+            <div className="absolute top-0 left-0 w-40 h-40 bg-gradient-to-br from-red-500/30 to-transparent rounded-br-full" />
+            <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-to-tl from-red-500/30 to-transparent rounded-tl-full" />
+
+            <div className="relative z-10">
+              <motion.div
+                className="mb-8"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.6, type: "spring" }}
+              >
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-red-400 to-red-600 rounded-full flex items-center justify-center shadow-2xl">
+                  <motion.div
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                  >
+                    <div className="w-6 h-6 bg-gradient-to-r from-red-400 to-red-600 rounded-full" />
+                  </motion.div>
+                </div>
+              </motion.div>
+
+              <motion.h3
+                className="text-5xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                Ready to Transform Medicine?
+              </motion.h3>
+
+              <motion.p
+                className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                Join Kayco's revolutionary approach to sustainable medicine. Whether you're an investor, partner, or innovator, let's build the future of healthcare together.
+              </motion.p>
+
+              {/* Action buttons */}
+              <motion.div
+                className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+              >
+                <motion.button
+                  className="group relative px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-full shadow-2xl overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="relative z-10">Join Our Angel Round</span>
+                  <motion.div
+                    className="absolute inset-0 bg-white/20 rounded-full"
+                    initial={{ scale: 0, x: "-100%" }}
+                    whileHover={{ scale: 2, x: "100%" }}
+                    transition={{ duration: 0.6 }}
+                  />
+                </motion.button>
+
+                <motion.button
+                  className="group px-8 py-4 border-2 border-red-500 text-red-600 font-bold rounded-full hover:bg-red-500 hover:text-white transition-all duration-300 shadow-lg"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span className="relative z-10">Learn More</span>
+                </motion.button>
+              </motion.div>
+
+              {/* Contact info */}
+              <motion.div
+                className="mt-8 flex flex-col sm:flex-row gap-6 justify-center items-center text-gray-600"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+              >
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse" />
+                  <span className="font-medium">Pipeline Ready</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse delay-300" />
+                  <span className="font-medium">Global Partnerships</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse delay-700" />
+                  <span className="font-medium">Open for Investment</span>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   )
