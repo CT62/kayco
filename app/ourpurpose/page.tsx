@@ -173,7 +173,7 @@ Because no one should have to say goodbye before their time.
 export { ourStartData, ourFutureData };
 
 
-const PatientCard = ({ patient, solution?, sectionTitle? }) => {
+const PatientCard = ({ patient, solution, sectionTitle }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
