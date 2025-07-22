@@ -27,24 +27,6 @@ const MechanochemistryPage = () => {
     },
   };
 
-  const backgroundParticles = Array.from({ length: 15 }).map((_, i) => {
-    const size = Math.random() * 60 + 30;
-    const xStart = Math.random() * 100;
-    const yStart = Math.random() * 100;
-    const xMove = (Math.random() - 0.5) * 300;
-    const yMove = (Math.random() - 0.5) * 300;
-    const duration = 15 + Math.random() * 10;
-    return {
-      id: i,
-      size,
-      xStart,
-      yStart,
-      xMove,
-      yMove,
-      duration,
-      delay: Math.random() * 5,
-    };
-  });
 
   return (
     <div className="min-h-screen bg-white">
