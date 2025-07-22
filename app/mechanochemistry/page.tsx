@@ -117,19 +117,19 @@ const MechanochemistryPage = () => {
               <div className="relative bg-white rounded-3xl p-8 shadow-xl">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="flex flex-col items-center text-center space-y-2">
-                    <Leaf className="w-12 h-12 text-green-500" />
+                    <Leaf className="w-12 h-12 text-black-500" />
                     <span className="text-sm font-medium text-gray-600">Sustainable</span>
                   </div>
                   <div className="flex flex-col items-center text-center space-y-2">
-                    <Zap className="w-12 h-12 text-yellow-500" />
+                    <Zap className="w-12 h-12 text-black-500" />
                     <span className="text-sm font-medium text-gray-600">Innovative</span>
                   </div>
                   <div className="flex flex-col items-center text-center space-y-2">
-                    <Shield className="w-12 h-12 text-blue-500" />
+                    <Shield className="w-12 h-12 text-black-500" />
                     <span className="text-sm font-medium text-gray-600">Patient-Focused</span>
                   </div>
                   <div className="flex flex-col items-center text-center space-y-2">
-                    <DollarSign className="w-12 h-12 text-[#FF6B6B]" />
+                    <DollarSign className="w-12 h-12 text-black-500" />
                     <span className="text-sm font-medium text-gray-600">Accessible</span>
                   </div>
                 </div>

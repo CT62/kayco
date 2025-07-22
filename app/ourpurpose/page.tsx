@@ -247,9 +247,8 @@ const PatientCard = ({ patient }: PatientCardProps) => {
               className="overflow-hidden"
             >
               <div className="space-y-6 border-t border-gray-100 pt-6">
-                <div className="bg-red-50 rounded-xl p-5 border border-red-100">
-                  <h5 className="font-bold text-red-900 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                <div className="bg-gray-200 rounded-xl p-5 border border-gray-300">
+                  <h5 className="font-bold text-gray-800 mb-3 flex items-center">
                     The Problem
                   </h5>
                   <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">
@@ -257,9 +256,8 @@ const PatientCard = ({ patient }: PatientCardProps) => {
                   </p>
                 </div>
                 
-                <div className="bg-green-50 rounded-xl p-5 border border-green-100">
-                  <h5 className="font-bold text-green-900 mb-3 flex items-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                <div className="bg-red-50 rounded-xl p-5 border border-red-100">
+                  <h5 className="font-bold text-red-500 mb-3 flex items-center">
                     Our Solution
                   </h5>
                   <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">

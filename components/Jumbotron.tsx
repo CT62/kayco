@@ -53,7 +53,6 @@ const KaycoHomepage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Soft background blur circle */}
         <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
@@ -81,9 +80,9 @@ const KaycoHomepage = () => {
             className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Shaping the future of medicine,
+            Shaping the future of medicine
             <br/>
-            Where people come first.
+            Where people come first
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
@@ -205,10 +204,9 @@ const KaycoHomepage = () => {
                 </motion.div>
                 <div className="space-y-6 relative z-10">
                   <div className="inline-block">
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-400 tracking-tight">
                       Our Vision
                     </h2>
-                    <div className="h-1 bg-red-300 mt-3 rounded-full w-20 mx-auto transition-all duration-500" />
                   </div>
                   <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
                     At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing
@@ -244,10 +242,9 @@ const KaycoHomepage = () => {
                 </motion.div>
                 <div className="space-y-6 relative z-10">
                   <div className="inline-block">
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-400 tracking-tight">
                       Our Mission
                     </h2>
-                    <div className="h-1 bg-red-300 mt-3 rounded-full w-24 mx-auto transition-all duration-500" />
                   </div>
                   <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
                     To create medicine, <br/>
@@ -271,7 +268,7 @@ const KaycoHomepage = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
-            <div className="absolute inset-0 bg-gray-200" />
+            <div className="absolute inset-0 bg-gray-100" />
           </div>
         </div>
 
@@ -286,27 +283,27 @@ const KaycoHomepage = () => {
             <div className="space-y-8 text-black leading-relaxed">
               <div className="space-y-4">
                 <p className="text-2xl sm:text-3xl">
-                  <span className="font-medium italic text-red-400">Nau mai, haere mai,</span>
+                  <span className="font-medium italic text-red-400">Nau mai haere mai</span>
                 </p>
                 <p className="text-lg sm:text-xl font-light">
-                  We honour the <span className="italic font-medium text-red-400">mana whenua</span> of <span className="italic font-medium text-red-400">Aotearoa</span> New Zealand and the <span className="italic font-medium text-red-400">mātauranga Māori</span>.
+                  We honour the <span className="italic font-medium text-black">mana whenua</span> of <span className="italic font-medium text-black">Aotearoa</span> New Zealand and the <span className="italic font-medium text-black">mātauranga Māori</span>.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <p className="text-2xl sm:text-3xl">
-                  <span className="font-bold text-red-300">Céad míle fáilte,</span>
+                  <span className="font-medium text-red-400 italic">Céad míle fáilte</span>
                 </p>
-                <p className="text-lg sm:text-xl font-light">
+                <p className="text-lg sm:text-xl font-medium">
                   We acknowledge our roots in Ireland and the legacy of Irish resilience, helping to bring Kayco to life.
                 </p>
               </div>
               
               <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-black">
-                <p><span className="italic">Nau mai, haere mai</span> = Māori welcome.</p>
-                <p><span className="italic">Mana whenua</span> = The Indigenous custodians of the land.</p>
-                <p><span className="italic">Mātauranga Māori</span> = Māori knowledge — traditional, cultural, and spiritual systems of understanding the world.</p>
-                <p><span className="italic">Céad míle fáilte</span> = Irish welcome.</p>
+                <p><span className="italic">Nau mai, haere mai</span> = Māori welcome</p>
+                <p><span className="italic">Mana whenua</span> = The Indigenous custodians of the land</p>
+                <p><span className="italic">Mātauranga Māori</span> = Māori knowledge — traditional, cultural, and spiritual systems of understanding the world</p>
+                <p><span className="italic">Céad míle fáilte</span> = Irish welcome</p>
               </div>
             </div>
           </div>
