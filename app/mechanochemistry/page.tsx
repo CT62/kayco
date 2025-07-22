@@ -1,6 +1,5 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { Atom, Zap, DollarSign, Clock, Leaf, Shield } from "lucide-react";
 
 const MechanochemistryPage = () => {
