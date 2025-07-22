@@ -67,36 +67,6 @@ const MechanochemistryPage = () => {
             <br className="hidden sm:block" />
             built for the future.
           </motion.p>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-            variants={itemVariants}
-          >
-            <motion.button
-              className="text-white px-12 py-4 rounded-full font-light text-lg tracking-wide transition-all duration-300 shadow-lg"
-              style={{ backgroundColor: "#FF6B6B" }}
-              whileHover={{
-                y: -3,
-                boxShadow: "0 15px 35px rgba(255,107,107,0.3)",
-                backgroundColor: "#FF5252",
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              LEARN MORE
-            </motion.button>
-            <motion.button
-              className="text-gray-700 px-12 py-4 border-2 rounded-full font-light text-lg tracking-wide transition-all duration-300"
-              style={{ borderColor: "#FF6B6B" }}
-              whileHover={{
-                y: -3,
-                color: "#FF6B6B",
-                boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              GET IN TOUCH
-            </motion.button>
-          </motion.div>
         </motion.div>
       </section>
 
