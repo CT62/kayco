@@ -42,10 +42,11 @@ const Navbar = () => {
   }, [mobileMenuOpen, accountDropdownOpen]);
 
   navLinks = [
-    { english: "Our Purpose", maori: "Ō Mātou Tāngata" },
-    { english: "Our People", maori: "Hono Mai" },
-    { english: "Mechano-Chemistry", maori: "Hangarau-Matū" },
-    { english: "Join Us", maori: "Hono Mai" },
+    { english: "Our Heart", maori: "To Tatou Ngakau",href:"" },
+    { english: "Our Purpose", maori: "Ō Mātou Tāngata", href:"ourpurpose" },
+    { english: "Our People", maori: "Hono Mai", href:"ourpeople" },
+    { english: "Mechano-Chemistry", maori: "Hangarau-Matū", href:"mechanochemistry" },
+    { english: "Join Us", maori: "Hono Mai",href:"joinus" },
   ];
 
   // Animation variants
@@ -135,7 +136,6 @@ const Navbar = () => {
         variants={navVariants}
       >
         <div className="max-w-screen-2xl flex items-center justify-between mx-auto p-3 relative">
-          {/* Logo */}
           <motion.a 
             href="/" 
             className="flex items-center"
@@ -165,7 +165,7 @@ const Navbar = () => {
                 whileTap={{ y: 0 }}
               >
                 <motion.a
-                  href={`/${link.english.toLowerCase().replace(" ", "")}`}
+                  href={`/${link.href}`}
                   className="text-black relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-current font-black text-sm xl:text-md tracking-wide flex flex-col items-center text-center"
                   whileHover={{ 
                     color: "#FF0000",
@@ -238,7 +238,7 @@ const Navbar = () => {
                     variants={mobileItemVariants}
                   >
                     <motion.a
-                      href={`/${link.english.toLowerCase().replace(" ", "")}`}
+                      href={`/${link.href}`}
                       className="block py-3 text-black hover:bg-gray-100 px-3 rounded-lg font-black text-lg tracking-wide transition-colors duration-200"
                       onClick={() => setMobileMenuOpen(false)}
                       whileHover={{ 

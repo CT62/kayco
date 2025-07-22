@@ -38,7 +38,6 @@ const KaycoHomepage = () => {
     const yMove = (Math.random() - 0.5) * 200;
     const rotateStart = Math.random() * 360;
     const duration = 10 + Math.random() * 10;
-
     return {
       id: i,
       size,
@@ -58,7 +57,6 @@ const KaycoHomepage = () => {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Soft background blur circle */}
         <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
-
         <motion.div
           className="relative z-10 text-center px-4 max-w-5xl mx-auto"
           variants={containerVariants}
@@ -79,16 +77,14 @@ const KaycoHomepage = () => {
               />
             </div>
           </motion.div>
-
           <motion.p
             className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Shaping the future of medicine,
-	    <br/>
+            <br/>
             Where people come first.
           </motion.p>
-
           <motion.div
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
             variants={itemVariants}
@@ -106,7 +102,6 @@ const KaycoHomepage = () => {
             >
               OUR PURPOSE
             </motion.button>
-
             <motion.button
               className="text-gray-700 px-10 py-3 sm:px-12 sm:py-4 border-2 rounded-full font-light text-base sm:text-lg tracking-wide transition-all duration-300"
               style={{ borderColor: "#FF6B6B" }}
@@ -116,7 +111,7 @@ const KaycoHomepage = () => {
                 boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
               }}
               whileTap={{ scale: 0.98 }}
-	      onClick={() => router.push("/joinus")}
+              onClick={() => router.push("/joinus")}
             >
               JOIN US
             </motion.button>
@@ -124,8 +119,10 @@ const KaycoHomepage = () => {
         </motion.div>
       </section>
 
+
+
       {/* Vision Section with Floating Logos */}
-      <section className="relative z-10 bg-white py-20 px-4 sm:px-8 md:px-16 overflow-hidden">
+      <section className="relative z-10 bg-white pb-10 pt-20 px-4 sm:px-8 md:px-16 overflow-hidden">
         {/* Floating Background Logos */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
           {backgroundLogos.map(
@@ -172,7 +169,6 @@ const KaycoHomepage = () => {
             )
           )}
         </div>
-
         <motion.div
           className="relative max-w-5xl mx-auto text-center z-10"
           initial={{ opacity: 0, y: 40 }}
@@ -180,37 +176,140 @@ const KaycoHomepage = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-<section className="relative text-center px-4 sm:px-8 lg:px-12 py-24">
-  <div className="max-w-5xl mx-auto space-y-20 z-10 relative">
-    {/* Vision */}
-    <div className="space-y-6">
-      <div className="inline-block">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
-          Our Vision
-        </h2>
-        <div className="h-1 bg-red-300 mt-3 rounded-full w-20 mx-auto transition-all duration-500" />
-      </div>
-      <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-        At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing
-        solutions that prioritize people. We aim to make healthcare smarter, simpler, and more human.
-      </p>
-    </div>
+          <section className="relative text-center px-4 sm:px-8 lg:px-12 py-24">
+            <div className="max-w-7xl mx-auto space-y-20 z-10 relative">
+              {/* Our Vision Section */}
+              <div className="relative">
+                {/* Baby and elderly hands image - positioned on the left with modern styling */}
+                <motion.div 
+                  className="absolute -left-16 top-1/2 -translate-y-1/2 -translate-x-12 hidden xl:block z-0"
+                  initial={{ opacity: 0, x: -80 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="relative group">
+                    {/* Backdrop blur effect */}
+                    <div className="absolute -inset-6 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+                    
+                    {/* Main image container - clean and simple */}
+                    <div className="relative w-72 h-48 rounded-2xl overflow-hidden shadow-xl group-hover:scale-105 transition-all duration-500">
+                      <Image
+                        src="/baby_finger.jpg"
+                        alt="Baby hand holding elderly hand"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+                <div className="space-y-6 relative z-10">
+                  <div className="inline-block">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+                      Our Vision
+                    </h2>
+                    <div className="h-1 bg-red-300 mt-3 rounded-full w-20 mx-auto transition-all duration-500" />
+                  </div>
+                  <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+                    At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing
+                    solutions that prioritize people. We aim to make healthcare smarter, simpler, and more human.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Our Mission Section */}
+              <div className="relative">
+                {/* Old couple image - positioned on the right with modern styling */}
+                <motion.div 
+                  className="absolute -right-16 top-1/2 -translate-y-1/2 translate-x-12 hidden xl:block z-0"
+                  initial={{ opacity: 0, x: 80 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="relative group">
+                    {/* Backdrop blur effect */}
+                    <div className="absolute -inset-6 bg-gradient-to-l from-red-100/20 to-orange-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+                    
+                    {/* Main image container - clean and simple */}
+                    <div className="relative w-72 h-48 rounded-2xl overflow-hidden shadow-xl group-hover:scale-105 transition-all duration-500">
+                      <Image
+                        src="/elderly_hands.jpg"
+                        alt="Happy elderly couple"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+                <div className="space-y-6 relative z-10">
+                  <div className="inline-block">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
+                      Our Mission
+                    </h2>
+                    <div className="h-1 bg-red-300 mt-3 rounded-full w-24 mx-auto transition-all duration-500" />
+                  </div>
+                  <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+                    To create medicine, <br/>
+                    That combine deep scientific innovation,  <br/>
+                    With compassion, integrity, and purpose,  <br/>
+                    To push the boundaries of drug development.  <br/>
+                  </p>
+                </div>
+              </div>
+              
+              <div className="xl:hidden space-y-10 mt-10">
+                {/* Mobile Mission Image */}
+              </div>
+            </div>
+          </section>
+        </motion.div>
+      </section>
 
-    {/* Mission */}
-    <div className="space-y-6">
-      <div className="inline-block">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-500 tracking-tight">
-          Our Mission
-        </h2>
-        <div className="h-1 bg-red-300 mt-3 rounded-full w-24 mx-auto transition-all duration-500" />
-      </div>
-      <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-        To transform lives through science rooted in empathy, one molecule at a time.
-      </p>
-    </div>
-  </div>
-</section>
+      {/* Cultural Acknowledgment Section */}
+      <section className="relative py-20 px-4 sm:px-8 md:px-16 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <div className="relative w-full h-full">
+            <div className="absolute inset-0 bg-gray-200" />
+          </div>
+        </div>
 
+        <motion.div
+          className="relative z-10 max-w-5xl mx-auto text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-white backdrop-blur-lg rounded-3xl p-8 sm:p-16">
+            <div className="space-y-8 text-black leading-relaxed">
+              <div className="space-y-4">
+                <p className="text-2xl sm:text-3xl">
+                  <span className="font-medium italic text-red-400">Nau mai, haere mai,</span>
+                </p>
+                <p className="text-lg sm:text-xl font-light">
+                  We honour the <span className="italic font-medium text-red-400">mana whenua</span> of <span className="italic font-medium text-red-400">Aotearoa</span> New Zealand and the <span className="italic font-medium text-red-400">mātauranga Māori</span>.
+                </p>
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-2xl sm:text-3xl">
+                  <span className="font-bold text-red-300">Céad míle fáilte,</span>
+                </p>
+                <p className="text-lg sm:text-xl font-light">
+                  We acknowledge our roots in Ireland and the legacy of Irish resilience, helping to bring Kayco to life.
+                </p>
+              </div>
+              
+              <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-black">
+                <p><span className="italic">Nau mai, haere mai</span> = Māori welcome.</p>
+                <p><span className="italic">Mana whenua</span> = The Indigenous custodians of the land.</p>
+                <p><span className="italic">Mātauranga Māori</span> = Māori knowledge — traditional, cultural, and spiritual systems of understanding the world.</p>
+                <p><span className="italic">Céad míle fáilte</span> = Irish welcome.</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </section>
     </div>
