@@ -55,7 +55,6 @@ const KaycoHomepage = () => {
     <div className="min-h-screen bg-white">
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Soft background blur circle */}
-        <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
         <motion.div
           className="relative z-10 text-center px-4 max-w-5xl mx-auto"
           variants={containerVariants}
