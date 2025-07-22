@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 
 const Footer = () => {
   const tabs = [
+    "Our Heart",
     "Our Purpose",
     "Our People",
     "Mechano-Chemistry",
@@ -15,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-white relative overflow-hidden">
+    <footer className="bg-white text-black relative overflow-hidden">
         <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
       {/* Main Footer Content */}
       <div className="max-w-screen-2xl mx-auto px-6 py-12">
@@ -54,7 +56,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Row */}
-        <div className="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+
+       
+
+      </div>
+ <div className="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>© 2025 Kayco. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
@@ -69,8 +75,28 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </div>
+              </div>
+<div className="bg-red-500 h-10 overflow-hidden relative mt-[var(--navbar-height,80px)] sm:hidden">
+        <motion.div
+          className="absolute inset-0 flex items-center"
+          initial={{ x: "0%" }}
+          animate={{ x: "-500%" }}
+          transition={{
+            repeat: Infinity,
+            duration: 8,
+            ease: "linear",
+          }}
+        >
+<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
+  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
+  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+
+        </motion.div>
       </div>
+
     </footer>
   );
 };
