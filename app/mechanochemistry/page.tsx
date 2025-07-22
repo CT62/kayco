@@ -50,37 +50,6 @@ const MechanochemistryPage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated background particles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {backgroundParticles.map(({ id, size, xStart, yStart, xMove, yMove, duration, delay }) => (
-            <motion.div
-              key={id}
-              className="absolute opacity-5"
-              style={{
-                top: `${yStart}%`,
-                left: `${xStart}%`,
-                width: `${size}px`,
-                height: `${size}px`,
-              }}
-              animate={{
-                x: [`0%`, `${xMove}%`],
-                y: [`0%`, `${yMove}%`],
-                rotate: [0, 360],
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                duration,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-                delay,
-              }}
-            >
-              <Atom className="w-full h-full text-red-500" />
-            </motion.div>
-          ))}
-        </div>
-
         {/* Gradient background elements */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
