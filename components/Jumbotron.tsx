@@ -210,7 +210,7 @@ const KaycoHomepage = () => {
                     </h2>
                   </div>
                   <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-		  To transform lives through science rooted in empathy <br/>
+		  To transform lives through science rooted in empathy, <br/>
 one molecule at a time.
 
                   </p>
