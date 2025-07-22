@@ -14,7 +14,7 @@ const steps = [
     details: ['Poor drug absorption', 'Antimicrobial resistance', 'Vulnerable patient needs']
   },
   { 
-    title: "What We're Building', 
+    title: "What We're Building", 
     description: 'A sustainable revolution in medicine - better absorption, fewer side effects, and global accessibility',
     details: ['Better drug absorption', 'Fighting resistance', 'Sustainable manufacturing']
   },
