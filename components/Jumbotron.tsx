@@ -210,8 +210,9 @@ const KaycoHomepage = () => {
                     </h2>
                   </div>
                   <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto">
-                    At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we are reshaping the future of medicine by creating life-changing
-                    solutions that prioritize people. We aim to make healthcare smarter, simpler, and more human.
+		  To transform lives through science rooted in empathy <br/>
+one molecule at a time.
+
                   </p>
                 </div>
               </div>
