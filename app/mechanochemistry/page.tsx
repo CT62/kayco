@@ -4,8 +4,6 @@ import { useRouter } from "next/navigation";
 import { Atom, Zap, DollarSign, Clock, Leaf, Shield } from "lucide-react";
 
 const MechanochemistryPage = () => {
-  const router = useRouter();
-
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -53,6 +51,37 @@ const MechanochemistryPage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated background particles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {backgroundParticles.map(({ id, size, xStart, yStart, xMove, yMove, duration, delay }) => (
+            <motion.div
+              key={id}
+              className="absolute opacity-5"
+              style={{
+                top: `${yStart}%`,
+                left: `${xStart}%`,
+                width: `${size}px`,
+                height: `${size}px`,
+              }}
+              animate={{
+                x: [`0%`, `${xMove}%`],
+                y: [`0%`, `${yMove}%`],
+                rotate: [0, 360],
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut",
+                delay,
+              }}
+            >
+              <Atom className="w-full h-full text-red-500" />
+            </motion.div>
+          ))}
+        </div>
+
         {/* Gradient background elements */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
@@ -93,6 +122,30 @@ const MechanochemistryPage = () => {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             variants={itemVariants}
           >
+            <motion.button
+              className="text-white px-12 py-4 rounded-full font-light text-lg tracking-wide transition-all duration-300 shadow-lg"
+              style={{ backgroundColor: "#FF6B6B" }}
+              whileHover={{
+                y: -3,
+                boxShadow: "0 15px 35px rgba(255,107,107,0.3)",
+                backgroundColor: "#FF5252",
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              LEARN MORE
+            </motion.button>
+            <motion.button
+              className="text-gray-700 px-12 py-4 border-2 rounded-full font-light text-lg tracking-wide transition-all duration-300"
+              style={{ borderColor: "#FF6B6B" }}
+              whileHover={{
+                y: -3,
+                color: "#FF6B6B",
+                boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              GET IN TOUCH
+            </motion.button>
           </motion.div>
         </motion.div>
       </section>
@@ -347,6 +400,62 @@ const MechanochemistryPage = () => {
               </div>
             </motion.div>
           </div>
+        </motion.div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="relative py-24 px-4 sm:px-8 md:px-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-pink-500/5"></div>
+        <motion.div
+          className="relative z-10 max-w-4xl mx-auto text-center"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+            Ready to revolutionize <br />
+            <span className="text-[#FF6B6B]">pharmaceutical manufacturing?</span>
+          </h2>
+          
+          <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
+            Join us in building the future of medicine — where innovation meets sustainability,
+            and patient access comes first.
+          </p>
+          
+          <motion.div
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            variants={itemVariants}
+          >
+            <motion.button
+              className="text-white px-12 py-4 rounded-full font-light text-lg tracking-wide transition-all duration-300 shadow-lg"
+              style={{ backgroundColor: "#FF6B6B" }}
+              whileHover={{
+                y: -3,
+                boxShadow: "0 15px 35px rgba(255,107,107,0.3)",
+                backgroundColor: "#FF5252",
+              }}
+              whileTap={{ scale: 0.98 }}
+            >
+              START A CONVERSATION
+            </motion.button>
+            <motion.button
+              className="text-gray-700 px-12 py-4 border-2 rounded-full font-light text-lg tracking-wide transition-all duration-300"
+              style={{ borderColor: "#FF6B6B" }}
+              whileHover={{
+                y: -3,
+                color: "#FF6B6B",
+                boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
+              }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                // Navigate back to home - you can implement router logic here
+                window.location.href = "/";
+              }}
+            >
+              BACK TO HOME
+            </motion.button>
+          </motion.div>
         </motion.div>
       </section>
     </div>
