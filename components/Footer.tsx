@@ -55,9 +55,6 @@ const Footer = () => {
         </div>
 
         {/* Bottom Row */}
-
-       
-
       </div>
 
 <div className="bg-red-500 h-10 overflow-hidden relative mt-[var(--navbar-height,80px)] sm:hidden">
@@ -82,7 +79,7 @@ const Footer = () => {
       </div>
 
 
- <div className="border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+ <div className=" mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
 
 
           <p>© 2025 Kayco. All rights reserved.</p>
