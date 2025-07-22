@@ -27,7 +27,7 @@ const Footer = () => {
               Building a better future through science and technology.
             </p>
             <div className="text-gray-800 space-y-1">
-              <p>Email: lenakadri@kayco-health.co.nz</p>
+              <p>Email: lena.kadri@kayco.co.nz</p>
             </div>
           </div>
 
