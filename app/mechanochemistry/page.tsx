@@ -176,13 +176,13 @@ const MechanochemistryPage = () => {
               viewport={{ once: true }}
             >
               <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed">
-                At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we believe better medicines begin with better methods. That's why we're building a new kind of pharmaceutical company — one that puts{" "}
+                At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we believe better medicines begin with better methods. That&apos;s why we&apos;re building a new kind of pharmaceutical company — one that puts{" "}
                 <span className="text-[#FF6B6B] font-medium">sustainability, innovation, and patient access</span> at the heart of everything we do.
               </p>
               <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed">
-                <p>What if we could make medicine that's better for people <em>and</em> the planet?</p>
+                <p>What if we could make medicine that&apos;s better for people <em>and</em> the planet?</p>
                 <p>What if we could lower costs, cut emissions, and unlock new treatments — all at once?</p>
-                <p className="text-[#FF6B6B] font-medium text-2xl">That's what mechano-chemistry makes possible.</p>
+                <p className="text-[#FF6B6B] font-medium text-2xl">That&apos;s what mechano-chemistry makes possible.</p>
               </div>
             </motion.div>
 
@@ -259,7 +259,7 @@ const MechanochemistryPage = () => {
               </p>
 
               <p className="text-lg text-gray-700 font-light leading-relaxed">
-                At Kayco, we're turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
+                At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>
             </motion.div>
 
@@ -399,62 +399,6 @@ const MechanochemistryPage = () => {
               </div>
             </motion.div>
           </div>
-        </motion.div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-pink-500/5"></div>
-        <motion.div
-          className="relative z-10 max-w-4xl mx-auto text-center"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
-            Ready to revolutionize <br />
-            <span className="text-[#FF6B6B]">pharmaceutical manufacturing?</span>
-          </h2>
-          
-          <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Join us in building the future of medicine — where innovation meets sustainability,
-            and patient access comes first.
-          </p>
-          
-          <motion.div
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
-            variants={itemVariants}
-          >
-            <motion.button
-              className="text-white px-12 py-4 rounded-full font-light text-lg tracking-wide transition-all duration-300 shadow-lg"
-              style={{ backgroundColor: "#FF6B6B" }}
-              whileHover={{
-                y: -3,
-                boxShadow: "0 15px 35px rgba(255,107,107,0.3)",
-                backgroundColor: "#FF5252",
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              START A CONVERSATION
-            </motion.button>
-            <motion.button
-              className="text-gray-700 px-12 py-4 border-2 rounded-full font-light text-lg tracking-wide transition-all duration-300"
-              style={{ borderColor: "#FF6B6B" }}
-              whileHover={{
-                y: -3,
-                color: "#FF6B6B",
-                boxShadow: "0 10px 25px rgba(255,107,107,0.2)",
-              }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => {
-                // Navigate back to home - you can implement router logic here
-                window.location.href = "/";
-              }}
-            >
-              BACK TO HOME
-            </motion.button>
-          </motion.div>
         </motion.div>
       </section>
     </div>
