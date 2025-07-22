@@ -26,8 +26,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-4 text-black">Kayco</h3>
             <p className="text-gray-800 mb-4 max-w-md">
-              Leading innovation in mechano-chemistry and sustainable solutions. 
-              Building a better future through science and technology.
+	    Building a better future through mechano-chemistry and sustainable solutions.
             </p>
             <div className="text-gray-800 space-y-1">
               <p>Email: lena.kadri@kayco.co.nz</p>
