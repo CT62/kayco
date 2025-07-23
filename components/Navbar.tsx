@@ -265,7 +265,10 @@ const Navbar = () => {
 
 
           )}
-<div className="bg-red-500 h-10 overflow-hidden relative sm:hidden">
+        </AnimatePresence>
+      </motion.nav>
+
+<div className="bg-red-500 h-10 overflow-hidden relative mt-[var(--navbar-height,80px)] sm:hidden">
         <motion.div
           className="absolute inset-0 flex items-center"
           initial={{ x: "0%" }}
@@ -285,15 +288,6 @@ const Navbar = () => {
 
         </motion.div>
       </div>
-
-
-
-        </AnimatePresence>
-
-
-      </motion.nav>
-
-
     </>
   );
 };
