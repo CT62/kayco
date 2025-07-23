@@ -215,7 +215,7 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: Sect
         <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl mb-4">
           <div className="w-8 h-8 bg-white rounded-lg"></div>
         </div>
-        <h3 className="text-3xl font-bold text-gray-900 mb-3">{title}</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">{title}</h3>
         <p className="text-gray-600 text-lg">{subtitle}</p>
       </div>
       
@@ -296,8 +296,8 @@ const OurPurposePage = () => {
       <div className="bg-gray-100 py-20 px-6 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Future</h2>
-            <p className="text-2xl text-gray-600 mb-2">Tō Tātou Anamata</p>
+            <h2 className="text-3xl font-bold text-red-400 mb-4">Our Future</h2>
+            <p className="text-xl text-gray-600 mb-2">Tō Tātou Anamata</p>
             <div className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
               <p>This is our future,</p>
               <p>Where we are heading,</p>
