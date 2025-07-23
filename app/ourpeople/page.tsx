@@ -39,7 +39,7 @@ const OurPeople = () => {
         >
           <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Our People</h1>
           <p className="text-xl text-gray-600">
-            We&apos;ve walked the walk. <br/> Now we&apos;re ready to build the future.
+            We have walked the walk. <br/> Now we are ready to build the future.
           </p>
         </motion.div>
 
