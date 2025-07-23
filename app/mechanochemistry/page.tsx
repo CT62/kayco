@@ -1,5 +1,6 @@
 "use client";
 import { motion, Variants } from "framer-motion";
+import Image from 'next/image'
 import { Atom, Zap, DollarSign, Clock, Leaf, Shield } from "lucide-react";
 
 const MechanochemistryPage = () => {
@@ -47,7 +48,7 @@ const MechanochemistryPage = () => {
             variants={itemVariants}
           >
             <div className="relative p-8 bg-white rounded-full shadow-2xl">
-              <Atom className="w-24 h-24 text-[#FF6B6B]" strokeWidth={1.5} />
+	    <Image src="/mechanochemistry.png" width={100} height={100}/>
               <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-pink-100 rounded-full opacity-20" />
             </div>
           </motion.div>
@@ -88,7 +89,7 @@ const MechanochemistryPage = () => {
             <div className="h-1 bg-red-300 w-32 mx-auto rounded-full" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="gap-12 items-center">
             <motion.div
               className="space-y-6"
               initial={{ opacity: 0, x: -40 }}
@@ -104,36 +105,6 @@ const MechanochemistryPage = () => {
                 <p>What if we could make medicine that&apos;s better for people <em>and</em> the planet?</p>
                 <p>What if we could lower costs, cut emissions, and unlock new treatments — all at once?</p>
                 <p className="text-[#FF6B6B] font-medium text-2xl">That&apos;s what mechano-chemistry makes possible.</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative bg-white rounded-3xl p-8 shadow-xl">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="flex flex-col items-center text-center space-y-2">
-                    <Leaf className="w-12 h-12 text-black-500" />
-                    <span className="text-sm font-medium text-gray-600">Sustainable</span>
-                  </div>
-                  <div className="flex flex-col items-center text-center space-y-2">
-                    <Zap className="w-12 h-12 text-black-500" />
-                    <span className="text-sm font-medium text-gray-600">Innovative</span>
-                  </div>
-                  <div className="flex flex-col items-center text-center space-y-2">
-                    <Shield className="w-12 h-12 text-black-500" />
-                    <span className="text-sm font-medium text-gray-600">Patient-Focused</span>
-                  </div>
-                  <div className="flex flex-col items-center text-center space-y-2">
-                    <DollarSign className="w-12 h-12 text-black-500" />
-                    <span className="text-sm font-medium text-gray-600">Accessible</span>
-                  </div>
-                </div>
-                <div className="absolute -inset-2 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-3xl blur-xl -z-10" />
               </div>
             </motion.div>
           </div>
@@ -156,7 +127,7 @@ const MechanochemistryPage = () => {
             <div className="h-1 bg-red-300 w-32 mx-auto rounded-full" />
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="gap-16 items-center">
             <motion.div
               className="space-y-8"
               initial={{ opacity: 0, x: -40 }}
@@ -182,35 +153,6 @@ const MechanochemistryPage = () => {
               <p className="text-lg text-gray-700 font-light leading-relaxed">
                 At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
-                <div className="text-center space-y-6">
-                  <div className="relative inline-block">
-                    <Atom className="w-32 h-32 text-[#FF6B6B] mx-auto" strokeWidth={1} />
-                    <motion.div
-                      className="absolute inset-0 border-2 border-[#FF6B6B] rounded-full"
-                      animate={{ rotate: 360 }}
-                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    />
-                    <motion.div
-                      className="absolute inset-4 border-2 border-red-300 rounded-full"
-                      animate={{ rotate: -360 }}
-                      transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">Mechanical Energy</h3>
-                  <p className="text-gray-600">Driving chemical reactions without harmful solvents</p>
-                </div>
-                <div className="absolute -inset-4 bg-gradient-to-br from-red-100/30 to-pink-100/30 rounded-3xl blur-2xl -z-10" />
-              </div>
             </motion.div>
           </div>
         </motion.div>

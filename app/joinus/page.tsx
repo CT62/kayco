@@ -38,14 +38,10 @@ export default function Roadmap() {
 
   return (
     <div ref={containerRef} className="min-h-screen to-white px-4 overflow-hidden relative">
-      {/* Animated background elements */}
       <motion.div 
         className="absolute inset-0 opacity-20"
         style={{ y: backgroundY }}
       >
-        <div className="absolute top-20 left-10 w-72 h-72 bg-red-400/30 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-40 right-20 w-96 h-96 bg-red-500/20 rounded-full blur-3xl animate-pulse delay-700" />
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-red-400/25 rounded-full blur-3xl animate-pulse delay-1000" />
       </motion.div>
 
       {/* Floating particles */}
@@ -74,16 +70,16 @@ export default function Roadmap() {
         style={{ scale: scaleProgress }}
       >
         {/* Enhanced Header */}
-        <div className="text-center mb-20">
+        <div className="text-center pb-20">
           <motion.div
-            className="inline-block mb-6"
+            className="inline-block"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, type: "spring" }}
           >
           </motion.div>
           <motion.h2
-            className="text-6xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
+            className="text-4xl font-black bg-gray-800 bg-clip-text text-transparent pb-2"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -97,7 +93,8 @@ export default function Roadmap() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Revolutionizing medicine through sustainable science - from mechano-chemistry innovation to global impact
+	  We are not waiting for the future of medicine. <br/>
+	  We are building it
           </motion.p>
         </div>
 
@@ -283,6 +280,7 @@ Join Kayco&#39;s revolutionary approach to sustainable medicine. Whether you&#39
                   className="group relative px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-full shadow-2xl overflow-hidden"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <span className="relative z-10">Join Our Angel Round</span>
@@ -302,18 +300,6 @@ Join Kayco&#39;s revolutionary approach to sustainable medicine. Whether you&#39
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse" />
-                  <span className="font-medium">Pipeline Ready</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse delay-300" />
-                  <span className="font-medium">Global Partnerships</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse delay-700" />
-                  <span className="font-medium">Open for Investment</span>
-                </div>
               </motion.div>
             </div>
           </div>

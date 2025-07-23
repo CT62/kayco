@@ -5,16 +5,12 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   const tabs = [
-    "Our Heart",
-    "Our Purpose",
-    "Our People",
-    "Mechano-Chemistry",
-    "Join Us",
+    {title:"Our Heart", href:"/",},
+    {title:"Our Purpose", href:"ourpurpose",},
+    {title:"Our People",href:"ourpeople",},
+    {title:"Mechano-Chemistry",href:"mechanochemistry",},
+    {title:"Join Us",href:"joinus",},
   ];
-
-  const toLowerCase = (text: string) => {
-    return `/${text.toLowerCase().replace(/\s+/g, "").replace(/[^a-z0-9-]/gi, "")}`;
-  };
 
   return (
     <footer className="bg-white text-black relative overflow-hidden">
@@ -38,14 +34,13 @@ const Footer = () => {
             <h4 className="text-md font-semibold mb-4 text-black">Navigation</h4>
             <ul className="space-y-2">
               {tabs.map((tab) => {
-                const href = toLowerCase(tab);
                 return (
                   <li key={tab}>
                     <Link
-                      href={href}
+                      href={tab.href}
                       className="text-gray-800 hover:text-red-600 transition-colors duration-200"
                     >
-                      {tab}
+                      {tab.title}
                     </Link>
                   </li>
                 );
@@ -79,7 +74,7 @@ const Footer = () => {
       </div>
 
 
- <div className=" mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+ <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
 
 
           <p>© 2025 Kayco. All rights reserved.</p>

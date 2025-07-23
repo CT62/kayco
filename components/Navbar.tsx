@@ -263,26 +263,6 @@ const Navbar = () => {
         </AnimatePresence>
       </motion.nav>
 
-      <div className="bg-red-500 h-10 overflow-hidden relative mt-[var(--navbar-height,80px)] sm:hidden">
-        <motion.div
-          className="absolute inset-0 flex items-center"
-          initial={{ x: "0%" }}
-          animate={{ x: "-500%" }}
-          transition={{
-            repeat: Infinity,
-            duration: 8,
-            ease: "linear",
-          }}
-        >
-<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
-  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>
-<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
-  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>
-
-        </motion.div>
-      </div>
     </>
   );
 };
