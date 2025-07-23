@@ -32,20 +32,19 @@ const Footer = () => {
           {/* Column 2: Navigation */}
           <div>
             <h4 className="text-md font-semibold mb-4 text-black">Navigation</h4>
-            <ul className="space-y-2">
-              {tabs.map((tab) => {
-                return (
-                  <li key={tab}>
-                    <Link
-                      href={tab.href}
-                      className="text-gray-800 hover:text-red-600 transition-colors duration-200"
-                    >
-                      {tab.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+<ul className="space-y-2">
+  {tabs.map((tab) => (
+    <li key={tab.href}>       
+    <Link
+        href={tab.href}
+        className="text-gray-800 hover:text-red-600 transition-colors duration-200"
+      >
+        {tab.title}
+      </Link>
+    </li>
+  ))}
+</ul>
+
           </div>
         </div>
 
