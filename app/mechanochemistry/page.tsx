@@ -94,7 +94,7 @@ const MechanochemistryPage = () => {
       </section>
 
       {/* Core Technology Section */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-gray-50">
+      <section className="relative px-4 sm:px-8 md:px-16">
         <motion.div
           className="max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
@@ -102,12 +102,6 @@ const MechanochemistryPage = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center space-y-8 mb-16">
-            <h2 className="text-3xl font-extrabold text-red-400 mb-8">
-              Technology
-            </h2>
-          </div>
-
           <div className="gap-16 items-center">
             <motion.div
               className="space-y-8"
@@ -125,12 +119,6 @@ const MechanochemistryPage = () => {
               <p className="text-lg text-gray-700 font-light leading-relaxed text-left">
                 This means fewer toxic chemicals, less waste, lower energy use — and new ways to develop medicines that may otherwise be impossible to access.
               </p>
-
-          <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
-              <span className="text-[#FF6B6B]">Possibilities</span>
-            </h2>
-          </div>
 
               <p className="text-lg text-gray-700 font-light leading-relaxed text-left">
                 At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
