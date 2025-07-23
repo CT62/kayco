@@ -34,7 +34,6 @@ const MechanochemistryPage = () => {
       <section className="relative flex pt-20 overflow-hidden">
         {/* Gradient background elements */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
 
         <motion.div
           className="relative z-10 text-center px-4"
