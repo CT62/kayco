@@ -48,7 +48,7 @@ const MechanochemistryPage = () => {
             variants={itemVariants}
           >
             <div className="relative p-8 bg-white rounded-full shadow-2xl">
-	    <Image src="/mechanochemistry.png" width={100} height={100}/>
+	    <Image alt="mechanochem" src="/mechanochemistry.png" width={100} height={100}/>
               <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-pink-100 rounded-full opacity-20" />
             </div>
           </motion.div>
