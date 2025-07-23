@@ -78,6 +78,8 @@ export default function Roadmap() {
             transition={{ duration: 0.8, type: "spring" }}
           >
           </motion.div>
+
+<div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
           <motion.h2
             className="text-4xl font-black bg-gray-800 bg-clip-text text-transparent pb-2"
             initial={{ opacity: 0, y: -30 }}

@@ -284,13 +284,13 @@ one molecule at a time.
           viewport={{ once: true }}
         >
           <div className="bg-white backdrop-blur-lg rounded-3xl p-8 sm:p-16">
-            <div className="space-y-8 text-black leading-relaxed">
+            <div className="space-y-8 text-gray-800 leading-relaxed">
               <div className="space-y-4">
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium italic text-red-400">Nau mai haere mai</span>
                 </p>
                 <p className="text-lg sm:text-xl font-light">
-                  We honour the <span className="italic font-medium text-black">mana whenua</span> of <span className="italic font-medium text-black">Aotearoa</span> New Zealand and the <span className="italic font-medium text-black">mātauranga Māori</span>.
+                  We honour the <span className="italic font-medium text-gray-800">mana whenua</span> of <span className="italic font-medium text-gray-800">Aotearoa</span> New Zealand and the <span className="italic font-medium text-gray-800">mātauranga Māori</span>.
                 </p>
               </div>
               
@@ -303,7 +303,7 @@ one molecule at a time.
                 </p>
               </div>
               
-              <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-black">
+              <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-gray-800">
                 <p><span className="italic">Nau mai, haere mai</span> = Māori welcome</p>
                 <p><span className="italic">Mana whenua</span> = The Indigenous custodians of the land</p>
                 <p><span className="italic">Mātauranga Māori</span> = Māori knowledge — traditional, cultural, and spiritual systems of understanding the world</p>
