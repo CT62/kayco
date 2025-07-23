@@ -27,45 +27,37 @@ const MechanochemistryPage = () => {
     },
   };
 
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative flex pt-20 overflow-hidden">
+      <section className="relative flex pt-20 overflow-hidden justify-center">
         {/* Gradient background elements */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
-
         <motion.div
           className="relative z-10 text-center px-4"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div
-            variants={itemVariants}
-          >
-          </motion.div>
-
           <motion.h1
-            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
+            className="text-4xl font-extrabold text-gray-800 mb-6"
             variants={itemVariants}
           >
-            Mechano-chemistry
+            Mechano-Chemistry
           </motion.h1>
 
           <motion.p
             className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-12 font-light leading-relaxed max-w-4xl mx-auto"
             variants={itemVariants}
           >
-            <span className="text-[#FF6B6B] font-medium">Smarter, cleaner, faster</span> drug manufacturing —{" "}
+            <span className="text-gray-800 font-medium">Drug manufacturing built for the future.{" "}</span>
             <br className="hidden sm:block" />
-            built for the future.
           </motion.p>
         </motion.div>
       </section>
 
       {/* Philosophy Section */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-gray-50">
+      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-white">
         <motion.div
           className="max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
@@ -74,12 +66,11 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
               Better <span className="text-[#FF6B6B]">Methods</span>,
               <br />
               Better <span className="text-[#FF6B6B]">Medicine</span>
             </h2>
-            <div className="h-1 bg-red-300 w-32 mx-auto rounded-full" />
           </div>
 
           <div className="gap-12 items-center">
@@ -105,7 +96,7 @@ const MechanochemistryPage = () => {
       </section>
 
       {/* Core Technology Section */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16">
+      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-gray-50">
         <motion.div
           className="max-w-6xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
@@ -114,10 +105,9 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
               Our Core <span className="text-[#FF6B6B]">Technology</span>
             </h2>
-            <div className="h-1 bg-red-300 w-32 mx-auto rounded-full" />
           </div>
 
           <div className="gap-16 items-center">
@@ -152,7 +142,7 @@ const MechanochemistryPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-gray-50">
+      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-white">
         <motion.div
           className="max-w-7xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
@@ -161,10 +151,9 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
               Real <span className="text-[#FF6B6B]">Impact</span>
             </h2>
-            <div className="h-1 bg-red-300 w-32 mx-auto rounded-full" />
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -180,7 +169,7 @@ const MechanochemistryPage = () => {
                 <div className="p-3 bg-green-100 rounded-full">
                   <DollarSign className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">Real Cost Savings</h3>
+                <h3 className="text-3xl font-extrabold text-gray-800">Real Cost Savings</h3>
               </div>
               
               <div className="space-y-6">
@@ -226,7 +215,7 @@ const MechanochemistryPage = () => {
                 <div className="p-3 bg-blue-100 rounded-full">
                   <Clock className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">More Efficient & Faster</h3>
+                <h3 className="text-3xl font-extrabold text-gray-800">More Efficient & Faster</h3>
               </div>
               
               <div className="space-y-6">
