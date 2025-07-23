@@ -114,8 +114,10 @@ const Person = ({ name, role, image, text }: PersonProps) => {
                   />
                 </div>
                 <div className="flex-1">
+		<div className="text-center">
                   <h2 className="text-2xl font-bold text-gray-900 mb-1">{name}</h2>
-                  <p className="text-red-500 font-semibold mb-4">{role}</p>
+                  <p className="text-red-500 font-light mb-4">{role}</p>
+		</div>
                   <div className="text-gray-700 text-base leading-relaxed">{text}</div>
                 </div>
               </div>
