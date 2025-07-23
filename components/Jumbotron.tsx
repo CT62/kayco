@@ -1,6 +1,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import { useRouter } from "next/navigation";
+import AutoScrollGallery from '@/components/AutoScrollGallery';
 import Image from "next/image";
 
 const KaycoHomepage = () => {
@@ -263,6 +264,7 @@ one molecule at a time.
             </div>
           </section>
         </motion.div>
+	<AutoScrollGallery/>
       </section>
 
       {/* Cultural Acknowledgment Section */}
