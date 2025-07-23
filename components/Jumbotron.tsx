@@ -79,7 +79,7 @@ const KaycoHomepage = () => {
             </div>
           </motion.div>
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-gray-800 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Shaping the future of medicine.
@@ -289,7 +289,7 @@ one molecule at a time.
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium italic text-red-400">Nau mai haere mai</span>
                 </p>
-                <p className="text-lg sm:text-xl font-light text-left">
+                <p className="text-lg sm:text-xl font-light text-left text-gray-800">
                   We honour the <span className="italic font-medium text-gray-800">mana whenua</span> of <span className="italic font-medium text-gray-800">Aotearoa</span> New Zealand and the <span className="italic font-medium text-gray-800">mātauranga Māori</span>.
                 </p>
               </div>
@@ -298,7 +298,7 @@ one molecule at a time.
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium text-red-400 italic">Céad míle fáilte</span>
                 </p>
-                <p className="text-lg sm:text-xl font-medium text-left">
+                <p className="text-lg sm:text-xl font-medium text-left text-gray-800">
                   We acknowledge our roots in Ireland and the legacy of Irish resilience, helping to bring Kayco to life.
                 </p>
               </div>
