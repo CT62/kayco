@@ -232,6 +232,7 @@ const Navbar = () => {
                 className="flex flex-col space-y-2 p-4"
                 variants={mobileMenuVariants}
               >
+
                 {navLinks.map((link, i) => (
                   <motion.li 
                     key={i}
@@ -257,11 +258,41 @@ const Navbar = () => {
                     </motion.a>
                   </motion.li>
                 ))}
+
               </motion.ul>
+
             </motion.div>
+
+
           )}
+<div className="bg-red-500 h-10 overflow-hidden relative sm:hidden">
+        <motion.div
+          className="absolute inset-0 flex items-center"
+          initial={{ x: "0%" }}
+          animate={{ x: "-500%" }}
+          transition={{
+            repeat: Infinity,
+            duration: 8,
+            ease: "linear",
+          }}
+        >
+<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
+  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+<span className="whitespace-nowrap text-white font-semibold text-sm px-4">
+  Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kayco | Pre-Launch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+
+        </motion.div>
+      </div>
+
+
+
         </AnimatePresence>
+
+
       </motion.nav>
+
 
     </>
   );
