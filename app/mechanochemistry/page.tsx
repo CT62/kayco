@@ -31,25 +31,24 @@ const MechanochemistryPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex pt-20 overflow-hidden">
         {/* Gradient background elements */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
 
         <motion.div
-          className="relative z-10 text-center px-4 max-w-6xl"
+          className="relative z-10 text-center px-4"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.div
-            className="flex justify-center items-center"
             variants={itemVariants}
           >
           </motion.div>
 
           <motion.h1
-            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6"
             variants={itemVariants}
           >
             Mechanochemistry
