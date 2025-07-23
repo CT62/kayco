@@ -32,7 +32,7 @@ const MechanochemistryPage = () => {
       {/* Hero Section */}
       <section className="relative flex pt-20 overflow-hidden justify-center">
         {/* Gradient background elements */}
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-40 w-84 h-84 bg-[#FF6B6B] opacity-18 rounded-full blur-3xl pointer-events-none" />
         <motion.div
           className="relative z-10 text-center px-4"
           variants={containerVariants}
@@ -103,8 +103,8 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
-              Our Core <span className="text-[#FF6B6B]">Technology</span>
+            <h2 className="text-3xl font-extrabold text-red-400 mb-8">
+              Technology
             </h2>
           </div>
 
@@ -116,7 +116,7 @@ const MechanochemistryPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed">
+              <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed text-center">
 At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
                 <span className="font-medium">without solvents, waste, or lengthy processes.</span>
               </p>
@@ -127,11 +127,11 @@ At Kayco, we put people, innovation, and sustainability at the heart of everythi
                 </p>
               </div>
 
-              <p className="text-lg text-gray-700 font-light leading-relaxed">
+              <p className="text-lg text-gray-700 font-light leading-relaxed text-center">
                 This means fewer toxic chemicals, less waste, lower energy use — and new ways to develop medicines that may otherwise be impossible to access.
               </p>
 
-              <p className="text-lg text-gray-700 font-light leading-relaxed">
+              <p className="text-lg text-gray-700 font-light leading-relaxed text-center">
                 At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>
             </motion.div>
