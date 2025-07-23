@@ -1,7 +1,6 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import Image from 'next/image'
-import { Atom, Zap, DollarSign, Clock, Leaf, Shield } from "lucide-react";
 
 const MechanochemistryPage = () => {
   const containerVariants: Variants = {
