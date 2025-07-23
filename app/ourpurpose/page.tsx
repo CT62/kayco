@@ -272,8 +272,8 @@ const OurPurposePage = () => {
       <div className="py-2 px-6 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 pb-4">Our Start</h2>
-            <p className="text-2xl text-gray-600 mb-2">Tō Mātou Tīmatanga</p>
+            <h2 className="text-3xl font-bold text-red-400 pb-4">Our Start</h2>
+            <p className="text-xl text-gray-600 mb-2">Tō Mātou Tīmatanga</p>
             <p className="text-lg text-gray-700 mt-6 pb-16 max-w-3xl mx-auto">
 	    At Kayco, we begin where today&apos;s treatment falls short. <br/>
 	    This is our starting point,<br/>
