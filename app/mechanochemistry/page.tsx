@@ -116,11 +116,6 @@ const MechanochemistryPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed text-left">
-At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
-                <span className="font-medium">without solvents, waste, or lengthy processes.</span>
-              </p>
-              
               <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-[#FF6B6B]">
                 <p className="text-lg text-gray-700 font-light leading-relaxed">
                   Mechanochemistry uses <span className="text-[#FF6B6B] font-bold">mechanical energy</span> instead of harmful solvents to drive chemical reactions.
