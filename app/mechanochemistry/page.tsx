@@ -47,7 +47,7 @@ const MechanochemistryPage = () => {
           </motion.h1>
 
           <motion.p
-            className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-12 font-light leading-relaxed max-w-4xl mx-auto"
+            className="text-xl text-gray-600 mb-12 font-light leading-relaxed max-w-4xl mx-auto"
             variants={itemVariants}
           >
             <span className="text-gray-600 font-medium">Drug manufacturing built for the future.{" "}</span>
@@ -66,10 +66,9 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
-              Better <span className="text-[#FF6B6B]">Methods</span>,
+            <h2 className="text-3xl font-extrabold text-red-400 mb-8">
+	    Sustainable Innovation
               <br />
-              Better <span className="text-[#FF6B6B]">Medicine</span>
             </h2>
           </div>
 
@@ -81,14 +80,13 @@ const MechanochemistryPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed">
-                At <span className="text-[#FF6B6B] font-medium">Kayco</span>, we believe better medicines begin with better methods. That&apos;s why we&apos;re building a new kind of pharmaceutical company — one that puts{" "}
-                <span className="text-[#FF6B6B] font-medium">sustainability, innovation, and patient access</span> at the heart of everything we do.
+              <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-center">
+	At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
               </p>
-              <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed">
-                <p>What if we could make medicine that&apos;s better for people <em>and</em> the planet?</p>
-                <p>What if we could lower costs, cut emissions, and unlock new treatments — all at once?</p>
-                <p className="text-[#FF6B6B] font-medium text-2xl">That&apos;s what mechano-chemistry makes possible.</p>
+              <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-center">
+                <p>What if we could make medicine that’s better for people and the planet?</p>
+                <p>What if we could lower costs, cut emissions, and access new treatments — all at once?</p>
+                <p className="font-bold">That&apos;s what mechano-chemistry makes possible.</p>
               </div>
             </motion.div>
           </div>
@@ -119,7 +117,7 @@ const MechanochemistryPage = () => {
               viewport={{ once: true }}
             >
               <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed">
-                At Kayco, our core technology is <span className="text-[#FF6B6B] font-medium">mechano-chemistry</span> — a revolutionary way to make medicine{" "}
+At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
                 <span className="font-medium">without solvents, waste, or lengthy processes.</span>
               </p>
               
