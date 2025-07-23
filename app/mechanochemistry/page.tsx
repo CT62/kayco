@@ -50,7 +50,7 @@ const MechanochemistryPage = () => {
             className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-12 font-light leading-relaxed max-w-4xl mx-auto"
             variants={itemVariants}
           >
-            <span className="text-gray-800 font-medium">Drug manufacturing built for the future.{" "}</span>
+            <span className="text-gray-600 font-medium">Drug manufacturing built for the future.{" "}</span>
             <br className="hidden sm:block" />
           </motion.p>
         </motion.div>
