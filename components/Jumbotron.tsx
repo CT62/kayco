@@ -82,9 +82,9 @@ const KaycoHomepage = () => {
             className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Shaping the future of medicine
+            Shaping the future of medicine.
             <br/>
-            Where people come first
+            Where people come first.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"

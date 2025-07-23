@@ -257,12 +257,12 @@ const OurPurposePage = () => {
             Our Purpose
           </motion.h1>
           <motion.h2 
-            className="text-xl font-light text-gray-800 pt-4"
+            className="text-xl font-light text-gray-600 pt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Putting patients at the heart of every breakthrough
+            Putting patients at the heart of every breakthrough.
           </motion.h2>
 
         </div>

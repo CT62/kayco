@@ -94,7 +94,7 @@ export default function Roadmap() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
 	  We are not waiting for the future of medicine. <br/>
-	  We are building it
+	  We are building it.
           </motion.p>
         </div>
 
