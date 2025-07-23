@@ -289,7 +289,7 @@ one molecule at a time.
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium italic text-red-400">Nau mai haere mai</span>
                 </p>
-                <p className="text-lg sm:text-xl font-light">
+                <p className="text-lg sm:text-xl font-light text-left">
                   We honour the <span className="italic font-medium text-gray-800">mana whenua</span> of <span className="italic font-medium text-gray-800">Aotearoa</span> New Zealand and the <span className="italic font-medium text-gray-800">mātauranga Māori</span>.
                 </p>
               </div>
@@ -298,12 +298,12 @@ one molecule at a time.
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium text-red-400 italic">Céad míle fáilte</span>
                 </p>
-                <p className="text-lg sm:text-xl font-medium">
+                <p className="text-lg sm:text-xl font-medium text-left">
                   We acknowledge our roots in Ireland and the legacy of Irish resilience, helping to bring Kayco to life.
                 </p>
               </div>
               
-              <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-gray-800">
+              <div className="pt-6 border-t border-white/30 space-y-3 text-sm text-gray-800 text-left">
                 <p><span className="italic">Nau mai, haere mai</span> = Māori welcome</p>
                 <p><span className="italic">Mana whenua</span> = The Indigenous custodians of the land</p>
                 <p><span className="italic">Mātauranga Māori</span> = Māori knowledge — traditional, cultural, and spiritual systems of understanding the world</p>
