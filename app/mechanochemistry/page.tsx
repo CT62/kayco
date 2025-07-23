@@ -1,6 +1,5 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import Image from 'next/image'
 import { DollarSign, Clock } from "lucide-react";
 
 const MechanochemistryPage = () => {
@@ -38,26 +37,22 @@ const MechanochemistryPage = () => {
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#FF6B6B] opacity-8 rounded-full blur-3xl pointer-events-none" />
 
         <motion.div
-          className="relative z-10 text-center px-4 max-w-6xl mx-auto"
+          className="relative z-10 text-center px-4 max-w-6xl"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <motion.div
-            className="flex justify-center items-center mb-8"
+            className="flex justify-center items-center"
             variants={itemVariants}
           >
-            <div className="relative p-8 bg-white rounded-full shadow-2xl">
-	    <Image alt="mechanochem" src="/mechanochemistry.png" width={100} height={100}/>
-              <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-pink-100 rounded-full opacity-20" />
-            </div>
           </motion.div>
 
           <motion.h1
-            className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
             variants={itemVariants}
           >
-            Mechano<span className="text-[#FF6B6B]">chemistry</span>
+            Mechanochemistry
           </motion.h1>
 
           <motion.p
