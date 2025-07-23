@@ -242,8 +242,8 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: Sect
 const OurPurposePage = () => {
   return (
     <div className="bg-white min-h-screen">
+<div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
 
-        <div className="absolute -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
       {/* Header */}
       <div className="py-20 px-6 sm:px-8 lg:px-12">
         <div className="max-w-6xl mx-auto text-center">
