@@ -253,7 +253,7 @@ export default function Roadmap() {
               </motion.div>
 
               <motion.h3
-                className="text-5xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
+                className="text-4xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
@@ -262,7 +262,7 @@ export default function Roadmap() {
               </motion.h3>
 
               <motion.p
-                className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed mb-8"
+                className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed mb-8 text-left"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
