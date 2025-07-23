@@ -29,6 +29,8 @@ const OurPeople = () => {
       }}
     >
       <div className="max-w-6xl mx-auto px-4">
+
+<div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
         {/* Header */}
         <motion.div
           className="text-center mb-12"
