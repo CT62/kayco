@@ -302,9 +302,6 @@ const OurPurposePage = () => {
               <p>This is our future,</p>
               <p>Where we are heading,</p>
               <p>The patients we will serve.</p>
-              <p className="text-2xl font-bold text-red-600 mt-8">
-                Answering the needs others overlook.
-              </p>
             </div>
           </div>
           
