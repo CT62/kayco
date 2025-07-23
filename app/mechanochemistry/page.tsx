@@ -67,7 +67,7 @@ const MechanochemistryPage = () => {
         >
           <div className="text-center space-y-8 mb-16">
             <h2 className="text-3xl font-extrabold text-red-400 mb-8">
-	    Sustainable Innovation
+	   Innovation
               <br />
             </h2>
           </div>
@@ -80,10 +80,10 @@ const MechanochemistryPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-center">
-	At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
+              <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
+	      Mechano-chemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
               </p>
-              <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-center">
+              <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
                 <p>What if we could make medicine that’s better for people and the planet?</p>
                 <p>What if we could lower costs, cut emissions, and access new treatments — all at once?</p>
                 <p className="font-bold">That&apos;s what mechano-chemistry makes possible.</p>
@@ -116,7 +116,7 @@ const MechanochemistryPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed text-center">
+              <p className="text-xl sm:text-2xl text-gray-700 font-light leading-relaxed text-left">
 At Kayco, we put people, innovation, and sustainability at the heart of everything we do.
                 <span className="font-medium">without solvents, waste, or lengthy processes.</span>
               </p>
@@ -127,11 +127,11 @@ At Kayco, we put people, innovation, and sustainability at the heart of everythi
                 </p>
               </div>
 
-              <p className="text-lg text-gray-700 font-light leading-relaxed text-center">
+              <p className="text-lg text-gray-700 font-light leading-relaxed text-left">
                 This means fewer toxic chemicals, less waste, lower energy use — and new ways to develop medicines that may otherwise be impossible to access.
               </p>
 
-              <p className="text-lg text-gray-700 font-light leading-relaxed text-center">
+              <p className="text-lg text-gray-700 font-light leading-relaxed text-left">
                 At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>
             </motion.div>
