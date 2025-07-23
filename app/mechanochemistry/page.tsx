@@ -48,10 +48,10 @@ const MechanochemistryPage = () => {
           </motion.div>
 
           <motion.h1
-            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
             variants={itemVariants}
           >
-            Mechanochemistry
+            Mechano-chemistry
           </motion.h1>
 
           <motion.p
