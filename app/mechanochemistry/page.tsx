@@ -126,6 +126,12 @@ const MechanochemistryPage = () => {
                 This means fewer toxic chemicals, less waste, lower energy use — and new ways to develop medicines that may otherwise be impossible to access.
               </p>
 
+          <div className="text-center space-y-8 mb-16">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
+              <span className="text-[#FF6B6B]">Possibilities</span>
+            </h2>
+          </div>
+
               <p className="text-lg text-gray-700 font-light leading-relaxed text-left">
                 At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>

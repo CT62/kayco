@@ -289,7 +289,7 @@ one molecule at a time.
                 <p className="text-2xl sm:text-3xl">
                   <span className="font-medium italic text-red-400">Nau mai haere mai</span>
                 </p>
-                <p className="text-lg sm:text-xl font-light text-left text-gray-800">
+                <p className="text-lg sm:text-xl font-light text-left">
                   We honour the <span className="italic font-medium text-gray-800">mana whenua</span> of <span className="italic font-medium text-gray-800">Aotearoa</span> New Zealand and the <span className="italic font-medium text-gray-800">mātauranga Māori</span>.
                 </p>
               </div>
