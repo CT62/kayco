@@ -68,6 +68,9 @@ const OurPeople = () => {
           <h2 className="text-3xl font-extrabold text-center text-red-400 mb-8">Advisor</h2>
           <div className="space-y-12">
             <CharlotteOwens />
+            <Unknown />
+            <Unknown />
+            <Unknown />
           </div>
         </motion.div>
 
@@ -95,6 +98,7 @@ const OurPeople = () => {
           </motion.div>
         ))}
 
+            <Unknown />
         {/* Associates */}
         <motion.h2
           className="text-3xl font-extrabold text-center text-red-400 mb-8"

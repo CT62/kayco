@@ -14,7 +14,7 @@ const AutoScrollGallery = () => {
         transition={{
           repeat: Infinity,
           ease: 'linear',
-          duration: 100,
+          duration: 20,
         }}
       >
         {[...images, ...images].map((img, i) => (
@@ -31,4 +31,3 @@ const AutoScrollGallery = () => {
 };
 
 export default AutoScrollGallery;
-
