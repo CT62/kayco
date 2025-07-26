@@ -194,14 +194,6 @@ const KaycoHomepage = () => {
                     <div className="absolute -inset-6 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                     
                     {/* Main image container - clean and simple */}
-                    <div className="relative w-72 h-48 rounded-2xl overflow-hidden shadow-xl group-hover:scale-105 transition-all duration-500">
-                      <Image
-                        src="/baby_finger.jpg"
-                        alt="Baby hand holding elderly hand"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
                   </div>
                 </motion.div>
                 <div className="space-y-6 relative z-10">
@@ -232,15 +224,6 @@ one molecule at a time.
                     {/* Backdrop blur effect */}
                     <div className="absolute -inset-6 bg-gradient-to-l from-red-100/20 to-orange-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                     
-                    {/* Main image container - clean and simple */}
-                    <div className="relative w-72 h-48 rounded-2xl overflow-hidden shadow-xl group-hover:scale-105 transition-all duration-500">
-                      <Image
-                        src="/elderly_hands.jpg"
-                        alt="Happy elderly couple"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
                   </div>
                 </motion.div>
                 <div className="space-y-6 relative z-10">

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const images = [
   'image0.jpg','image1.png', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
-  'image6.jpg', 'image7.jpg', 'image8.png',
+  'image6.jpg', 'image7.jpg', 'image8.jpg',
 ];
 
 const AutoScrollGallery = () => {

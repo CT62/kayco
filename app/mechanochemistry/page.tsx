@@ -28,51 +28,39 @@ const MechanochemistryPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative flex pt-20 overflow-hidden justify-center">
-        {/* Gradient background elements */}
-        <div className="absolute -top-40 w-84 h-84 bg-[#FF6B6B] opacity-18 rounded-full blur-3xl pointer-events-none" />
-        <motion.div
-          className="relative z-10 text-center px-4"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
+    <div className="bg-white min-h-screen">
+      <div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
+
+      {/* Header */}
+      <div className="py-20 px-6 sm:px-8 lg:px-12">
+        <div className="max-w-6xl mx-auto text-center">
           <motion.h1
-            className="text-4xl font-extrabold text-gray-800 mb-6"
-            variants={itemVariants}
+            className="text-4xl font-bold text-gray-800 pt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
             Mechano-Chemistry
           </motion.h1>
-
-          <motion.p
-            className="text-xl text-gray-600 mb-12 font-light leading-relaxed max-w-4xl mx-auto"
-            variants={itemVariants}
+          <motion.h2
+            className="text-xl font-light text-gray-600 pt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            <span className="text-gray-600 font-medium">Built for the future of medicine.{" "}</span>
-            <br className="hidden sm:block" />
-          </motion.p>
-        </motion.div>
-      </section>
+            Built for the future of medicine.
+          </motion.h2>
+        </div>
+      </div>
 
-      {/* Philosophy Section */}
-      <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-white">
-        <motion.div
-          className="max-w-6xl mx-auto"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center space-y-8 mb-12">
-            <h2 className="text-3xl font-extrabold text-red-400 mb-4">
-	   Innovation
-              <br />
-            </h2>
+      {/* Innovation Section */}
+      <div className="py-2 px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-red-400 pb-4">Innovation</h2>
           </div>
-
-          <div className="gap-12 items-center">
+          
+          <div className="space-y-8 max-w-6xl mx-auto">
             <motion.div
               className="space-y-4"
               initial={{ opacity: 0, x: -40 }}
@@ -81,33 +69,14 @@ const MechanochemistryPage = () => {
               viewport={{ once: true }}
             >
               <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
-	      Mechano-chemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
+                Mechano-chemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
               </p>
               <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
                 <p>What if we could make medicine that's better for people and the planet?</p>
                 <p>What if we could lower costs, cut emissions, and access new treatments — all at once?</p>
                 <p className="font-bold">That&apos;s what mechano-chemistry makes possible.</p>
               </div>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
-      <section className="relative -mt-12 px-4 sm:px-8 md:px-16">
-        <motion.div
-          className="max-w-6xl mx-auto"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="items-center">
-            <motion.div
-              className="space-y-4"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
+              
               <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-[#FF6B6B]">
                 <p className="text-lg text-gray-700 font-light leading-relaxed">
                   Mechanochemistry uses <span className="text-[#FF6B6B] font-bold">mechanical energy</span> instead of harmful solvents to drive chemical reactions.
@@ -123,8 +92,8 @@ const MechanochemistryPage = () => {
               </p>
             </motion.div>
           </div>
-        </motion.div>
-      </section>
+        </div>
+      </div>
 
       {/* Benefits Section */}
       <section className="relative py-24 px-4 sm:px-8 md:px-16 bg-gray-100">
