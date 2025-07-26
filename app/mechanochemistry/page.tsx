@@ -1,5 +1,5 @@
 "use client";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { DollarSign, Clock } from "lucide-react";
 
 const MechanochemistryPage = () => {
@@ -48,9 +48,9 @@ const MechanochemistryPage = () => {
                 Mechano-chemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
               </p>
               <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
-                <p>What if we could make medicine that's better for people and the planet?</p>
+                <p>What if we could make medicine that&rsquo;s better for people and the planet?</p>
                 <p>What if we could lower costs, cut emissions, and access new treatments — all at once?</p>
-                <p className="font-bold">That&apos;s what mechano-chemistry makes possible.</p>
+                <p className="font-bold">That&rsquo;s what mechano-chemistry makes possible.</p>
               </div>
               
               <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-[#FF6B6B]">
@@ -64,7 +64,7 @@ const MechanochemistryPage = () => {
               </p>
 
               <p className="text-lg text-gray-700 font-light leading-relaxed text-left pb-4">
-                At Kayco, we&apos;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
+                At Kayco, we&rsquo;re turning the research into reality. Mechanochemistry is the foundation of how we make better medicine — for patients, for the planet, and for the future.
               </p>
             </motion.div>
           </div>
@@ -217,7 +217,7 @@ const MechanochemistryPage = () => {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2"></div>
-                      <span className="text-gray-700">Finding new and improved forms of already existing drugs — to improve drug performance in the body to ultimately enhance patients' lives</span>
+                      <span className="text-gray-700">Finding new and improved forms of already existing drugs — to improve drug performance in the body to ultimately enhance patients&rsquo; lives</span>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2"></div>

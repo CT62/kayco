@@ -32,7 +32,6 @@ export default function Roadmap() {
     offset: ["start end", "end start"]
   })
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
 
   return (
@@ -231,7 +230,7 @@ export default function Roadmap() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Join Kayco's revolutionary approach to sustainable medicine. Whether you're an investor, partner, or innovator, let's build the future of healthcare together.
+                Join Kayco&rsquo;s revolutionary approach to sustainable medicine. Whether you&rsquo;re an investor, partner, or innovator, let&rsquo;s build the future of healthcare together.
               </motion.p>
 
               {/* Action buttons */}
