@@ -3,30 +3,6 @@ import { motion, Variants } from "framer-motion";
 import { DollarSign, Clock } from "lucide-react";
 
 const MechanochemistryPage = () => {
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants: Variants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring" as const,
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
-
   return (
     <div className="bg-white min-h-screen">
       <div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
@@ -263,4 +239,3 @@ const MechanochemistryPage = () => {
 };
 
 export default MechanochemistryPage;
-
