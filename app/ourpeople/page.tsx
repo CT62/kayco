@@ -20,7 +20,7 @@ const OurPeople = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-white pt-12 md:pt-16" // Reduced top padding
+      className="min-h-screen bg-white pt-24"
       initial="hidden"
       animate="visible"
       variants={{
@@ -31,42 +31,39 @@ const OurPeople = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="absolute right-0 w-48 h-48 md:w-96 md:h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
 
-        {/* Header */}
         <motion.div
-          className="text-center mb-8 md:mb-10" // Reduced bottom margin
+          className="text-center mb-8 md:mb-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">Our People</h1> {/* Responsive font size */}
-          <p className="text-lg md:text-xl text-gray-600"> {/* Reduced font size */}
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">Our People</h1>
+          <p className="text-lg md:text-xl text-gray-600">
             We have walked the walk. <br/> Now we are ready to build the future.
           </p>
         </motion.div>
 
-        {/* Founder */}
         <motion.div
-          className="mb-12" // Reduced bottom margin
+          className="mb-12"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Founder</h2> {/* Reduced font size */}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Founder</h2>
           <LenaKadri />
         </motion.div>
 
-        {/* Advisor */}
         <motion.div
-          className="mb-12" // Reduced bottom margin
+          className="mb-12"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Advisor</h2> {/* Reduced font size */}
-          <div className="space-y-10"> {/* Reduced spacing */}
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Advisor</h2>
+          <div className="space-y-10">
             <CharlotteOwens />
             <Unknown />
             <Unknown />
@@ -74,7 +71,6 @@ const OurPeople = () => {
           </div>
         </motion.div>
 
-        {/* Mentors */}
         <motion.div
           className="mb-12" // Reduced bottom margin
           initial={{ opacity: 0, y: 30 }}

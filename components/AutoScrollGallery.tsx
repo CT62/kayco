@@ -7,7 +7,7 @@ const images = [
 
 const AutoScrollGallery = () => {
   return (
-    <div className="overflow-hidden w-full bg-white dark:bg-black py-4">
+    <div className="overflow-hidden w-full bg-white py-4">
       <motion.div
         className="flex gap-4 w-max"
         animate={{ x: ['0%', '-50%'] }}

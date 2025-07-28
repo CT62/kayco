@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import AuthWrapper from "@/components/AuthWrapper";
+import { isAuthenticated } from "@/auth";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -24,15 +26,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const authenticated = isAuthenticated();
+
   return (
     <html lang="en">
-    <Navbar/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuthWrapper isAuthenticated={authenticated}>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </AuthWrapper>
       </body>
-    <Footer/>  
     </html>
   );
 }
