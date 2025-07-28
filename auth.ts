@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 
 export const AUTH_COOKIE_NAME = 'site_authenticated';
-export const CORRECT_PASSWORD = 'your-secret-password'; // Change this!
+export const CORRECT_PASSWORD = process.env.PASSWORD;
 
 export async function setAuthCookie() {
   const cookieStore = await cookies();
