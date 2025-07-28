@@ -7,7 +7,7 @@ export default function AuthWrapper({
   isAuthenticated 
 }: { 
   children: React.ReactNode;
-  isAuthenticated: boolean;
+  isAuthenticated: Promise<boolean>;
 }) {
   const [showModal, setShowModal] = useState(!isAuthenticated);
 
