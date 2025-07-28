@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { CORRECT_PASSWORD, AUTH_COOKIE_NAME, setAuthCookie } from '@/auth';
+import { CORRECT_PASSWORD, AUTH_COOKIE_NAME } from '@/auth';
 import { cookies } from 'next/headers';
 
 export async function POST(request: Request) {
