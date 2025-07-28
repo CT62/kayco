@@ -12,8 +12,6 @@ export async function setAuthCookie() {
     maxAge: 60 * 60 * 24 * 7,
     path: '/',
   });
-
-
 }
 
 export async function isAuthenticated() {

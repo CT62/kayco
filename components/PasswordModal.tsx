@@ -31,7 +31,6 @@ export default function PasswordModal({ onSuccess }: { onSuccess: () => void }) 
         
         <form onSubmit={handleSubmit}>
           <input
-            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
@@ -47,7 +46,7 @@ export default function PasswordModal({ onSuccess }: { onSuccess: () => void }) 
           
           <button
             type="submit"
-            className="w-full bg-red-400 text-white py-2 px-4 rounded-lg hover:bg-red-500"
+            className="w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400"
           >
             Access Site
           </button>

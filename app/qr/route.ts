@@ -6,7 +6,7 @@ export async function GET() {
   const cookieStore = await cookies();
   cookieStore.set(AUTH_COOKIE_NAME, 'true', {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: true,
     sameSite: 'strict',
     maxAge: 60 * 60 * 24 * 7,
     path: '/',
