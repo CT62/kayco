@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const KaycoHomepage = () => {
   const router = useRouter();
-
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -17,7 +16,6 @@ const KaycoHomepage = () => {
       },
     },
   };
-
   const itemVariants: Variants = {
     hidden: { y: 30, opacity: 0 },
     visible: {
@@ -30,7 +28,6 @@ const KaycoHomepage = () => {
       },
     },
   };
-
   const backgroundLogos = Array.from({ length: 10 }).map((_, i) => {
     const size = Math.random() * 40 + 20;
     const xStart = Math.random() * 100;
@@ -51,12 +48,10 @@ const KaycoHomepage = () => {
       gray: i % 2 === 0,
     };
   });
-
   return (
     <div className="min-h-screen bg-white">
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Soft background blur circle */}
-
         <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
         <motion.div
           className="relative z-10 text-center px-4 max-w-5xl mx-auto"
@@ -119,9 +114,6 @@ const KaycoHomepage = () => {
           </motion.div>
         </motion.div>
       </section>
-
-
-
       {/* Vision Section with Floating Logos */}
       <section className="relative z-10 bg-white pb-10 pt-20 px-4 sm:px-8 overflow-hidden">
         {/* Floating Background Logos */}
@@ -205,7 +197,6 @@ const KaycoHomepage = () => {
                   <p className="text-gray-700 text-2xl font-light leading-relaxed max-w-3xl mx-auto">
 		  To transform lives through science rooted in empathy, <br/>
 one molecule at a time.
-
                   </p>
                 </div>
               </div>
@@ -240,7 +231,6 @@ one molecule at a time.
                   </p>
                 </div>
               </div>
-
               {/* Our Story Section */}
               <div className="relative">
                 <div className="space-y-8 relative z-10">
@@ -259,11 +249,11 @@ one molecule at a time.
                     </p>
                     
                     <p>
-                      The science is there. But why isn't it reaching everyone? And why isn't it reaching everyone, as effectively as possible?
+                      The science is there. But why isn&apos;t it reaching everyone? And why isn&apos;t it reaching everyone, as effectively as possible?
                     </p>
                     
                     <p>
-                      At Kayco, we're not here to talk about the problems. We're here to transform them.
+                      At Kayco, we&apos;re not here to talk about the problems. We&apos;re here to transform them.
                     </p>
                     
                     <p className="text-center font-medium">
@@ -271,7 +261,7 @@ one molecule at a time.
                     </p>
                     
                     <p className="text-center text-3xl font-light text-red-400 italic">
-                      If we can do better, why haven't we?
+                      If we can do better, why haven&apos;t we?
                     </p>
                     
                     <p className="text-red-400">
@@ -305,7 +295,6 @@ one molecule at a time.
         </motion.div>
 	<AutoScrollGallery/>
       </section>
-
       {/* Cultural Acknowledgment Section */}
       <section className="relative py-20 px-4 sm:px-8 overflow-hidden">
         {/* Background Image */}
@@ -314,7 +303,6 @@ one molecule at a time.
             <div className="absolute inset-0 bg-gray-100" />
           </div>
         </div>
-
         <motion.div
           className="relative z-10 max-w-5xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}

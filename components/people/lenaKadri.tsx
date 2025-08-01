@@ -29,7 +29,7 @@ const LenaKadri = () => {
       
       <div className="mt-6 space-y-6">
         <p className="text-gray-700 leading-relaxed">
-          I'm Dr. Lena Kadri, the founder of Kayco. I'm proudly Irish and a big advocate for women and girls in science. I lead my life with purpose and meaning, living by the motto <strong>"if not now, then when?"</strong> And, as dark as it may seem, <strong>"the only thing certain in life, is that we're all going to die"</strong>. 
+          I&apos;m Dr. Lena Kadri, the founder of Kayco. I&apos;m proudly Irish and a big advocate for women and girls in science. I lead my life with purpose and meaning, living by the motto <strong>&ldquo;if not now, then when?&rdquo;</strong> And, as dark as it may seem, <strong>&ldquo;the only thing certain in life, is that we&apos;re all going to die&rdquo;</strong>. 
         </p>
         
         <p className="text-gray-700 leading-relaxed">
@@ -38,7 +38,7 @@ const LenaKadri = () => {
         
         <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
           <p className="text-gray-700 leading-relaxed italic mb-2">
-            "Your feet will take you where your heart is"
+            &ldquo;Your feet will take you where your heart is&rdquo;
           </p>
           <p className="text-gray-600 text-sm">
             <em>an áit a bhfuil do chroí, is ann a thabharfas do chosa thú</em>
@@ -46,15 +46,15 @@ const LenaKadri = () => {
         </div>
         
         <p className="text-gray-700 leading-relaxed">
-          There's an Irish proverb that really resonates with me. And for me, my heart is, and always will be with the patients who need me the most. The ones who need better. These are patients around the world who Kayco can serve.
+          There&apos;s an Irish proverb that really resonates with me. And for me, my heart is, and always will be with the patients who need me the most. The ones who need better. These are patients around the world who Kayco can serve.
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          That's why I moved to Aotearoa. To pursue my life's mission of founding Kayco. Why NZ you may ask? Well, haven't you seen the start-up culture? Plus, the country and people are just the best!
+          That&apos;s why I moved to Aotearoa. To pursue my life&apos;s mission of founding Kayco. Why NZ you may ask? Well, haven&apos;t you seen the start-up culture? Plus, the country and people are just the best!
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          Well, that's all from me!
+          Well, that&apos;s all from me!
         </p>
         
         <div className="mt-8">
