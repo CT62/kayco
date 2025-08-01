@@ -1,5 +1,4 @@
 'use client'
-
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import LenaKadri from '@/components/people/lenaKadri'
@@ -30,7 +29,7 @@ const OurPeople = () => {
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="absolute right-0 w-48 h-48 md:w-96 md:h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
-
+        
         <motion.div
           className="text-center mb-8 md:mb-10"
           initial={{ opacity: 0, y: 30 }}
@@ -38,9 +37,9 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">Our People</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our People</h1>
           <p className="text-lg md:text-xl text-gray-600">
-            We have walked the walk. <br/> Now we are ready to build the future.
+            We have the expertise. <br/> Now we are ready to build the future.
           </p>
         </motion.div>
 
@@ -51,7 +50,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Founder</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Founder</h2>
           <LenaKadri />
         </motion.div>
 
@@ -62,7 +61,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Advisor</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Advisor</h2>
           <div className="space-y-10">
             <CharlotteOwens />
             <Unknown />
@@ -72,19 +71,19 @@ const OurPeople = () => {
         </motion.div>
 
         <motion.div
-          className="mb-12" // Reduced bottom margin
+          className="mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6">Mentors</h2> {/* Reduced font size */}
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Mentor</h2>
         </motion.div>
 
         {[AnisoaraNicol, Unknown].map((Component, index) => (
           <motion.div
             key={`mentor-${index}`}
-            className="mb-12" // Reduced bottom margin
+            className="mb-12"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -93,12 +92,10 @@ const OurPeople = () => {
             <Component />
           </motion.div>
         ))}
-
-        <Unknown />
         
         {/* Associates */}
         <motion.h2
-          className="text-2xl md:text-3xl font-extrabold text-center text-red-400 mb-6" // Reduced font size
+          className="text-3xl md:text-4xl font-bold text-center text-red-400 py-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -110,7 +107,7 @@ const OurPeople = () => {
         {[Unknown, Unknown, Unknown].map((Component, index) => (
           <motion.div
             key={`associate-${index}`}
-            className="mb-12" // Reduced bottom margin
+            className="mb-12"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -122,34 +119,33 @@ const OurPeople = () => {
 
         {/* Affiliations */}
         <motion.div
-          className="relative z-10 py-12 px-4" // Reduced padding
+          className="relative z-10 py-12 px-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-3xl md:text-4xl font-extrabold text-center bg-red-400 bg-clip-text text-transparent mb-8" // Reduced bottom margin
+            className="text-3xl md:text-4xl font-bold text-center bg-red-400 bg-clip-text text-transparent mb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             Affiliations
           </motion.h2>
-
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> {/* Reduced gap */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {affiliations.map((affiliation, index) => (
                 <motion.div
                   key={index}
-                  className="relative bg-white/80 backdrop-blur-xl border border-red-200 rounded-2xl md:rounded-3xl p-4 shadow-xl hover:shadow-red-200 transition-shadow duration-300 flex items-center justify-center overflow-hidden" // Reduced padding/shadow
+                  className="relative bg-white/80 backdrop-blur-xl border border-red-200 rounded-2xl md:rounded-3xl p-4 shadow-xl hover:shadow-red-200 transition-shadow duration-300 flex items-center justify-center overflow-hidden"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-bl from-red-400/30 to-transparent rounded-bl-full pointer-events-none" /> {/* Smaller decoration */}
-                  <div className="relative w-full h-28 flex items-center justify-center z-10"> {/* Reduced height */}
+                  <div className="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-bl from-red-400/30 to-transparent rounded-bl-full pointer-events-none" />
+                  <div className="relative w-full h-28 flex items-center justify-center z-10">
                     <Image
                       src={affiliation.image}
                       alt={affiliation.alt}

@@ -55,7 +55,7 @@ const MechanochemistryPage = () => {
               
               <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-[#FF6B6B]">
                 <p className="text-lg text-gray-700 font-light leading-relaxed">
-                  Mechanochemistry uses <span className="text-[#FF6B6B] font-bold">mechanical energy</span> instead of harmful solvents to drive chemical reactions.
+                  Mechanochemistry uses <span className="text-black font-bold">mechanical energy</span> instead of harmful solvents to drive chemical reactions.
                 </p>
               </div>
 
@@ -112,27 +112,29 @@ const MechanochemistryPage = () => {
                 </div>
                 
                 <p className="text-lg text-gray-700 font-light">
-                  We can reduce pharmaceutical production costs by up to 90% — meaning for the cost of making <span className="font-bold text-[#FF6B6B]">one</span> drug the traditional way, you could make{" "}
-                  <span className="font-bold text-[#FF6B6B]">eight or nine</span> drugs using our process.
+                  We can reduce pharmaceutical production costs by up to 90% — meaning for the cost of making <span className="font-bold">one</span> drug the traditional way, you could make{" "}
+                  <span className="font-bold text-black">eight or nine</span> drugs using our process.
                 </p>
                 
                 <div className="space-y-3">
                   <p className="font-medium text-gray-800 mb-3">How?</p>
                   <p className="text-gray-700 mb-3">By eliminating or reducing harmful chemicals and lowering energy inputs using mechanical energy, leading to:</p>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#FF6B6B] mt-1">•</span>
-                      <span>Lower costs on raw materials</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#FF6B6B] mt-1">•</span>
-                      <span>Less energy usage</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-[#FF6B6B] mt-1">•</span>
-                      <span>Reduced waste and disposal needs</span>
-                    </li>
-                  </ul>
+                  <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border border-red-200">
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                        <span>Lower costs on raw materials</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                        <span>Less energy usage</span>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
+                        <span>Reduced waste and disposal needs</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -157,29 +159,29 @@ const MechanochemistryPage = () => {
               
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 font-light">
-                  Mechanochemical technologies such as <span className="font-medium text-[#FF6B6B]">twin-screw extrusion</span> and{" "}
-                  <span className="font-medium text-[#FF6B6B]">ball milling</span> enable continuous, scalable production under controlled and reproducible conditions.
+                  Mechanochemical technologies such as <span className="font-medium text-black">twin-screw extrusion</span> and{" "}
+                  <span className="font-medium text-black">ball milling</span> enable continuous, scalable production under controlled and reproducible conditions.
                 </p>
                 
                 <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border border-red-200">
                   <p className="font-medium text-gray-800 mb-4">This results in:</p>
                   <div className="grid gap-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Shorter processing times</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Higher yields</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Minimal or no purification steps</span>
                     </div>
                   </div>
                 </div>
                 
-                <p className="text-lg font-medium text-[#FF6B6B]">The result? Faster production — and a quicker path to patients.</p>
+                <p className="text-lg font-medium text-black">The result? Faster production — and a quicker path to patients.</p>
               </div>
             </motion.div>
 
@@ -216,15 +218,15 @@ const MechanochemistryPage = () => {
                   <p className="font-medium text-gray-800 mb-4">That means:</p>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-gray-700">Finding new and improved forms of already existing drugs — to improve drug performance in the body to ultimately enhance patients&rsquo; lives</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-gray-700">Discovering brand new drugs — ones that were previously inaccessible through conventional methods</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-gray-700">Accelerating the path to treatment — for diseases with limited or no effective treatment options</span>
                     </div>
                   </div>

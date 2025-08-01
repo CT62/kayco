@@ -30,17 +30,16 @@ interface SectionCardProps {
   isMultiplePatients?: boolean;
 }
 
-
 const ourStartData = {
   enhancingDrugEfficacy: {
     title: "Enhancing Drug Efficacy",
-    subtitle: "For better absorption, fewer side effects, and faster relief.",
+    subtitle: "For better absorption, more relief, and fewer side effects.",
     patient: {
       name: "Priya, 52 years old",
       description: "A mother who did everything right, but still got worse",
       image: "/Priya.jpg",
-      problem: `Priya's the type of mother who holds everything together. Full-time job, deadlines, school drop-offs, family dinners, putting the kids to bed, cleaning the house, looking after her aging parents. So when she got a urinary tract infection, she didn't stop. She took the prescribed antibiotics, followed every instruction, and waited to feel better. But she didn't.\n\nHer fever spiked. The pain got worse. A second visit to urgent care confirmed what she suspected. The infection hadn't cleared. It wasn't because she skipped a dose. It wasn't the wrong medicine. It was because not enough of the treatment reached her bloodstream.\n\nSome medicines, don't absorb well in the body. So even when taken correctly, not enough of the medicine reaches the infection to work as its needed. The bacteria survive, adapt, and become more resistant. Meaning future medication will be even less effective.\n\nPriya missed more days at work. Her family routine was thrown off. And she was left wondering what more she could've done. Even though she had done everything right.`,
-      solution: `We improve essential antibiotics so the body can absorb them better, faster, and with fewer side effects. This helps the medicine do what it's meant to do. Work effectively, the first time around. We deliver the essential medications in the form of:\n• Improved oral tablets and capsules\n• Gentle skin patches\n• Inhalable formulations`
+      problem: `Priya's the type of mother who holds everything together. Full-time job, deadlines, school drop-offs, family dinners, putting the kids to bed, cleaning the house, looking after her aging parents. So when she got a urinary tract infection, she didn't stop. She took the prescribed antibiotics, followed every instruction, and waited to feel better. But she didn't.\n\nHer fever spiked. The pain got worse. A second visit to urgent care confirmed what she suspected. The infection hadn't cleared. It wasn't because she skipped a dose. It wasn't the wrong medicine. It was because not enough of the treatment reached her bloodstream.\n\nSome medicines, don't absorb well in the body. So even when taken correctly, not enough of the medicine reaches the infection to work as needed. The bacteria survive, adapt, and become more resistant. Meaning future medication will be even less effective.\n\nPriya missed more days at work. Her family routine was thrown off. And she was left wondering what more she could've done, even though she had done everything right.`,
+      solution: `We improve essential antibiotics so the body can absorb them better, faster, and with fewer side effects. This helps the medicine do what it's meant to do. Work effectively, the first time around.`
     }
   }
 };
@@ -117,7 +116,6 @@ const ourFutureData = {
   }
 };
 
-
 const PatientCard = ({ patient }: PatientCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -168,7 +166,7 @@ const PatientCard = ({ patient }: PatientCardProps) => {
               className="overflow-hidden"
             >
               <div className="space-y-6 border-t border-gray-100 pt-6">
-                <div className="bg-gray-200 rounded-xl p-5 border border-gray-300">
+                <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
                   <h5 className="font-bold text-gray-800 mb-3 flex items-center">
                     The Problem
                   </h5>
@@ -178,7 +176,7 @@ const PatientCard = ({ patient }: PatientCardProps) => {
                 </div>
                 
                 <div className="bg-red-50 rounded-xl p-5 border border-red-100">
-                  <h5 className="font-bold text-red-500 mb-3 flex items-center">
+                  <h5 className="font-bold text-red-600 mb-3 flex items-center">
                     Our Solution
                   </h5>
                   <p className="text-gray-700 leading-relaxed whitespace-pre-line text-sm">
@@ -191,7 +189,7 @@ const PatientCard = ({ patient }: PatientCardProps) => {
         </AnimatePresence>
 
         <motion.button
-          className="mt-4 w-full flex items-center justify-center px-6 py-3 border-2 border-red-400 text-gray-800 font-semibold rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+          className="mt-4 w-full flex items-center justify-center px-6 py-3 border-2 border-red-400 text-gray-800 font-semibold rounded-xl hover:bg-red-50 hover:border-red-500 transition-all duration-200 shadow-lg hover:shadow-xl"
           onClick={() => setExpanded(!expanded)}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -210,7 +208,7 @@ const PatientCard = ({ patient }: PatientCardProps) => {
 
 const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: SectionCardProps) => {
   return (
-    <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
+    <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 h-full">
       <div className="text-center mb-10">
         <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl mb-4">
           <div className="w-8 h-8 bg-white rounded-lg"></div>
@@ -241,13 +239,16 @@ const SectionCard = ({ title, subtitle, data, isMultiplePatients = false }: Sect
 
 const OurPurposePage = () => {
   return (
-    <div className="bg-white min-h-screen">
-<div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
+    <div className="bg-gradient-to-br from-white via-gray-50 to-white min-h-screen">
+      {/* Background decorative elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-10 w-96 h-96 bg-red-100 opacity-30 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-blue-100 opacity-20 rounded-full blur-3xl" />
+      </div>
 
       {/* Header */}
-      <div className="py-20 px-6 sm:px-8 lg:px-12">
+      <div className="relative z-10 py-20 px-6 sm:px-8 lg:px-12">
         <div className="max-w-6xl mx-auto text-center">
-
           <motion.h1 
             className="text-4xl font-bold text-gray-800 pt-4"
             initial={{ opacity: 0, y: 20 }}
@@ -260,75 +261,75 @@ const OurPurposePage = () => {
             className="text-xl font-light text-gray-600 pt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
             Putting patients at the heart of every breakthrough.
           </motion.h2>
-
         </div>
       </div>
 
-      {/* Introduction */}
-      <div className="py-2 px-6 sm:px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-red-400 pb-4">Our Start</h2>
-            <p className="text-xl text-gray-600 mb-2">Tō Mātou Tīmatanga</p>
-            <p className="text-lg text-gray-700 mt-6 pb-16 max-w-3xl mx-auto">
-	    At Kayco, we begin where today&apos;s treatment falls short. <br/>
-	    This is our starting point,<br/>
-	    Not our endpoint.<br/>
-	    Because everyone deserves better.<br/>
-            </p>
-          </div>
-          
-          <div className="grid gap-16">
-	  <SectionCard 
-              title={ourStartData.enhancingDrugEfficacy.title}
-              subtitle={ourStartData.enhancingDrugEfficacy.subtitle}
-              data={ourStartData.enhancingDrugEfficacy}
-              isMultiplePatients={false}
-            />
-                      </div>
-        </div>
-      </div>
-
-      <div className="bg-gray-100 py-20 px-6 sm:px-8 lg:px-12">
+      {/* Our Start Section */}
+      <div className="relative z-10 py-2 px-6 sm:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-red-400 mb-4">Our Future</h2>
-            <p className="text-xl text-gray-600 mb-2">Tō Tātou Anamata</p>
-            <div className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
-              <p>This is our future,</p>
-              <p>Where we are heading,</p>
-              <p>The patients we will serve.</p>
-              <p className="text-2xl font-bold text-red-600 mt-8">
-                Answering the needs others overlook.
-              </p>
+            <h2 className="text-3xl font-bold text-red-400 pb-4">Our Start</h2>
+            <div className="text-lg text-gray-700 mt-6 pb-16 max-w-3xl mx-auto">
+              <p>At Kayco, we begin where today's treatment falls short.</p>
+              <p>This is our starting point.</p>
+              <p>Not our endpoint.</p>
+              <p>Because everyone deserves better.</p>
             </div>
           </div>
           
-          <div className="grid gap-16 xl:grid-cols-2">
+          <div className="max-w-5xl mx-auto pb-6">
             <SectionCard 
-              title={ourFutureData.prioritisingWomensHealth.title}
-              subtitle={ourFutureData.prioritisingWomensHealth.subtitle}
-              data={ourFutureData.prioritisingWomensHealth}
-              isMultiplePatients={true}
+              title={ourStartData.enhancingDrugEfficacy.title}
+              subtitle={ourStartData.enhancingDrugEfficacy.subtitle}
+              data={ourStartData.enhancingDrugEfficacy}
+              isMultiplePatients={false}
             />
-         <SectionCard 
-              title={ourFutureData.discoveringNewSolutions.title}
-              subtitle={ourFutureData.discoveringNewSolutions.subtitle}
-              data={ourFutureData.discoveringNewSolutions}
-              isMultiplePatients={true}
-            />
-           <SectionCard 
-              title={ourFutureData.reformulatingMedicine.title}
-              subtitle={ourFutureData.reformulatingMedicine.subtitle}
-              data={ourFutureData.reformulatingMedicine}
-              isMultiplePatients={true}
-            />
+          </div>
+        </div>
+      </div>
 
-   
+      {/* Our Future Section */}
+      <div className="relative z-10 bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-6 sm:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-red-400 mb-4">Our Future</h2>
+            <div className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
+              <p>This is our future.</p>
+              <p>Where we are heading.</p>
+              <p>The patients we will serve.</p>
+            </div>
+          </div>
+          
+          {/* Desktop: Mixed layout - single column for women's health, then two columns */}
+          <div className="space-y-16">
+            <div className="max-w-5xl mx-auto">
+              <SectionCard 
+                title={ourFutureData.prioritisingWomensHealth.title}
+                subtitle={ourFutureData.prioritisingWomensHealth.subtitle}
+                data={ourFutureData.prioritisingWomensHealth}
+                isMultiplePatients={true}
+              />
+            </div>
+            
+            {/* Two column layout for these sections on large screens */}
+            <div className="grid gap-16 xl:grid-cols-2">
+              <SectionCard 
+                title={ourFutureData.discoveringNewSolutions.title}
+                subtitle={ourFutureData.discoveringNewSolutions.subtitle}
+                data={ourFutureData.discoveringNewSolutions}
+                isMultiplePatients={true}
+              />
+              <SectionCard 
+                title={ourFutureData.reformulatingMedicine.title}
+                subtitle={ourFutureData.reformulatingMedicine.subtitle}
+                data={ourFutureData.reformulatingMedicine}
+                isMultiplePatients={true}
+              />
+            </div>
           </div>
         </div>
       </div>

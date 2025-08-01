@@ -21,7 +21,7 @@ const steps = [
   { 
     title: "Why Now; What's Next", 
     description: 'The science is ready, the need is urgent. Join us in shaping the future of medicine',
-    details: ['Pipeline ready', 'Angel round open', 'Global partnerships']
+    details: ['Pipeline ready', 'VC round open', 'Global partnerships']
   },
 ];
 
@@ -32,19 +32,14 @@ export default function Roadmap() {
     offset: ["start end", "end start"]
   })
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
-
   return (
     <div ref={containerRef}>
-      <motion.div 
-        className="max-w-5xl mx-auto relative z-10 px-4"
-        style={{ scale: scaleProgress }}
-      >
+      <div className="max-w-5xl mx-auto relative mb-12">
         {/* Compact Header */}
-        <div className="text-center pb-6">
+        <div className="text-center">
           <div className="absolute right-0 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
           <motion.h2
-            className="text-4xl font-black bg-gray-800 bg-clip-text text-transparent pb-2"
+            className="text-3xl font-black bg-gray-800 bg-clip-text text-transparent py-2 pt-12"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -53,7 +48,7 @@ export default function Roadmap() {
           </motion.h2>
           
           <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed pb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -62,7 +57,6 @@ export default function Roadmap() {
             We are building it.
           </motion.p>
         </div>
-
         <div className="relative">
           {/* Dynamic vertical line */}
           <motion.div 
@@ -110,7 +104,6 @@ export default function Roadmap() {
                     <div className="absolute inset-2 rounded-full bg-white" />
                   </div>
                 </div>
-
                 {/* Consistent card design */}
                 <motion.div
                   className="bg-white/80 backdrop-blur-xl border border-red-200 rounded-3xl p-5 flex-1 max-w-3xl relative overflow-hidden shadow-xl"
@@ -121,16 +114,15 @@ export default function Roadmap() {
                   
                   <div className="relative z-10">
                     <motion.h3 
-                      className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-red-600 bg-clip-text text-transparent mb-2"
+                      className="text-xl font-bold bg-gradient-to-r from-gray-800 to-red-600 bg-clip-text text-transparent mb-2"
                       layoutId={`title-${index}`}
                     >
                       {step.title}
                     </motion.h3>
                     
-                    <p className="text-gray-700 text-lg leading-relaxed mb-3">
+                    <p className="text-base leading-relaxed mb-3">
                       {step.description}
                     </p>
-
                     {/* Feature tags */}
                     <div className="flex flex-wrap gap-2 mb-3">
                       {step.details.map((detail, detailIndex) => (
@@ -157,7 +149,6 @@ export default function Roadmap() {
             ))}
           </div>
         </div>
-
         {/* Call to Action Section */}
         <motion.div
           className="mt-16 relative"
@@ -192,11 +183,9 @@ export default function Roadmap() {
                 />
               ))}
             </div>
-
             {/* Corner decorations */}
             <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-red-500/30 to-transparent rounded-br-full" />
             <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-red-500/30 to-transparent rounded-tl-full" />
-
             <div className="relative z-10">
               <motion.div
                 className="mb-6"
@@ -214,25 +203,22 @@ export default function Roadmap() {
                   </motion.div>
                 </div>
               </motion.div>
-
               <motion.h3
-                className="text-3xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
+                className="text-2xl font-black bg-gray-800 bg-clip-text text-transparent mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
                 Ready to Transform Medicine?
               </motion.h3>
-
               <motion.p
-                className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed mb-6 text-left"
+                className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed mb-6 text-left"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
                 Join Kayco&rsquo;s revolutionary approach to sustainable medicine. Whether you&rsquo;re an investor, partner, or innovator, let&rsquo;s build the future of healthcare together.
               </motion.p>
-
               {/* Action buttons */}
               <motion.div
                 className="flex flex-col sm:flex-row gap-6 justify-center items-center"
@@ -247,7 +233,7 @@ export default function Roadmap() {
                   onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <span className="relative z-10">Join Our Angel Round</span>
+                  <span className="relative z-10">Join Our VC Round</span>
                   <motion.div
                     className="absolute inset-0 bg-white/20 rounded-full"
                     initial={{ scale: 0, x: "-100%" }}
@@ -259,7 +245,7 @@ export default function Roadmap() {
             </div>
           </div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   )
 }
