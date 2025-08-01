@@ -44,8 +44,8 @@ const Navbar = () => {
   navLinks = [
     { english: "Our Heart", maori: "To Tatou Ngakau",href:"" },
     { english: "Our Purpose", maori: "Ō Mātou Tāngata", href:"ourpurpose" },
-    { english: "Our People", maori: "Hono Mai", href:"ourpeople" },
     { english: "Mechano-Chemistry", maori: "Mechano-Pūtaiao Matū", href:"mechanochemistry" },
+    { english: "Our People", maori: "Hono Mai", href:"ourpeople" },
     { english: "Join Us", maori: "Hono Mai",href:"joinus" },
   ];
 
