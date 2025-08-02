@@ -37,7 +37,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our People</h1>
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">Our People</h1>
           <p className="text-lg md:text-xl text-gray-600">
             We have the expertise. <br/> Now we are ready to build the future.
           </p>
@@ -50,7 +50,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Founder</h2>
+          <h2 className="text-2xl font-bold text-center text-red-400 mb-6">Founder</h2>
           <LenaKadri />
         </motion.div>
 
@@ -61,7 +61,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Advisor</h2>
+          <h2 className="text-3xl font-bold text-center text-red-400 mb-6">Advisor</h2>
           <div className="space-y-10">
             <CharlotteOwens />
             <Unknown />
@@ -77,7 +77,7 @@ const OurPeople = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-red-400 mb-6">Mentor</h2>
+          <h2 className="text-3xl font-bold text-center text-red-400 mb-6">Mentor</h2>
         </motion.div>
 
         {[AnisoaraNicol, Unknown].map((Component, index) => (
@@ -95,7 +95,7 @@ const OurPeople = () => {
         
         {/* Associates */}
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center text-red-400 py-10"
+          className="text-3xl font-bold text-center text-red-400 py-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -146,13 +146,23 @@ const OurPeople = () => {
                 >
                   <div className="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-bl from-red-400/30 to-transparent rounded-bl-full pointer-events-none" />
                   <div className="relative w-full h-28 flex items-center justify-center z-10">
-                    <Image
-                      src={affiliation.image}
-                      alt={affiliation.alt}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
+                    {affiliation.image !== "/affilliations/morehouseSchoolofMedicine.jpg" ? (
+                      <Image
+                        src={affiliation.image}
+                        alt={affiliation.alt}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    ) : (
+                      <Image
+                        src={affiliation.image}
+                        alt={affiliation.alt}
+                        className="object-contain max-w-full max-h-full"
+			width={190}
+			height={115}
+                      />
+                    )}
                   </div>
                 </motion.div>
               ))}
