@@ -81,7 +81,7 @@ const MechanochemistryPage = () => {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-8 mb-16">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
+            <h2 className="text-3xl font-extrabold text-gray-800 mb-8">
               <span className="text-[#FF6B6B]">Real Impact</span>
             </h2>
           </div>

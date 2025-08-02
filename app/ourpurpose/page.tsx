@@ -355,7 +355,7 @@ const OurPurposePage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-red-400 pb-4">Our Start</h2>
-            <div className="text-lg text-gray-700 mt-6 pb-16 max-w-3xl mx-auto">
+            <div className="text-lg text-gray-700 mt-6 max-w-3xl mx-auto">
               <p>At Kayco, we begin where today&apos;s treatments fall short.</p>
               <p>This is our starting point.</p>
               <p>Not our endpoint.</p>

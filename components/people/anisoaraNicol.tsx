@@ -33,7 +33,7 @@ const AnisoaraNicol = () => {
     <Person
       name="Dr. Anisoara Nicol, PhD"
       image="/people/Anisoara.png"
-      role="Business Development Advisor"
+      role="Business Development Mentor"
       text={bio}
     />
   );
