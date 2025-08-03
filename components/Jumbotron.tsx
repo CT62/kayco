@@ -260,7 +260,7 @@ one molecule at a time.
                       We live by the question:
                     </p>
                     
-                    <p className="text-center text-3xl font-bold">
+                    <p className="text-center text-lg font-bold text-black">
                       If we can do better, why haven&apos;t we?
                     </p>
                     
@@ -280,7 +280,7 @@ one molecule at a time.
                       Rooted in Ireland and growing in Aotearoa, I am proud to announce the pre-launch of Kayco — a start-up dedicated to transforming lives through science rooted in empathy, one molecule at a time.
                     </p>
                     
-                    <p className="text-center font-medium text-2xl text-red-400">
+                    <p className="text-left font-bold text-lg text-black">
                       Because at Kayco, we believe medicine should work for everyone. Not just the majority.
                     </p>
                   </div>
