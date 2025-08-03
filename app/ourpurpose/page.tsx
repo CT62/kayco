@@ -389,12 +389,13 @@ const OurPurposePage = () => {
           {/* Desktop: Mixed layout - single column for women's health, then two columns */}
           <div className="space-y-16">
             <div className="max-w-5xl mx-auto">
-              <SectionCard 
-                title={ourFutureData.prioritisingWomensHealth.title}
-                subtitle={ourFutureData.prioritisingWomensHealth.subtitle}
-                data={ourFutureData.prioritisingWomensHealth}
+            <SectionCard
+                title={ourFutureData.reformulatingMedicine.title}
+                subtitle={ourFutureData.reformulatingMedicine.subtitle}
+                data={ourFutureData.reformulatingMedicine}
                 isMultiplePatients={true}
               />
+
             </div>
             
             {/* Two column layout for these sections on large screens */}
@@ -406,12 +407,13 @@ const OurPurposePage = () => {
                 isMultiplePatients={true}
               />
               <SectionCard 
-                title={ourFutureData.reformulatingMedicine.title}
-                subtitle={ourFutureData.reformulatingMedicine.subtitle}
-                data={ourFutureData.reformulatingMedicine}
+                title={ourFutureData.prioritisingWomensHealth.title}
+                subtitle={ourFutureData.prioritisingWomensHealth.subtitle}
+                data={ourFutureData.prioritisingWomensHealth}
                 isMultiplePatients={true}
               />
-            </div>
+
+          </div>
           </div>
         </div>
       </div>

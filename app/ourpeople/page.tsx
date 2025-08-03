@@ -93,6 +93,7 @@ const OurPeople = () => {
           </motion.div>
         ))}
         
+        <Unknown />
         {/* Associates */}
         <motion.h2
           className="text-3xl font-bold text-center text-red-400 py-10"

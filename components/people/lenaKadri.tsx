@@ -29,7 +29,7 @@ const LenaKadri = () => {
       
       <div className="mt-6 space-y-6">
         <p className="text-gray-700 leading-relaxed">
-          I&apos;m Dr. Lena Kadri, the founder of Kayco. I&apos;m proudly Irish and a big advocate for women and girls in science. I lead my life with purpose and meaning, living by the motto <strong>&ldquo;if not now, then when?&rdquo;</strong> And, as dark as it may seem, <strong>&ldquo;the only thing certain in life, is that we&apos;re all going to die&rdquo;</strong>. 
+          I&apos;m Dr. Lena Kadri, the founder of Kayco. I&apos;m proudly Irish and a big advocate for women and girls in science. I lead my life with purpose and meaning, living by the motto <strong className="text-black">&ldquo;if not now, then when?&rdquo;</strong> And, as dark as it may seem, <strong className="text-black">&ldquo;the only thing certain in life, is that we&apos;re all going to die&rdquo;</strong>. 
         </p>
         
         <p className="text-gray-700 leading-relaxed">

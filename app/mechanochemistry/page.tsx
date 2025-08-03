@@ -45,12 +45,12 @@ const MechanochemistryPage = () => {
               viewport={{ once: true }}
             >
               <p className="text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
-                Mechano-chemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
+                Mechanochemistry uses <strong>mechanical energy</strong> instead of harmful solvents to drive chemical reactions.
               </p>
               <div className="space-y-4 text-lg sm:text-xl text-gray-700 font-light leading-relaxed text-left">
                 <p>What if we could make medicine that&rsquo;s better for people and the planet?</p>
                 <p>What if we could lower costs, cut emissions, and access new treatments — all at once?</p>
-                <p className="font-bold">That&rsquo;s what mechano-chemistry makes possible.</p>
+                <p className="font-bold text-black">That&rsquo;s what mechanochemistry makes possible.</p>
               </div>
               
               <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-[#FF6B6B]">
@@ -112,7 +112,7 @@ const MechanochemistryPage = () => {
                 </div>
                 
                 <p className="text-lg text-gray-700 font-light">
-                  We can reduce pharmaceutical production costs by up to 90% — meaning for the cost of making <span className="font-bold">one</span> drug the traditional way, you could make{" "}
+                  We can reduce pharmaceutical production costs by up to 90% — meaning for the cost of making <span className="font-bold text-black">one</span> drug the traditional way, you could make{" "}
                   <span className="font-bold text-black">eight or nine</span> drugs using our process.
                 </p>
                 
@@ -159,13 +159,13 @@ const MechanochemistryPage = () => {
               
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 font-light">
-                  Mechanochemical technologies such as <span className="font-medium text-black">twin-screw extrusion</span> and{" "}
-                  <span className="font-medium text-black">ball milling</span> enable continuous, scalable production under controlled and reproducible conditions.
+                  Mechanochemical technologies such as <span className="text-black font-bold">twin-screw extrusion</span> and{" "}
+                  <span className="font-bold text-black">ball milling</span> enable continuous, scalable production under controlled and reproducible conditions.
                 </p>
                 
                 <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border border-red-200">
                   <p className="font-medium text-gray-800 mb-4">This results in:</p>
-                  <div className="grid gap-4">
+                  <div className="grid gap-2">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Shorter processing times</span>
@@ -181,7 +181,7 @@ const MechanochemistryPage = () => {
                   </div>
                 </div>
                 
-                <p className="text-lg font-medium text-black">The result? Faster production — and a quicker path to patients.</p>
+                <p className="text-lg font-medium text-gray-700">The result? Faster production — and a quicker path to patients.</p>
               </div>
             </motion.div>
 

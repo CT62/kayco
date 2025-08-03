@@ -19,7 +19,7 @@ export const CharlotteOwens = () => {
           ].map((tag, index) => (
             <span
               key={index}
-              className="border border-red-400 px-4 py-2 rounded-full text-sm font-semibold shadow hover:scale-105 transition-transform duration-200"
+              className="border border-red-400 px-4 py-2 rounded-full text-sm shadow hover:scale-105 transition-transform duration-200 text-black"
             >
               {tag}
             </span>
@@ -29,13 +29,13 @@ export const CharlotteOwens = () => {
       <div className="mt-6 space-y-4">
         <h3 className="text-xl font-bold text-gray-800">Professional Background</h3>
         <div className="text-gray-700 leading-relaxed">
-          <p className="mb-2"><strong>Present</strong></p>
+          <p className="mb-2"><strong className="text-black">Present</strong></p>
           <ul className="list-disc list-inside mb-4 space-y-1">
             <li>CMO (Consultant), DeepLook Medical</li>
             <li>Senior Executive Board Member, Prezent</li>
             <li>Adjunct Assist. Prof. of Clinical Obstetrics and Gynecology, Morehouse School of Medicine</li>
           </ul>
-          <p className="mb-2"><strong>Previous Experience</strong></p>
+          <p className="mb-2"><strong className="text-black">Previous Experience</strong></p>
           <ul className="list-disc list-inside space-y-1">
             <li>SVP, Head of Global Medical Affairs & Outcomes Research, Organon</li>
             <li>VP, Head of Center for Health Equity & Patient Affairs, Takeda</li>
@@ -46,7 +46,7 @@ export const CharlotteOwens = () => {
             <li>Worldwide Medical Director, Ethicon, Inc. (J&amp;J)</li>
           </ul>
         </div>
-        <h3 className="text-xl font-bold text-gray-800 pt-4">Career Summary</h3>
+        <h3 className="text-xl font-bold text-black pt-4">Career Summary</h3>
         <p className="text-gray-700 leading-relaxed">
           Dr. Charlotte Owens, M.D., is a physician-executive with over two decades of global leadership
           experience across clinical medicine, the biopharmaceutical and device industries, and strategic

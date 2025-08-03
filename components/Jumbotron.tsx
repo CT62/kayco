@@ -74,7 +74,7 @@ const KaycoHomepage = () => {
             </div>
           </motion.div>
           <motion.p
-            className="text-xl text-gray-800 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
+            className="text-xl text-gray-600 mb-8 sm:mb-12 font-light leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Shaping the future of medicine.
@@ -194,7 +194,7 @@ const KaycoHomepage = () => {
                       Our Vision
                     </h2>
                   </div>
-                  <p className="text-gray-700 text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+                  <p className="text-gray-700 text-lg font-light leading-relaxed max-w-3xl mx-auto">
 		  To transform lives through science rooted in empathy, <br/>
 one molecule at a time.
                   </p>
@@ -223,7 +223,7 @@ one molecule at a time.
                       Our Mission
                     </h2>
                   </div>
-                  <p className="text-gray-700 text-2xl font-light leading-relaxed max-w-3xl mx-auto">
+                  <p className="text-gray-700 text-lg font-light leading-relaxed max-w-3xl mx-auto">
                     To create medicine, <br/>
                     That combines deep scientific innovation,  <br/>
                     With compassion, integrity, and purpose,  <br/>
@@ -239,7 +239,7 @@ one molecule at a time.
                       Our Story
                     </h2>
                   </div>
-                  <div className="text-gray-700 text-xl font-light leading-relaxed max-w-4xl mx-auto space-y-6 text-left">
+                  <div className="text-gray-700 text-lg font-light leading-relaxed max-w-4xl mx-auto space-y-6 text-left">
                     <p>
                       Kayco exists to serve patients who need and deserve better. To improve medicines that simply miss the mark.
                     </p>
@@ -260,11 +260,11 @@ one molecule at a time.
                       We live by the question:
                     </p>
                     
-                    <p className="text-center text-3xl font-light text-red-400 italic">
+                    <p className="text-center text-3xl font-bold">
                       If we can do better, why haven&apos;t we?
                     </p>
                     
-                    <p className="text-red-400">
+                    <p className="text-gray-800">
                       Because for many people around the world, their needs are still left unmet.
                     </p>
                     
