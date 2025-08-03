@@ -277,7 +277,7 @@ one molecule at a time.
                     </p>
                     
                     <p className="text-left text-lg text-gray-800">
-                      Because at Kayco, we believe medicine should work for <p className="italic">everyone</p>. Not just the majority.
+                      Because at Kayco, we believe medicine should work for <span className="italic">everyone. Not just the majority.</span>
                     </p>
                   </div>
                 </div>
