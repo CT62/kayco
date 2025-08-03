@@ -273,10 +273,6 @@ one molecule at a time.
                     </p>
                     
                     <p>
-                      We are starting by improving the effectiveness of overlooked medicines. Next, we will reformulate the medications, to make them more tolerable for those who need them the most. Following this, we will unlock new, sustainable pathways to drug discovery.
-                    </p>
-                    
-                    <p>
                       Rooted in Ireland and growing in Aotearoa, I am proud to announce the pre-launch of Kayco — a start-up dedicated to transforming lives through science rooted in empathy, one molecule at a time.
                     </p>
                     
