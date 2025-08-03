@@ -276,8 +276,8 @@ one molecule at a time.
                       Rooted in Ireland and growing in Aotearoa, I am proud to announce the pre-launch of Kayco — a start-up dedicated to transforming lives through science rooted in empathy, one molecule at a time.
                     </p>
                     
-                    <p className="text-left font-bold text-lg text-black">
-                      Because at Kayco, we believe medicine should work for everyone. Not just the majority.
+                    <p className="text-left text-lg text-gray-800">
+                      Because at Kayco, we believe medicine should work for <p className="italic">everyone</p>. Not just the majority.
                     </p>
                   </div>
                 </div>
