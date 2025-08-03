@@ -309,19 +309,19 @@ one molecule at a time.
           <div className="bg-white backdrop-blur-lg rounded-3xl p-8 sm:p-16">
             <div className="space-y-8 text-gray-800 leading-relaxed">
               <div className="space-y-4">
-                <p className="text-2xl">
-                  <span className="font-medium italic text-red-400">Nau mai haere mai</span>
+                <p className="text-lg">
+                  <span className="font-medium text-red-400">Nau mai haere mai</span>
                 </p>
-                <p className="text-xl font-light text-left">
+                <p className="text-lg font-light text-left">
                   We honour the <span className="italic font-medium text-gray-800">mana whenua</span> of <span className="italic font-medium text-gray-800">Aotearoa</span> New Zealand and the <span className="italic font-medium text-gray-800">mātauranga Māori</span>.
                 </p>
               </div>
               
               <div className="space-y-4">
-                <p className="text-2xl">
-                  <span className="font-medium text-red-400 italic">Céad míle fáilte</span>
+                <p className="text-lg">
+                  <span className="font-medium text-red-400">Céad míle fáilte</span>
                 </p>
-                <p className="text-xl font-medium text-left text-gray-800">
+                <p className="text-lg font-medium text-left text-gray-800">
                   We acknowledge our roots in Ireland and the legacy of Irish resilience, helping to bring Kayco to life.
                 </p>
               </div>
