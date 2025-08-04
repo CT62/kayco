@@ -8,13 +8,13 @@ import Unknown from '@/components/people/unknown'
 
 const OurPeople = () => {
   const affiliations = [
-    { image: '/affilliations/theUniversityOfAuckland.jpg', alt: 'The University of Auckland logo' },
+    { image: '/affilliations/theUniversityOfAuckland.png', alt: 'The University of Auckland logo' },
     { image: '/affilliations/womenInHealthTech.png', alt: 'Women in Health Tech logo' },
-    { image: '/affilliations/monashUniversity.webp', alt: 'Monash University logo' },
-    { image: '/affilliations/trinityCollegeDublin.jpg', alt: 'Trinity College Dublin logo' },
+    { image: '/affilliations/monashUniversity.png', alt: 'Monash University logo' },
+    { image: '/affilliations/trinityCollegeDublin.png', alt: 'Trinity College Dublin logo' },
     { image: '/affilliations/universityOfLimerick.png', alt: 'University of Limerick logo' },
-    { image: '/affilliations/sspc.jpg', alt: 'SSPC logo' },
-    { image: '/affilliations/morehouseSchoolofMedicine.jpg', alt: 'Morehouse School of Medicine logo' },
+    { image: '/affilliations/sspc.png', alt: 'SSPC logo' },
+    { image: '/affilliations/morehouseSchoolofMedicine.png', alt: 'Morehouse School of Medicine logo' },
   ]
 
   return (
@@ -94,6 +94,7 @@ const OurPeople = () => {
         ))}
         
         <Unknown />
+
         {/* Associates */}
         <motion.h2
           className="text-3xl font-bold text-center text-red-400 py-10"
@@ -147,21 +148,39 @@ const OurPeople = () => {
                 >
                   <div className="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-gradient-to-bl from-red-400/30 to-transparent rounded-bl-full pointer-events-none" />
                   <div className="relative w-full h-28 flex items-center justify-center z-10">
-                    {affiliation.image !== "/affilliations/morehouseSchoolofMedicine.jpg" ? (
+                    {affiliation.image === "/affilliations/trinityCollegeDublin.png" ? (
+                      <Image
+                        src={affiliation.image}
+                        alt={affiliation.alt}
+                        className="object-contain max-w-full max-h-full"
+                        width={260}
+                        height={185}
+                      />
+                    ) : affiliation.image === "/affilliations/morehouseSchoolofMedicine.png" ? (
+                      <Image
+                        src={affiliation.image}
+                        alt={affiliation.alt}
+                        className="object-contain max-w-full max-h-full"
+                        width={190}
+                        height={135}
+                      />
+                    ) : affiliation.image === "/affilliations/universityOfLimerick.png" ? (
+                      <Image
+                        src={affiliation.image}
+                        alt={affiliation.alt}
+                        width={160}
+                        height={105}
+                        className="object-contain"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+
+			) : (
                       <Image
                         src={affiliation.image}
                         alt={affiliation.alt}
                         fill
                         className="object-contain"
                         sizes="(max-width: 768px) 100vw, 50vw"
-                      />
-                    ) : (
-                      <Image
-                        src={affiliation.image}
-                        alt={affiliation.alt}
-                        className="object-contain max-w-full max-h-full"
-			width={190}
-			height={115}
                       />
                     )}
                   </div>

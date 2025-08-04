@@ -212,7 +212,9 @@ const PatientCard = ({ patient }: PatientCardProps) => {
           <img 
             src={patient.image} 
             alt={patient.name}
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover ${
+              patient.name.includes('Wayne') ? 'md:object-[center_20%] lg:object-[center_20%]' : ''
+            }`}
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">

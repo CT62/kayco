@@ -51,7 +51,6 @@ const KaycoHomepage = () => {
   return (
     <div className="min-h-screen bg-white">
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        {/* Soft background blur circle */}
         <div className="absolute -bottom-20 -right-32 w-96 h-96 bg-[#FF6B6B] opacity-10 rounded-full blur-3xl pointer-events-none z-0" />
         <motion.div
           className="relative z-10 text-center px-4 max-w-5xl mx-auto"
@@ -114,9 +113,8 @@ const KaycoHomepage = () => {
           </motion.div>
         </motion.div>
       </section>
-      {/* Vision Section with Floating Logos */}
+      
       <section className="relative z-10 bg-white pb-10 pt-20 px-4 sm:px-8 overflow-hidden">
-        {/* Floating Background Logos */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
           {backgroundLogos.map(
             ({
@@ -171,9 +169,8 @@ const KaycoHomepage = () => {
         >
           <section className="relative text-center px-4 sm:px-8 lg:px-12 py-24">
             <div className="max-w-7xl mx-auto space-y-20 z-10 relative">
-              {/* Our Vision Section */}
+              
               <div className="relative">
-                {/* Baby and elderly hands image - positioned on the left with modern styling */}
                 <motion.div 
                   className="absolute -left-16 top-1/2 -translate-y-1/2 -translate-x-12 hidden xl:block z-0"
                   initial={{ opacity: 0, x: -80 }}
@@ -182,10 +179,7 @@ const KaycoHomepage = () => {
                   viewport={{ once: true }}
                 >
                   <div className="relative group">
-                    {/* Backdrop blur effect */}
                     <div className="absolute -inset-6 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                    
-                    {/* Main image container - clean and simple */}
                   </div>
                 </motion.div>
                 <div className="space-y-6 relative z-10">
@@ -201,9 +195,7 @@ one molecule at a time.
                 </div>
               </div>
               
-              {/* Our Mission Section */}
               <div className="relative">
-                {/* Old couple image - positioned on the right with modern styling */}
                 <motion.div 
                   className="absolute -right-16 top-1/2 -translate-y-1/2 translate-x-12 hidden xl:block z-0"
                   initial={{ opacity: 0, x: 80 }}
@@ -212,9 +204,7 @@ one molecule at a time.
                   viewport={{ once: true }}
                 >
                   <div className="relative group">
-                    {/* Backdrop blur effect */}
                     <div className="absolute -inset-6 bg-gradient-to-l from-red-100/20 to-orange-100/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                    
                   </div>
                 </motion.div>
                 <div className="space-y-6 relative z-10">
@@ -231,69 +221,96 @@ one molecule at a time.
                   </p>
                 </div>
               </div>
-              {/* Our Story Section */}
+              
               <div className="relative">
-                <div className="space-y-8 relative z-10">
+                <div className="space-y-12 relative z-10">
                   <div className="inline-block">
                     <h2 className="text-3xl font-bold text-red-400 tracking-tight">
                       Our Story
                     </h2>
                   </div>
-                  <div className="text-gray-700 text-lg font-light leading-relaxed max-w-4xl mx-auto space-y-6 text-left">
-                    <p>
-                      Kayco exists to serve patients who need and deserve better. To improve medicines that simply miss the mark.
-                    </p>
+                  
+                  <div className="max-w-4xl mx-auto space-y-8">
                     
-                    <p>
-                      Treatments that offer little or no relief. Side effects that can outweigh the benefits. Resistance that quietly grows in the background, narrowing future options. Formulations that make patients gag or vomit. Entire groups of people who were never even part of the conversation. And illnesses and diseases with limited or no treatment options at all.
-                    </p>
-                    
-                    <p>
-                      The science is there. But why isn&apos;t it reaching everyone? And why isn&apos;t it reaching everyone, as effectively as possible?
-                    </p>
-                    
-                    <p>
-                      At Kayco, we&apos;re not here to talk about the problems. We&apos;re here to transform them.
-                    </p>
-                    
-                    <p className="text-center font-medium">
-                      We live by the question:
-                    </p>
-                    
-                    <p className="text-center text-lg font-bold text-black">
-                      If we can do better, why haven&apos;t we?
-                    </p>
-                    
-                    <p className="text-gray-800">
-                      Because for many people around the world, their needs are still left unmet.
-                    </p>
-                    
-                    <p>
-                      At Kayco, we are on a mission to push the boundaries of what drug development can be — and who it can serve.
-                    </p>
-                    
-                    <p>
-                      Rooted in Ireland and growing in Aotearoa, I am proud to announce the pre-launch of Kayco — a start-up dedicated to transforming lives through science rooted in empathy, one molecule at a time.
-                    </p>
-                    
-                    <p className="text-left text-lg text-gray-800">
-                      Because at Kayco, we believe medicine should work for <span className="italic">everyone. Not just the majority.</span>
-                    </p>
+                    <motion.div 
+                      className="relative"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="text-gray-700 text-lg font-light leading-relaxed text-left space-y-6">
+                        <p>
+                          Kayco exists to serve patients who need and deserve better. To improve medicines that simply miss the mark.
+                        </p>
+                        
+                        <p>
+                          Treatments that offer little or <span className="font-bold text-black">no relief</span>. Side effects that can <span className="font-bold text-black">outweigh the benefits</span>. Resistance that quietly grows in the background, <span className="font-bold text-black">narrowing future options</span>. Formulations that make patients gag or <span className="font-bold text-black">vomit</span>. Entire groups of people who were <span className="font-bold text-black">never even part of the conversation</span>. And illnesses and diseases with limited or <span className="font-bold text-black">no treatment options at all</span>.
+                        </p>
+                        
+                        <div className="text-center py-4">
+                          <p className="text-gray-700 text-lg font-light leading-relaxed">
+                            The science is there. But why isn't it reaching everyone? And why isn't it reaching everyone, as effectively as possible?
+                          </p>
+                        </div>
+                        <div className="flex items-center justify-center py-8">
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+                          <div className="px-4">
+                            <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                          </div>
+                          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+                        </div>
+                        
+
+                        <p>
+                          At Kayco, we're not here to talk about the problems. We're here to transform them.
+                        </p>
+                        
+                        <p>
+                          We live by the question: <span className="font-bold text-black">If we can do better, why haven't we?</span> Because for many people around the world, their needs are still left unmet.
+                        </p>
+                      </div>
+                    </motion.div>
+
+                    <motion.div 
+                      className="relative"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.3 }}
+                      viewport={{ once: true }}
+                    >
+                      <div className="text-gray-700 text-lg font-light leading-relaxed text-left space-y-6">
+                        <p>
+                          At Kayco, we are on a mission to push the boundaries of what drug development can be — and who it can serve.
+                        </p>
+                        
+                        <p>
+                          We are starting by improving the <span className="font-bold text-black">effectiveness</span> of overlooked medicines, <span className="font-bold text-black">reformulating</span> treatments for those who need them the most, and opening <span className="font-bold text-black">new</span>, <span className="font-bold text-black">sustainable</span> pathways to <span className="font-bold text-black">drug discovery</span>.
+                        </p>
+                        
+                        <p>
+                          Rooted in Ireland and growing in Aotearoa, I am proud to announce the pre-launch of Kayco — a start-up dedicated to transforming lives through science rooted in empathy, one molecule at a time.
+                        </p>
+                        
+                                                <p className="text-gray-700 text-lg font-light leading-relaxed">
+                          Because at Kayco, we believe medicine should work for <span className="italic font-medium">everyone. Not just the majority.</span>
+                        </p>
+                      </div>
+                    </motion.div>
+
                   </div>
                 </div>
               </div>
               
               <div className="xl:hidden space-y-10 mt-10">
-                {/* Mobile Mission Image */}
               </div>
             </div>
           </section>
         </motion.div>
 	<AutoScrollGallery/>
       </section>
-      {/* Cultural Acknowledgment Section */}
+      
       <section className="relative py-20 px-4 sm:px-8 overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div className="relative w-full h-full">
             <div className="absolute inset-0 bg-gray-100" />
