@@ -250,7 +250,7 @@ one molecule at a time.
                         
                         <div className="text-center py-4">
                           <p className="text-gray-700 text-lg font-light leading-relaxed">
-                            The science is there. But why isn't it reaching everyone? And why isn't it reaching everyone, as effectively as possible?
+                            The science is there. But why isn&apos;t it reaching everyone? And why isn&apos;t it reaching everyone, as effectively as possible?
                           </p>
                         </div>
                         <div className="flex items-center justify-center py-8">
@@ -263,11 +263,11 @@ one molecule at a time.
                         
 
                         <p>
-                          At Kayco, we're not here to talk about the problems. We're here to transform them.
+                          At Kayco, we&apos;re not here to talk about the problems. We&apos;re here to transform them.
                         </p>
                         
                         <p>
-                          We live by the question: <span className="font-bold text-black">If we can do better, why haven't we?</span> Because for many people around the world, their needs are still left unmet.
+                          We live by the question: <span className="font-bold text-black">If we can do better, why haven&apos;t we?</span> Because for many people around the world, their needs are still left unmet.
                         </p>
                       </div>
                     </motion.div>
