@@ -140,7 +140,7 @@ Because no one should have to say goodbye before their time.
   },
   // Added Reformulating Medicine to Our Future
   reformulatingMedicine: {
-    title: "Reformulating Medicine",
+    title: "Expanding Drug Delivery",
     subtitle: "Improving how medicine is delivered for vulnerable patients.",
     patients: [
       {
