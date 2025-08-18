@@ -124,7 +124,7 @@ const MechanochemistryPage = () => {
         >
           <div className="text-center space-y-8 mb-16">
             <h2 className="text-3xl font-extrabold text-gray-800 mb-8">
-              <span className="text-[#FF6B6B]">Why It's the Future</span>
+              <span className="text-[#FF6B6B]">Why It&apos;s the Future</span>
             </h2>
           </div>
 
@@ -165,7 +165,7 @@ const MechanochemistryPage = () => {
 
                 {/* Kayco's Mechanochemistry */}
                 <div className="space-y-6">
-                  <h3 className="text-2xl font-extrabold text-gray-800 text-center pb-4 border-b-2 border-[#FF6B6B]">Kayco's Mechanochemistry</h3>
+                  <h3 className="text-2xl font-extrabold text-gray-800 text-center pb-4 border-b-2 border-[#FF6B6B]">Kayco&apos;s Mechanochemistry</h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3 p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200">
                       <div className="w-3 h-3 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
