@@ -23,7 +23,6 @@ const Navbar = () => {
       setScrolled(isScrolled);
     };
     
-    // Check initial scroll position
     handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -42,9 +41,10 @@ const Navbar = () => {
   }, [mobileMenuOpen, accountDropdownOpen]);
 
   navLinks = [
-    { english: "Our Heart", maori: "To Tatou Ngakau",href:"" },
-    { english: "Our Purpose", maori: "Ō Mātou Tāngata", href:"ourpurpose" },
+    { english: "Home", maori: "Kainga",href:"" },
+    { english: "Our Heart", maori: "To Tatou Ngakau",href:"ourheart" },
     { english: "Mechano-Chemistry", maori: "Mechano-Pūtaiao Matū", href:"mechanochemistry" },
+    { english: "Our Purpose", maori: "Ō Mātou Tāngata", href:"ourpurpose" },
     { english: "Our People", maori: "Hono Mai", href:"ourpeople" },
     { english: "Join Us", maori: "Hono Mai",href:"joinus" },
   ];

@@ -145,19 +145,19 @@ const MechanochemistryPage = () => {
                   <h3 className="text-2xl font-extrabold text-gray-800 text-center pb-4 border-b-2 border-gray-200">Conventional Methods</h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3 p-4 bg-gray-100 rounded-xl">
-                      <div className="w-3 h-3 bg-gray-500 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gray-500 rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Solvent-heavy, high waste</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gray-100 rounded-xl">
-                      <div className="w-3 h-3 bg-gray-500 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gray-500 rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Batch-based, months-long cycles</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gray-100 rounded-xl">
-                      <div className="w-3 h-3 bg-gray-500 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gray-500 rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Limited to soluble precursors</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gray-100 rounded-xl">
-                      <div className="w-3 h-3 bg-gray-500 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-gray-500 rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700">Energy-intensive purification</span>
                     </div>
                   </div>
@@ -168,19 +168,19 @@ const MechanochemistryPage = () => {
                   <h3 className="text-2xl font-extrabold text-gray-800 text-center pb-4 border-b-2 border-[#FF6B6B]">Kayco&apos;s Mechanochemistry</h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3 p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200">
-                      <div className="w-3 h-3 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Solvent-free / solvent-minimal</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200">
-                      <div className="w-3 h-3 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Continuous, weeks, not months</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200">
-                      <div className="w-3 h-3 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Access to insoluble or unstable molecules</span>
                     </div>
                     <div className="flex items-center space-x-3 p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200">
-                      <div className="w-3 h-3 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Minimal or no purification required</span>
                     </div>
                   </div>
