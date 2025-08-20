@@ -1,5 +1,5 @@
 "use client"
-import Jumbotron from "@/components/Jumbotron.tsx"
+import Jumbotron from "@/components/Jumbotron"
 import { motion } from "framer-motion";
 import { FlaskConical, Zap, Users, Target, Heart, Globe, Microscope, Building2, Handshake } from "lucide-react";
 
