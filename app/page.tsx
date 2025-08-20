@@ -30,7 +30,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <div className="text-center space-y-6">
-                <p className="text-lg sm:text-xl text-gray-700 font-bold leading-relaxed">
+                <p className="text-lg sm:text-xl text-black font-bold leading-relaxed">
                   At Kayco, we unlock the potential of essential medicines.
                 </p>
                 
@@ -277,15 +277,15 @@ export default function Home() {
                   
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4 p-6 bg-white rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Infectious diseases</span>
                     </div>
                     <div className="flex items-center space-x-4 p-6 bg-white rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Central Nervous System (CNS)</span>
                     </div>
                     <div className="flex items-center space-x-4 p-6 bg-white rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Oncology</span>
                     </div>
                   </div>
@@ -318,15 +318,15 @@ export default function Home() {
                   
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4 p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Women&apos;s health</span>
                     </div>
                     <div className="flex items-center space-x-4 p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Rare diseases</span>
                     </div>
                     <div className="flex items-center space-x-4 p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#FF6B6B] rounded-full flex-shrink-0"></div>
                       <span className="text-gray-700 font-medium">Discovery of new drugs</span>
                     </div>
                   </div>
