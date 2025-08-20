@@ -5,29 +5,6 @@ import AutoScrollGallery from '@/components/AutoScrollGallery';
 import Image from "next/image";
 
 const OurHeart = () => {
-  const router = useRouter();
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-  const itemVariants: Variants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring" as const,
-        stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
   const backgroundLogos = Array.from({ length: 10 }).map((_, i) => {
     const size = Math.random() * 40 + 20;
     const xStart = Math.random() * 100;

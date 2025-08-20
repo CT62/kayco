@@ -106,7 +106,7 @@ export default function Home() {
                   </p>
                   
                   <p className="text-lg text-gray-700 font-light leading-relaxed">
-                    Our formulations are developed by Kayco's team of scientists, clinicians, and strategists with deep expertise in solubility science, formulation, and commercialization.
+                    Our formulations are developed by Kayco&apos;s team of scientists, clinicians, and strategists with deep expertise in solubility science, formulation, and commercialization.
                   </p>
                   
                   <div className="relative">
@@ -319,7 +319,7 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4 p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
-                      <span className="text-gray-700 font-medium">Women's health</span>
+                      <span className="text-gray-700 font-medium">Women&apos;s health</span>
                     </div>
                     <div className="flex items-center space-x-4 p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="w-3 h-3 bg-gradient-to-r from-[#FF6B6B] to-pink-400 rounded-full flex-shrink-0"></div>
