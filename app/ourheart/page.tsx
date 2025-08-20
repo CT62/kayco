@@ -1,6 +1,5 @@
 "use client";
-import { motion, Variants } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 import AutoScrollGallery from '@/components/AutoScrollGallery';
 import Image from "next/image";
 
