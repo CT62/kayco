@@ -399,7 +399,7 @@ export default function Home() {
                           <h4 className="font-bold text-gray-800">License</h4>
                         </div>
                         <p className="text-gray-700 font-light">
-                          Reformulated essential medicines
+                          Reformulate essential medicines
                         </p>
                       </div>
                     </div>
