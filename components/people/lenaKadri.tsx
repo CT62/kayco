@@ -34,7 +34,7 @@ const LenaKadri = () => {
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          Motivated by a deep sense of urgency and responsibility, Dr. Kadri lives by the principle: <strong className="text-black">&ldquo;If not now, then when?&rdquo;</strong> This perspective continually leads her to ask: What am I here to do? What mark do I want to leave on the world? These are not simply words, but guiding principles that shape both her work and her life's mission.
+          Motivated by a deep sense of urgency and responsibility, Dr. Kadri lives by the principle: <strong className="text-black">&ldquo;If not now, then when?&rdquo;</strong> This perspective continually leads her to ask: What am I here to do? What mark do I want to leave on the world? These are not simply words, but guiding principles that shape both her work and her life&apos;s mission.
         </p>
         
         <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
@@ -47,11 +47,11 @@ const LenaKadri = () => {
         </div>
         
         <p className="text-gray-700 leading-relaxed">
-          An Irish proverb she often reflects on captures the answer: For Dr. Kadri, that path has always led to patients — especially those who need better medicines and greater access to them. They are at the heart of Kayco's purpose and the reason she pursues her work with such determination.
+          An Irish proverb she often reflects on captures the answer: For Dr. Kadri, that path has always led to patients — especially those who need better medicines and greater access to them. They are at the heart of Kayco&apos;s purpose and the reason she pursues her work with such determination.
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          This vision brought her to Aotearoa New Zealand: a country with a thriving start-up culture, a spirit of innovation, and people whose warmth made it the natural home for Kayco's beginnings.
+          This vision brought her to Aotearoa New Zealand: a country with a thriving start-up culture, a spirit of innovation, and people whose warmth made it the natural home for Kayco&apos;s beginnings.
         </p>
         
         <div className="mt-8">
