@@ -12,6 +12,7 @@ const LenaKadri = () => {
     "Mechano-Chemistry",
   ];
   
+
   const bio = (
     <>
       <div className="mb-6">
