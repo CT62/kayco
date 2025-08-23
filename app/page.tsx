@@ -86,14 +86,14 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-[#FF6B6B] to-pink-400 rounded-3xl blur-lg opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
               <div className="relative bg-gradient-to-br from-red-50 to-pink-50 rounded-3xl p-12 border border-red-200 backdrop-blur-sm">
-                <div className="flex items-center space-x-6 mb-10">
-                  <div className="relative">
+                <div className="mb-10">
+                  <div className="relative w-fit mx-auto mb-6">
                     <div className="absolute inset-0 bg-[#FF6B6B] rounded-full blur opacity-20"></div>
-                    <div className="relative p-4 bg-red-100 rounded-full">
+                    <div className="relative p-4 bg-red-100 rounded-full flex items-center justify-center">
                       <FlaskConical className="w-8 h-8 text-[#FF6B6B]" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-extrabold text-gray-800">Pioneering Pharmaceutical Innovation</h3>
+                  <h3 className="text-2xl font-extrabold text-gray-800 text-center">Pioneering Pharmaceutical Innovation</h3>
                 </div>
                 
                 <div className="space-y-8">

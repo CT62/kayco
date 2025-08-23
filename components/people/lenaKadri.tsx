@@ -29,16 +29,16 @@ const LenaKadri = () => {
       
       <div className="mt-6 space-y-6">
         <p className="text-gray-700 leading-relaxed">
-          I&apos;m Dr. Lena Kadri, the founder of Kayco. I&apos;m proudly Irish and a big advocate for women and girls in science. I lead my life with purpose and meaning, living by the motto <strong className="text-black">&ldquo;if not now, then when?&rdquo;</strong> And, as dark as it may seem, <strong className="text-black">&ldquo;the only thing certain in life, is that we&apos;re all going to die&rdquo;</strong>. 
+          Dr. Lena Kadri is the founder of Kayco, a pharmaceutical start-up dedicated to transforming the way poorly soluble medicines are developed and delivered. She is proudly Irish and a passionate advocate for women and girls in STEM.
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          When you live by these principles, you really ask yourself: what am I here to do? What mark do I want to leave on the world?
+          Motivated by a deep sense of urgency and responsibility, Dr. Kadri lives by the principle: <strong className="text-black">&ldquo;If not now, then when?&rdquo;</strong> This perspective continually leads her to ask: What am I here to do? What mark do I want to leave on the world? These are not simply words, but guiding principles that shape both her work and her life's mission.
         </p>
         
         <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
           <p className="text-gray-700 leading-relaxed italic mb-2">
-            &ldquo;Your feet will take you where your heart is&rdquo;.
+            &ldquo;Your feet will take you where your heart is&rdquo;
           </p>
           <p className="text-gray-600 text-sm">
             <em>an áit a bhfuil do chroí, is ann a thabharfas do chosa thú.</em>
@@ -46,15 +46,11 @@ const LenaKadri = () => {
         </div>
         
         <p className="text-gray-700 leading-relaxed">
-          This is an Irish proverb that really resonates with me. And for me, my heart is, and always will be with the patients who need me the most. The ones who need better. These are patients around the world who Kayco can serve.
+          An Irish proverb she often reflects on captures the answer: For Dr. Kadri, that path has always led to patients — especially those who need better medicines and greater access to them. They are at the heart of Kayco's purpose and the reason she pursues her work with such determination.
         </p>
         
         <p className="text-gray-700 leading-relaxed">
-          That&apos;s why I moved to Aotearoa. To pursue my life&apos;s mission of founding Kayco. Why NZ you may ask? Well, haven&apos;t you seen the start-up culture? Plus, the country and people are just the best!
-        </p>
-        
-        <p className="text-gray-700 leading-relaxed">
-          Well, that&apos;s all from me!
+          This vision brought her to Aotearoa New Zealand: a country with a thriving start-up culture, a spirit of innovation, and people whose warmth made it the natural home for Kayco's beginnings.
         </p>
         
         <div className="mt-8">

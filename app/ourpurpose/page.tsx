@@ -44,7 +44,7 @@ Her fever spiked. The pain got worse. A second visit to urgent care confirmed wh
 
 Some medicines, don't absorb well in the body. So even when taken correctly, not enough of the medicine reaches the infection to work as needed. The bacteria survive, adapt, and become more resistant. Meaning future medication will be even less effective.
 
-Priya missed more days at work. Her family routine was thrown off. And she was left wondering what more she could've done, even though she had done everything right.`,
+Priya missed more days at work. Her family routine was thrown off, and she was left wondering what more she could've done, even though she had done everything right.`,
       solution: `We improve essential antibiotics so the body can absorb them better, faster, and with fewer side effects. This helps the medicine do what it's meant to do. Work effectively, the first time around. We deliver the essential medications in the form of:
 • Improved oral tablets and capsules
 • Gentle skin patches
@@ -67,7 +67,7 @@ const ourFutureData = {
 
 After nearly a decade of dismissal, Anika was finally diagnosed with endometriosis. A chronic condition affecting 1 in 10 women.
 
-Hormonal therapies caused side effects that disrupted her mood, memory, and daily functioning. Surgery offered temporary relief, but nothing long-term. Like many young teenagers and women, Anika was left cycling through medications that didn't work. And a system that didn't seem to care.
+Hormonal therapies caused side effects that disrupted her mood, memory, and daily functioning. Surgery offered temporary relief, but nothing long-term. Like many young teenagers and women, Anika was left cycling through medications that didn't work, and a system that didn't seem to care.
 
 Many of the available medicines shut down hormones, bringing on menopausal symptoms in females as young as 13 years old. Anika tried them all: hormonal pills, injections, painkillers. But the side effects left her foggy, fatigued, and emotionally drained. She needed something better. Something designed for her, not recycled from treatments for someone else.`,
         solution: `We're bringing innovation to where it's long overdue.
