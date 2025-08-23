@@ -5,17 +5,17 @@ import { useRef } from 'react'
 const steps = [
   { 
     title: 'Where We Come From', 
-    description: 'Built from science and engineered for impact with proven expertise and industry-leading advisors',
+    description: 'Built from science and engineered for impact with proven expertise and industry-leading advisors.',
     details: ['Mechano-chemistry expertise', 'Proven R&D track record', 'Global biopharma advisors']
   },
   { 
     title: "What's Broken", 
-    description: 'Addressing critical gaps in modern medicine from poor absorption to antimicrobial resistance',
+    description: 'Addressing critical gaps in modern medicine from poor absorption to antimicrobial resistance.',
     details: ['Poor drug absorption', 'Antimicrobial resistance', 'Vulnerable patient needs']
   },
   { 
     title: "What We're Building", 
-    description: 'A sustainable revolution in medicine - better absorption, fewer side effects, and global accessibility',
+    description: 'A sustainable revolution in medicine - better absorption, fewer side effects, and global accessibility.',
     details: ['Better drug absorption', 'Fighting resistance', 'Sustainable manufacturing']
   },
   { 

@@ -142,9 +142,9 @@ one molecule at a time.
                   </div>
                   <p className="text-gray-700 text-lg font-light leading-relaxed max-w-3xl mx-auto">
                     To create medicine, <br/>
-                    That combines deep scientific innovation,  <br/>
-                    With compassion, integrity, and purpose,  <br/>
-                    To push the boundaries of drug development.  <br/>
+                    that combines deep scientific innovation,  <br/>
+                    with compassion, integrity, and purpose,  <br/>
+                    to push the boundaries of drug development.  <br/>
                   </p>
                 </div>
               </div>
@@ -177,7 +177,7 @@ one molecule at a time.
                         
                         <div className="text-center py-4">
                           <p className="text-gray-700 text-lg font-light leading-relaxed">
-                            The science is there. But why isn&apos;t it reaching everyone? And why isn&apos;t it reaching everyone, as effectively as possible?
+                            The science is there. But why isn&apos;t it reaching everyone? And why isn&apos;t it reaching everyone as effectively as possible?
                           </p>
                         </div>
                         <div className="flex items-center justify-center py-8">

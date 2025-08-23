@@ -38,15 +38,15 @@ const LenaKadri = () => {
         
         <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-red-500">
           <p className="text-gray-700 leading-relaxed italic mb-2">
-            &ldquo;Your feet will take you where your heart is&rdquo;
+            &ldquo;Your feet will take you where your heart is&rdquo;.
           </p>
           <p className="text-gray-600 text-sm">
-            <em>an áit a bhfuil do chroí, is ann a thabharfas do chosa thú</em>
+            <em>an áit a bhfuil do chroí, is ann a thabharfas do chosa thú.</em>
           </p>
         </div>
         
         <p className="text-gray-700 leading-relaxed">
-          There&apos;s an Irish proverb that really resonates with me. And for me, my heart is, and always will be with the patients who need me the most. The ones who need better. These are patients around the world who Kayco can serve.
+          This is an Irish proverb that really resonates with me. And for me, my heart is, and always will be with the patients who need me the most. The ones who need better. These are patients around the world who Kayco can serve.
         </p>
         
         <p className="text-gray-700 leading-relaxed">

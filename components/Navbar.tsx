@@ -163,17 +163,18 @@ const Navbar = () => {
                 variants={linkVariants}
                 whileHover={{ y: -2 }}
                 whileTap={{ y: 0 }}
+                className="text-center"
               >
                 <motion.a
                   href={`/${link.href}`}
-                  className="text-black relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-current font-black text-sm xl:text-md tracking-wide flex flex-col items-center text-center"
+                  className="text-black relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:bg-current font-black text-sm xl:text-md tracking-wide flex flex-col items-center"
                   whileHover={{ 
                     color: "#FF0000",
                     transition: { duration: 0.2 }
                   }}
                 >
-                  <span>{link.english}</span>
-                  <span className="text-xs text-gray-600 opacity-60 font-normal mt-1 tracking-normal">
+                  <span className="whitespace-nowrap">{link.english}</span>
+                  <span className="text-xs text-gray-600 opacity-60 font-normal mt-1 tracking-normal whitespace-nowrap">
                     {link.maori}
                   </span>
                 </motion.a>
