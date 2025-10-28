@@ -45,7 +45,6 @@ Her fever spiked. The pain got worse. A second visit to urgent care confirmed wh
 Some medicines, don't absorb well in the body. So even when taken correctly, not enough of the medicine reaches the infection to work as needed. The bacteria survive, adapt, and become more resistant. Meaning future medication will be even less effective.
 
 Priya missed more days at work. Her family routine was thrown off. And she was left wondering what more she could've done, even though she had done everything right.`,
-Priya missed more days at work. Her family routine was thrown off, and she was left wondering what more she could've done, even though she had done everything right.`,
       solution: `We improve essential antibiotics so the body can absorb them better, faster, and with fewer side effects. This helps the medicine do what it's meant to do. Work effectively, the first time around. We deliver the essential medications in the form of:
 • Improved oral tablets and capsules
 • Gentle skin patches
