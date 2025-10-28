@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { DollarSign, Clock, Zap, Layers, FlaskConical, Target, TrendingUp } from "lucide-react";
+import {  Zap, Layers, FlaskConical, Target, TrendingUp } from "lucide-react";
 
 const MechanochemistryPage = () => {
   return (
