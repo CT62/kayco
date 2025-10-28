@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation';
-import { cookies } from 'next/headers';
 
 //const AUTH_COOKIE_NAME = 'site_authenticated';
 export async function GET() {
